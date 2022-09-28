@@ -1,0 +1,24 @@
+@import "set";
+@import "components";
+
+@import "header";
+@import "footer";
+@import "banner";
+
+
+
+body.lock {
+  overflow: hidden;
+}
+
+@media (min-width: 48.01em) {
+  .mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 48em) {
+  .desktop {
+    display: none;
+  }
+}

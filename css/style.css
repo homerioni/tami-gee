@@ -1,0 +1,372 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: "Sofia Pro";
+  font-size: 0.5208335vw;
+  font-style: normal;
+  font-weight: normal;
+  -webkit-animation: bugfix infinite 1s;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-style: normal;
+  font-weight: normal;
+  -webkit-animation: bugfix infinite 1s;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+  color: #2F2E2A;
+  background-color: #FFFFFF;
+}
+
+input,
+textarea {
+  -webkit-animation: bugfix infinite 1s;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  color: inherit;
+}
+
+a {
+  color: unset;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+button,
+input,
+a,
+textarea {
+  outline: none;
+  cursor: pointer;
+  font: inherit;
+}
+button:focus,
+input:focus,
+a:focus,
+textarea:focus {
+  outline: none;
+}
+button:active,
+input:active,
+a:active,
+textarea:active {
+  outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+button {
+  border: none;
+  color: inherit;
+  font: inherit;
+  text-align: inherit;
+  padding: 0;
+  background-color: transparent;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.container {
+  width: 162rem;
+  margin: 0 auto;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+@media (max-width: 48em) {
+  html {
+    font-size: 5px;
+    font-size: 1.5625vw;
+    font-size: 1.3333333333vw;
+    -webkit-text-size-adjust: none;
+  }
+
+  body {
+    -webkit-text-size-adjust: none;
+  }
+
+  .container {
+    padding: 0 4rem;
+    width: 100%;
+  }
+}
+.header {
+  position: relative;
+  z-index: 2;
+  padding: 2.5rem 0;
+}
+.header--white {
+  color: white;
+}
+.header--white .header__language-btn > select {
+  color: white;
+}
+.header--white .header__language-btn > svg path {
+  stroke: white;
+}
+.header--fixed {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header__logo {
+  font-weight: 700;
+  font-size: 4.5rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__menu-item {
+  font-weight: 700;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+.header__menu-item:not(:last-child) {
+  margin-right: 3.5rem;
+}
+.header__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__language-btn {
+  position: relative;
+  display: block;
+  margin-right: 6rem;
+  font-weight: 700;
+  font-size: 1.8rem;
+  letter-spacing: 0.1em;
+}
+.header__language-btn > select {
+  padding-right: 2.2rem;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  cursor: pointer;
+  text-align: right;
+}
+.header__language-btn > svg {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 1.1rem;
+  height: 0.6rem;
+  -webkit-transform: translateY(-80%);
+          transform: translateY(-80%);
+}
+.header__language-btn > svg path {
+  stroke: #2F2E2A;
+}
+.header__btn {
+  display: block;
+  width: 2.1rem;
+  height: 2.1rem;
+}
+.header__btn:not(:last-child) {
+  margin-right: 2.4rem;
+}
+.header__btn > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+body {
+  min-height: 100vh;
+  position: relative;
+}
+@media (max-width: 48em) {
+  body {
+    padding-bottom: 40rem;
+  }
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.banner {
+  position: relative;
+  height: 100vh;
+}
+.banner.active .banner__shadow {
+  visibility: hidden;
+}
+.banner.active .banner__bg {
+  display: block;
+}
+.banner.active .banner__text-box {
+  position: static;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.banner.active + .banner .banner__text-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.banner__shadow {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+.banner__bg {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+.banner__bg > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.banner__text-box {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: -5;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 11rem 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  text-align: center;
+}
+.banner__title {
+  width: 71rem;
+  margin-bottom: 3rem;
+  font-family: "Lora";
+  font-size: 4rem;
+  line-height: 5.7rem;
+  text-transform: uppercase;
+}
+.banner__btn {
+  padding: 2.2rem 4.8rem;
+  border: 1px solid white;
+  background: rgba(255, 255, 255, 0.05);
+  -webkit-backdrop-filter: blur(2rem);
+          backdrop-filter: blur(2rem);
+  font-weight: 700;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+
+body.lock {
+  overflow: hidden;
+}
+
+@media (min-width: 48.01em) {
+  .mobile {
+    display: none;
+  }
+}
+@media (max-width: 48em) {
+  .desktop {
+    display: none;
+  }
+}
