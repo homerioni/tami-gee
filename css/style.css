@@ -256,7 +256,6 @@ input[type=number] {
 body {
   min-height: 100vh;
   position: relative;
-  padding-bottom: 1px;
 }
 @media (max-width: 48em) {
   body {
@@ -271,44 +270,55 @@ body {
   width: 100%;
 }
 
-.banner {
+.main-page {
   position: relative;
-  height: 100vh;
 }
-.banner.active .banner__shadow {
-  visibility: hidden;
-}
-.banner.active .banner__bg {
-  display: block;
-}
-.banner.active .banner__text-box {
-  position: static;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.banner.active + .banner .banner__text-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.banner__shadow {
+.main-page:before {
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
+  z-index: -9999;
   display: block;
   width: 100%;
   height: 100%;
   background-color: black;
 }
+
+.banner {
+  position: relative;
+  z-index: 1;
+  height: 150vh;
+  -webkit-box-shadow: 0 2rem 4rem 2rem rgba(4, 0, 0, 0.5);
+          box-shadow: 0 2rem 4rem 2rem rgba(4, 0, 0, 0.5);
+}
+.banner--static {
+  height: 100vh;
+  background-color: transparent;
+}
+.banner--next {
+  z-index: 0;
+}
+.banner--next .banner__content {
+  position: fixed;
+  top: 0;
+  z-index: -2;
+}
+.banner__content {
+  position: sticky;
+  top: 0;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+}
 .banner__bg {
-  display: none;
   position: absolute;
   left: 0;
   top: 0;
   z-index: -1;
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
 .banner__bg > img {
   width: 100%;
@@ -317,11 +327,13 @@ body {
      object-fit: cover;
 }
 .banner__text-box {
-  position: fixed;
+  position: absolute;
+  top: 0;
   left: 0;
-  bottom: 0;
-  z-index: -5;
-  display: none;
+  z-index: 11;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -333,8 +345,8 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding: 11rem 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   color: white;
   text-align: center;
 }
