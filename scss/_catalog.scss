@@ -111,8 +111,11 @@
     position: absolute;
     right: 0;
     top: 0;
-    width: 2.5rem;
-    height: 2.1rem;
+
+    svg {
+      width: 2.5rem;
+      height: 2.1rem;
+    }
 
     path {
       fill: #2F2E2A;

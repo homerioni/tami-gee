@@ -4,9 +4,14 @@
   position: relative;
   z-index: 2;
   padding: 2.5rem 0;
+  margin-bottom: 10rem;
 
   &--white {
     color: white;
+
+    .header__menu-item.active:before {
+      background-color: white;
+    }
 
     .header__language-btn {
       > select {
@@ -70,7 +75,7 @@
         top: calc(100% + 2rem);
         width: 100%;
         height: 1px;
-        background-color: white;
+        background-color: #2F2E2A;
       }
     }
   }
