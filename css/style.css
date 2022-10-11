@@ -499,6 +499,7 @@ body {
 .catalog__item {
   position: relative;
   width: 36.7rem;
+  height: auto;
   margin-right: 5rem;
 }
 .catalog__item:nth-child(4n+3) {
@@ -532,6 +533,16 @@ body {
 .catalog__like.active .like-active {
   display: initial;
 }
+.catalog__item-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
 .catalog__img-box {
   width: 36.7rem;
   height: 41.4rem;
@@ -554,6 +565,7 @@ body {
   text-transform: uppercase;
 }
 .catalog__price {
+  margin-top: auto;
   font-weight: 500;
   font-size: 1.8rem;
   line-height: 2.8rem;

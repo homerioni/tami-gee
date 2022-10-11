@@ -95,6 +95,7 @@
   &__item {
     position: relative;
     width: 36.7rem;
+    height: auto;
     margin-right: 5rem;
 
     &:nth-child(4n + 3) {
@@ -141,6 +142,9 @@
   }
 
   &__item-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
   }
 
   &__img-box {
@@ -167,6 +171,7 @@
   }
 
   &__price {
+    margin-top: auto;
     font-weight: 500;
     font-size: 1.8rem;
     line-height: 2.8rem;
