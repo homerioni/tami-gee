@@ -1,0 +1,172 @@
+@import "param";
+
+.catalog {
+  margin-bottom: 17rem;
+
+  &__title {
+    margin-bottom: 5rem;
+    font-family: $lora;
+    font-size: 4rem;
+    line-height: 5.7rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__filter-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8.8rem;
+  }
+
+  &__breadcrumbs {
+  }
+
+  &__breadcrumb {
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    color: rgba(47, 46, 42, 0.6);
+
+    &:not(:last-child) {
+      &:after {
+        content: '/';
+        display: inline;
+        margin: 0 1rem;
+      }
+    }
+  }
+
+  &__filters {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+  }
+
+  &__filter-btn {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+  }
+
+  &__label-select {
+    position: relative;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+  }
+
+  &__select {
+    position: relative;
+    z-index: 1;
+    padding: 0 3rem 0 12rem;
+    outline: none;
+    border: none;
+    appearance: none;
+    background-color: transparent;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    cursor: pointer;
+  }
+
+  &__select-sub-text {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+
+  &__select-arrow {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 1.1rem;
+    height: 0.6rem;
+    transform: translateY(-50%);
+
+    path {
+      stroke: #393738;
+    }
+  }
+
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 6rem;
+  }
+
+  &__item {
+    position: relative;
+    width: 36.7rem;
+    margin-right: 5rem;
+
+    &:nth-child(4n + 3) {
+      margin-right: 0;
+    }
+
+    &:nth-child(4n) {
+      margin-right: 0;
+      margin-left: auto;
+    }
+  }
+
+  &__like {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 2.5rem;
+    height: 2.1rem;
+
+    path {
+      fill: #2F2E2A;
+    }
+
+    .like-active {
+      display: none;
+
+      path {
+        fill: #CB2C30;
+      }
+    }
+
+    &.active {
+      .like-disabled {
+        display: none;
+      }
+
+      .like-active {
+        display: initial;
+      }
+    }
+  }
+
+  &__item-content {
+  }
+
+  &__img-box {
+    width: 36.7rem;
+    height: 41.4rem;
+    padding: 2.7rem 1.8rem;
+    margin-bottom: 0.9rem;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__item-title {
+    margin-bottom: 0.7rem;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+    letter-spacing: 0.1em;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__price {
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    text-align: center;
+  }
+}

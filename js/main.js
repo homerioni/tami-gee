@@ -48,4 +48,8 @@ $(document).ready(function () {
         });
     }
 
+    $('.catalog__like').click(function () {
+        $(this).toggleClass('active');
+    });
+
 });
