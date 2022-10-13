@@ -1,0 +1,107 @@
+@import "param";
+
+.contacts {
+  padding-bottom: 17rem;
+
+  &__container {
+    width: 80rem;
+    margin-left: auto;
+  }
+
+  &__title {
+    margin-bottom: 8.5rem;
+    font-family: $lora;
+    font-size: 4rem;
+    line-height: 5.9rem;
+    text-transform: uppercase;
+  }
+
+  &__content {
+    margin-bottom: 7rem;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+
+    &:not(:last-child) {
+      margin-bottom: 3rem;
+    }
+  }
+
+  &__row-name {
+    width: 38rem;
+    font-family: $sof600;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  &__row-text {
+    width: 38rem;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+
+    &--gray {
+      font-size: 1.6rem;
+      line-height: 2.5rem;
+      color: #979694;
+    }
+
+    > p {
+      &:not(:last-child) {
+        margin-bottom: 2.5rem;
+      }
+
+      > span {
+        display: block;
+        margin-top: 0.3rem;
+      }
+    }
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__btn {
+    padding: 2.2rem 4.6rem;
+    border: 1px solid #2F2E2A;
+    text-transform: uppercase;
+    font-family: $sof600;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    letter-spacing: 0.1em;
+  }
+
+  &__socials {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  &__social {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    text-transform: uppercase;
+  }
+
+  &__bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 79rem;
+    height: 100%;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
