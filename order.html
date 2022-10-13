@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="another website">
+    <title>Страница</title>
+
+    <link rel="stylesheet" href="font/stylesheet.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+<header class="header">
+    <nav class="container header__container">
+        <a href="" class="header__logo">
+            tamI gee
+        </a>
+        <ul class="header__menu">
+            <li class="header__menu-item active">
+                <a href="">Каталог</a>
+            </li>
+            <li class="header__menu-item">
+                <a href="">О бренде</a>
+            </li>
+            <li class="header__menu-item">
+                <a href="">Покупателям</a>
+            </li>
+            <li class="header__menu-item">
+                <a href="">Контакты</a>
+            </li>
+        </ul>
+        <div class="header__buttons">
+            <label class="header__language-btn">
+                <select>
+                    <option value="">RU</option>
+                    <option value="">ENG</option>
+                </select>
+                <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 1L5.5 5L1 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </label>
+            <a href="" class="header__btn">
+                <img src="img/header-icon-search-black.svg" alt="">
+            </a>
+            <a href="" class="header__btn">
+                <img src="img/header-icon-favorite-black.svg" alt="">
+            </a>
+            <a href="" class="header__btn">
+                <img src="img/header-icon-user-black.svg" alt="">
+            </a>
+            <a href="" class="header__btn">
+                <img src="img/header-icon-cart-black.svg" alt="">
+            </a>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <section class="order">
+        <div class="container">
+            <div class="order__content">
+                <form class="order__form">
+                    <h1 class="order__title">
+                        оформление заказа
+                    </h1>
+                    <div class="order__form-content">
+                        <div class="order__form-box active">
+                            <h2 class="order__box-title">
+                                <span>Получатель</span>
+                                <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 1L5.5 5L1 1" stroke="#2F2E2A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </h2>
+                            <div class="order__box-row">
+                                <p class="order__row-name">Ваши данные</p>
+                                <div class="order__box-inputs">
+                                    <label class="order__label">
+                                        <input placeholder="Имя" type="text" class="order__input required">
+                                    </label>
+                                    <label class="order__label">
+                                        <input placeholder="Фамилия" type="text" class="order__input required">
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="order__box-row">
+                                <p class="order__row-name">Контакты</p>
+                                <div class="order__box-inputs">
+                                    <label class="order__label">
+                                        <input placeholder="Мобильный номер" type="text" class="order__input required">
+                                    </label>
+                                    <label class="order__label">
+                                        <input placeholder="E-mail" type="text" class="order__input required">
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="order__box-row">
+                                <p class="order__row-name">Город</p>
+                                <div class="order__box-inputs">
+                                    <label class="order__label">
+                                        <select class="order__select required">
+                                            <option selected disabled>Ваш город</option>
+                                            <option value="123">Москва</option>
+                                            <option value="123">Санкт-петербург</option>
+                                        </select>
+                                        <svg class="order__select-arrow" width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10 1L5.5 5L1 1" stroke="#2F2E2A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order__complete-box">
+                            <h2 class="order__box-title">
+                                <span>Получатель</span>
+                                <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 1L5.5 5L1 1" stroke="#2F2E2A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </h2>
+                            <div class="order__complete-text">
+                                <p>Анастасия Петрова</p>
+                                <p>+7 000 000 00 00</p>
+                                <p>test@mail.ru</p>
+                            </div>
+                        </div>
+                        <div class="order__form-box">
+                            <h2 class="order__box-title">
+                                <span>Способ доставки</span>
+                                <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 1L5.5 5L1 1" stroke="#2F2E2A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </h2>
+                            <div class="order__box-row">
+                                <label class="order__delivery-item">
+                                    <input type="radio" name="delivery" class="required">
+                                    <span class="order__delivery-name">Самовывоз</span>
+                                    <span class="order__delivery-desc">Бесплатно</span>
+                                </label>
+                                <label class="order__delivery-item">
+                                    <input type="radio" name="delivery" class="required">
+                                    <span class="order__delivery-name">Экспресс-доставка за час</span>
+                                    <span class="order__delivery-desc">Бесплатно от 20 000 ₽</span>
+                                </label>
+                                <label class="order__delivery-item">
+                                    <input type="radio" name="delivery" class="required">
+                                    <span class="order__delivery-name">Доставка</span>
+                                    <span class="order__delivery-desc">Бесплатно от 20 000 ₽</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="order__complete-box">
+                            <h2 class="order__box-title">
+                                <span>Способ доставки</span>
+                                <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 1L5.5 5L1 1" stroke="#2F2E2A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </h2>
+                            <div class="order__complete-text">
+                                <p>Курьерская доставка</p>
+                            </div>
+                        </div>
+                        <div class="order__form-box">
+                            <h2 class="order__box-title">
+                                <span>Адрес и доставка</span>
+                                <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 1L5.5 5L1 1" stroke="#2F2E2A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </h2>
+                            <div class="order__box-row">
+                                <p class="order__row-name">Адрес доставки</p>
+                                <div class="order__box-inputs">
+                                    <label class="order__label order__label--full">
+                                        <input placeholder="Улица и дом" type="text" class="order__input required">
+                                    </label>
+                                    <label class="order__label order__label--quarter">
+                                        <input placeholder="Кв/Офис" type="text" class="order__input">
+                                    </label>
+                                    <label class="order__label order__label--quarter">
+                                        <input placeholder="Домофон" type="text" class="order__input">
+                                    </label>
+                                    <label class="order__label order__label--quarter">
+                                        <input placeholder="Подъезд" type="text" class="order__input">
+                                    </label>
+                                    <label class="order__label order__label--quarter">
+                                        <input placeholder="Этаж" type="text" class="order__input">
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="order__box-row">
+                                <p class="order__row-name">Дата доставки</p>
+                                <div class="order__box-inputs">
+                                    <label class="order__label">
+                                        <select class="order__select required">
+                                            <option selected disabled>День доставки</option>
+                                            <option value="123">23.09 ПТ</option>
+                                            <option value="123">24.09 СБ</option>
+                                        </select>
+                                        <svg class="order__select-arrow" width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10 1L5.5 5L1 1" stroke="#2F2E2A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </label>
+                                    <label class="order__label">
+                                        <select class="order__select required">
+                                            <option selected disabled>Время доставки</option>
+                                            <option value="123">с 10 до 14</option>
+                                            <option value="123">с 14 до 18</option>
+                                        </select>
+                                        <svg class="order__select-arrow" width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10 1L5.5 5L1 1" stroke="#2F2E2A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order__complete-box">
+                            <h2 class="order__box-title">
+                                <span>Адрес и доставка</span>
+                                <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 1L5.5 5L1 1" stroke="#2F2E2A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </h2>
+                            <div class="order__complete-text">
+                                <p>Россия, г. Москва, ул. Покровка, 29</p>
+                                <p>завтра, 23 сентября</p>
+                                <p>с 10:00 по 14:00</p>
+                            </div>
+                        </div>
+                        <div class="order__form-box">
+                            <h2 class="order__box-title">
+                                <span>оплата</span>
+                                <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 1L5.5 5L1 1" stroke="#2F2E2A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </h2>
+                            <label class="order__box-row">
+                                <input type="radio" name="payment" class="required">
+                                <span class="order__radio-icon"></span>
+                                <span class="order__payment-info">
+                                <span>Оплата картой на сайте</span>
+                                <span class="order__payment-icon">
+                                    <img src="img/order-credit-card.svg" alt="">
+                                </span>
+                            </span>
+                            </label>
+                            <label class="order__box-row">
+                                <input type="radio" name="payment" class="required">
+                                <span class="order__radio-icon"></span>
+                                <span class="order__payment-info">
+                                <span>SberPay</span>
+                                <span class="order__payment-icon">
+                                    <img src="img/order-sber-pay.svg" alt="">
+                                </span>
+                            </span>
+                            </label>
+                        </div>
+                        <div class="order__complete-box">
+                            <h2 class="order__box-title">
+                                <span>Оплата</span>
+                                <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 1L5.5 5L1 1" stroke="#2F2E2A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </h2>
+                            <div class="order__complete-text">
+                                <p>Оплата картой на сайте</p>
+                            </div>
+                        </div>
+                        <button class="order__btn">завершить оформление</button>
+                    </div>
+                </form>
+                <div class="order__info-block">
+                    <h2 class="order__info-title">ваш заказ</h2>
+                    <p class="order__info-desc">3 позиции на сумму:</p>
+                    <ul class="order__info-list">
+                        <li class="order__info-list-item">
+                            <img src="img/catalog-img4.webp" alt="">
+                        </li>
+                        <li class="order__info-list-item">
+                            <img src="img/catalog-img5.webp" alt="">
+                        </li>
+                        <li class="order__info-list-item">
+                            <img src="img/catalog-img1.webp" alt="">
+                        </li>
+                    </ul>
+                    <a href="" class="order__info-link">изменить</a>
+                    <label class="order__label order__label--promo">
+                        <input placeholder="ПРОМОКОД" type="text" class="order__input order__input--promo">
+                        <svg class="order__promo-arrow" width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L5 5.5L1 10" stroke="#979694" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <svg class="order__promo-reset" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 6L6 18" stroke="#2E2E2E" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+                            <path d="M6 6L18 18" stroke="#2E2E2E" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+                        </svg>
+                        <span class="order__input-error">Промокод не подходит</span>
+                    </label>
+                    <div class="order__total-box">
+                        <p class="order__total-text">Сумма заказа</p>
+                        <p class="order__total">900 000 ₽</p>
+                    </div>
+                    <div class="order__total-box">
+                        <p class="order__total-text">Доставка</p>
+                        <p class="order__total">Бесплатно</p>
+                    </div>
+                    <div class="order__total-box">
+                        <p class="order__total-text">Итого</p>
+                        <p class="order__total order__total--bold">900 000 ₽</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/jquery.ui.touch-punch.min.js"></script>
+<script src="js/swiper.js"></script>
+<script src="js/main.js"></script>
+
+<script>
+    // Скрипт чисто для теста функционала
+    $('.order__form-box .required').change(function () {
+        let hasEmpty;
+        $(this).parents('.order__form-box').find('.required').each(function () {
+            if (!$(this).val()) {
+                hasEmpty = true;
+            }
+        });
+        if (!hasEmpty && !$(this).parents('.order__form-box').next().next().hasClass('active')) {
+            $(this).parents('.order__form-box').next().next().addClass('active').find('.order__box-row').slideDown();
+        }
+    });
+
+    // Для открытия какой либо вкладки используем следующий код
+    // $('.order__form-box').addClass('active').find('.order__box-row').slideDown();
+</script>
+</body>
+</html>

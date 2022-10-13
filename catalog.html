@@ -75,34 +75,195 @@
                     <a href="" class="catalog__breadcrumb">Одежда</a>
                 </nav>
                 <div class="catalog__filters">
-                    <label class="catalog__filter-btn">
-                        <span>Категория</span>
-                        <select>
-                            <option value="">Все</option>
-                            <option value="">Жакеты</option>
-                        </select>
-                    </label>
-                    <label class="catalog__filter-btn">
-                        <span>Цвет</span>
-                        <select>
-                            <option value="">Все</option>
-                            <option value="">Желтый</option>
-                        </select>
-                    </label>
-                    <label class="catalog__filter-btn">
-                        <span>Материал</span>
-                        <select>
-                            <option value="">Все</option>
-                            <option value="">Жакард</option>
-                        </select>
-                    </label>
-                    <label class="catalog__filter-btn">
-                        <span>Размер</span>
-                        <select>
-                            <option value="">Все</option>
-                            <option value="">XL</option>
-                        </select>
-                    </label>
+                    <div class="catalog__filter-btn-box">
+                        <button type="button" class="catalog__filter-btn">Категория</button>
+                        <div class="catalog__filter-box">
+                            <a href="" class="catalog__filter-category">Платья</a>
+                            <a href="" class="catalog__filter-category">Блузки/рубашки/топы</a>
+                            <a href="" class="catalog__filter-category">Юбки</a>
+                            <a href="" class="catalog__filter-category">Трикотаж</a>
+                            <a href="" class="catalog__filter-category">Жакеты</a>
+                            <a href="" class="catalog__filter-category">Брюки/шорты</a>
+                            <a href="" class="catalog__filter-category">Вечерняя линия</a>
+                            <a href="" class="catalog__filter-category">Верхняя одежда</a>
+                            <a href="" class="catalog__filter-category">Аксессуары</a>
+                        </div>
+                    </div>
+                    <div class="catalog__filter-btn-box">
+                        <button type="button" class="catalog__filter-btn">Цвет</button>
+                        <div class="catalog__filter-box">
+                            <label class="catalog__filter-label">
+                                <input type="checkbox">
+                                <span class="catalog__filter-checkbox">
+                                    <img src="img/catalog-check.svg" alt="">
+                                </span>
+                                <span class="catalog__filter-color" style="background-color: #2F2E2A"></span>
+                                <span class="catalog__filter-text">Черный</span>
+                            </label>
+                            <label class="catalog__filter-label">
+                                <input type="checkbox">
+                                <span class="catalog__filter-checkbox">
+                                    <img src="img/catalog-check.svg" alt="">
+                                </span>
+                                <span class="catalog__filter-color" style="background-color: #C9D4BD"></span>
+                                <span class="catalog__filter-text">Мятный</span>
+                            </label>
+                            <label class="catalog__filter-label">
+                                <input type="checkbox">
+                                <span class="catalog__filter-checkbox">
+                                    <img src="img/catalog-check.svg" alt="">
+                                </span>
+                                <span class="catalog__filter-color" style="background-color: #ECDEB8"></span>
+                                <span class="catalog__filter-text">Желтый</span>
+                            </label>
+                            <label class="catalog__filter-label">
+                                <input type="checkbox">
+                                <span class="catalog__filter-checkbox">
+                                    <img src="img/catalog-check.svg" alt="">
+                                </span>
+                                <span class="catalog__filter-color" style="background-color: #FFFFFF"></span>
+                                <span class="catalog__filter-text">Белый</span>
+                            </label>
+                            <label class="catalog__filter-label">
+                                <input type="checkbox">
+                                <span class="catalog__filter-checkbox">
+                                    <img src="img/catalog-check.svg" alt="">
+                                </span>
+                                <span class="catalog__filter-color" style="background-color: #BABABA"></span>
+                                <span class="catalog__filter-text">Серый</span>
+                            </label>
+                            <label class="catalog__filter-label">
+                                <input type="checkbox">
+                                <span class="catalog__filter-checkbox">
+                                    <img src="img/catalog-check.svg" alt="">
+                                </span>
+                                <span class="catalog__filter-color" style="background-color: #ECD9D4"></span>
+                                <span class="catalog__filter-text">Розовый</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="catalog__filter-btn-box">
+                        <button type="button" class="catalog__filter-btn">Материал</button>
+                        <div class="catalog__filter-box">
+                            <label class="catalog__filter-label">
+                                <input type="checkbox">
+                                <span class="catalog__filter-checkbox">
+                                    <img src="img/catalog-check.svg" alt="">
+                                </span>
+                                <span class="catalog__filter-text">Акрил</span>
+                            </label>
+                            <label class="catalog__filter-label">
+                                <input type="checkbox">
+                                <span class="catalog__filter-checkbox">
+                                    <img src="img/catalog-check.svg" alt="">
+                                </span>
+                                <span class="catalog__filter-text">Бархат</span>
+                            </label>
+                            <label class="catalog__filter-label">
+                                <input type="checkbox">
+                                <span class="catalog__filter-checkbox">
+                                    <img src="img/catalog-check.svg" alt="">
+                                </span>
+                                <span class="catalog__filter-text">Верблюжья шерсть</span>
+                            </label>
+                            <label class="catalog__filter-label">
+                                <input type="checkbox">
+                                <span class="catalog__filter-checkbox">
+                                    <img src="img/catalog-check.svg" alt="">
+                                </span>
+                                <span class="catalog__filter-text">Замша</span>
+                            </label>
+                            <label class="catalog__filter-label">
+                                <input type="checkbox">
+                                <span class="catalog__filter-checkbox">
+                                    <img src="img/catalog-check.svg" alt="">
+                                </span>
+                                <span class="catalog__filter-text">Кашемир</span>
+                            </label>
+                            <label class="catalog__filter-label">
+                                <input type="checkbox">
+                                <span class="catalog__filter-checkbox">
+                                    <img src="img/catalog-check.svg" alt="">
+                                </span>
+                                <span class="catalog__filter-text">Жаккард</span>
+                            </label>
+                            <label class="catalog__filter-label">
+                                <input type="checkbox">
+                                <span class="catalog__filter-checkbox">
+                                    <img src="img/catalog-check.svg" alt="">
+                                </span>
+                                <span class="catalog__filter-text">Лен</span>
+                            </label>
+                            <label class="catalog__filter-label">
+                                <input type="checkbox">
+                                <span class="catalog__filter-checkbox">
+                                    <img src="img/catalog-check.svg" alt="">
+                                </span>
+                                <span class="catalog__filter-text">Трикотаж</span>
+                            </label>
+                            <label class="catalog__filter-label">
+                                <input type="checkbox">
+                                <span class="catalog__filter-checkbox">
+                                    <img src="img/catalog-check.svg" alt="">
+                                </span>
+                                <span class="catalog__filter-text">Аксессуары</span>
+                            </label>
+                            <label class="catalog__filter-label">
+                                <input type="checkbox">
+                                <span class="catalog__filter-checkbox">
+                                    <img src="img/catalog-check.svg" alt="">
+                                </span>
+                                <span class="catalog__filter-text">Хлопок</span>
+                            </label>
+                            <label class="catalog__filter-label">
+                                <input type="checkbox">
+                                <span class="catalog__filter-checkbox">
+                                    <img src="img/catalog-check.svg" alt="">
+                                </span>
+                                <span class="catalog__filter-text">Шерсть</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="catalog__filter-btn-box">
+                        <button type="button" class="catalog__filter-btn">Размер</button>
+                        <div class="catalog__filter-box">
+                            <label class="catalog__filter-label">
+                                <input type="checkbox">
+                                <span class="catalog__filter-checkbox">
+                                    <img src="img/catalog-check.svg" alt="">
+                                </span>
+                                <span class="catalog__filter-text">34</span>
+                            </label>
+                            <label class="catalog__filter-label">
+                                <input type="checkbox">
+                                <span class="catalog__filter-checkbox">
+                                    <img src="img/catalog-check.svg" alt="">
+                                </span>
+                                <span class="catalog__filter-text">36</span>
+                            </label>
+                            <label class="catalog__filter-label">
+                                <input type="checkbox">
+                                <span class="catalog__filter-checkbox">
+                                    <img src="img/catalog-check.svg" alt="">
+                                </span>
+                                <span class="catalog__filter-text">38</span>
+                            </label>
+                            <label class="catalog__filter-label">
+                                <input type="checkbox">
+                                <span class="catalog__filter-checkbox">
+                                    <img src="img/catalog-check.svg" alt="">
+                                </span>
+                                <span class="catalog__filter-text">40</span>
+                            </label>
+                            <label class="catalog__filter-label">
+                                <input type="checkbox">
+                                <span class="catalog__filter-checkbox">
+                                    <img src="img/catalog-check.svg" alt="">
+                                </span>
+                                <span class="catalog__filter-text">42</span>
+                            </label>
+                        </div>
+                    </div>
                 </div>
                 <label class="catalog__label-select">
                     <span class="catalog__select-sub-text">Сортировка:</span>

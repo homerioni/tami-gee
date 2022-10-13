@@ -1,0 +1,375 @@
+@import "param";
+
+.order {
+  padding-bottom: 17rem;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__form {
+    width: 97rem;
+  }
+
+  &__title {
+    margin-bottom: 6rem;
+    font-family: $lora;
+    font-size: 4rem;
+    text-transform: uppercase;
+  }
+
+  &__form-box {
+    opacity: .5;
+
+    &.active {
+      opacity: 1;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 6rem;
+    }
+  }
+
+  &__box-title {
+    position: relative;
+    width: fit-content;
+    margin-bottom: 3rem;
+    padding-right: 3rem;
+    font-family: $lora;
+    font-size: 2rem;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    > svg {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      width: 1.1rem;
+      height: 0.6rem;
+      transform: translateY(-50%);
+
+      path {
+        stroke: #2F2E2A;
+      }
+    }
+  }
+
+  &__box-row {
+    display: none;
+    justify-content: space-between;
+    cursor: pointer;
+
+    &:not(:last-child) {
+      margin-bottom: 4rem;
+    }
+
+    > input {
+      display: none;
+    }
+  }
+
+  &__row-name {
+    flex: none;
+    width: 20rem;
+    padding-right: 2rem;
+    font-size: 1.8rem;
+    color: #979694;
+  }
+
+  &__box-inputs {
+    flex: auto;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2.6rem;
+    row-gap: 4rem;
+  }
+
+  &__label {
+    position: relative;
+    flex: 40%;
+    display: block;
+    border-bottom: 1px solid rgba(47, 46, 42, 0.1);
+    font-size: 1.8rem;
+
+    &--full {
+      flex: 100%;
+    }
+
+    &--quarter {
+      flex: 20%;
+
+      > input {
+        width: 17rem;
+      }
+    }
+
+    &--promo {
+      border-bottom: 1px dashed #979694;
+      margin-bottom: 6.3rem;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    margin-bottom: 2.4rem;
+
+    &--promo {
+      padding-right: 4rem;
+      margin-bottom: 1.2rem;
+    }
+  }
+
+  &__select {
+    width: 100%;
+    padding: 0 2rem 2.4rem 0;
+    outline: none;
+    border: none;
+    appearance: none;
+    background-color: transparent;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    cursor: pointer;
+  }
+
+  &__select-arrow {
+    position: absolute;
+    right: 0;
+    top: 1.2rem;
+    z-index: -1;
+    width: 1.1rem;
+    height: 0.6rem;
+    transform: translateY(-50%);
+
+    path {
+      stroke: #2F2E2A;
+    }
+  }
+
+  &__delivery-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30.5rem;
+    height: auto;
+    min-height: 12.5rem;
+    padding: 3rem;
+    border: 1px solid #EAEAEA;
+    cursor: pointer;
+
+    > input {
+      display: none;
+    }
+
+    &.active {
+      border: 1px solid #2F2E2A;
+    }
+  }
+
+  &__delivery-name {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  &__delivery-desc {
+    display: block;
+    font-size: 1.6rem;
+    text-align: center;
+    color: #979694;
+  }
+
+  &__radio-icon {
+    flex: none;
+    display: block;
+    width: 1.8rem;
+    height: 1.8rem;
+    padding: 0.4rem;
+    border-radius: 100%;
+    background-color: #CCCCCC;
+
+    &.active {
+      background-color: #2F2E2A;
+
+      &:before {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+        background-color: white;
+      }
+    }
+  }
+
+  &__payment-info {
+    display: flex;
+    justify-content: space-between;
+    width: 76.5rem;
+    padding-bottom: 2.4rem;
+    border-bottom: 1px solid rgba(47, 46, 42, 0.1);
+    font-size: 1.8rem;
+  }
+
+  &__payment-icon {
+    height: 2.6rem;
+
+    > img {
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__btn {
+    padding: 2.2rem 4rem;
+    margin-top: 5rem;
+    border: 1px solid #2F2E2A;
+    font-weight: 700;
+    font-size: 1.8rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    opacity: .5;
+
+    &.active {
+      opacity: 1;
+    }
+  }
+
+  &__info-block {
+    width: 45rem;
+    height: fit-content;
+    padding: 7rem 4rem;
+    background-color: #FAF9F5;
+  }
+
+  &__info-title {
+    margin-bottom: 2rem;
+    font-family: $lora;
+    font-size: 3rem;
+    text-transform: uppercase;
+  }
+
+  &__info-desc {
+    margin-bottom: 4.5rem;
+    font-size: 1.8rem;
+    color: #979694;
+  }
+
+  &__info-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  &__info-list-item {
+    width: 8rem;
+    height: 10rem;
+    padding: 1.5rem 1rem;
+    background-color: white;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__info-link {
+    display: block;
+    margin-bottom: 5.6rem;
+    font-weight: 500;
+    font-size: 1.6rem;
+    letter-spacing: 0.1em;
+    color: #979694;
+    text-transform: uppercase;
+  }
+
+  &__promo-arrow {
+    position: absolute;
+    right: 0;
+    top: 1.2rem;
+    width: 0.6rem;
+    height: 1.1rem;
+    transform: translateY(-50%);
+    cursor: pointer;
+
+    path {
+      stroke: #979694;
+    }
+  }
+
+  &__promo-reset {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 1.2rem;
+    width: 2.4rem;
+    height: 2.4rem;
+    transform: translateY(-50%);
+    cursor: pointer;
+
+    path {
+      stroke: #2E2E2E;
+    }
+  }
+
+  &__input-error {
+    position: absolute;
+    left: 0;
+    top: calc(100% + 0.6rem);
+    font-size: 1.8rem;
+    color: #A10000;
+  }
+
+  &__total-box {
+    display: flex;
+    justify-content: space-between;
+
+    &:not(:last-child) {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  &__total-text {
+    font-size: 1.8rem;
+    color: #979694;
+  }
+
+  &__total {
+    font-size: 1.8rem;
+
+    &--bold {
+      font-family: $sof600;
+      font-weight: 700;
+    }
+  }
+
+  &__complete {
+    display: none;
+    margin-bottom: 5.5rem;
+
+    &.active {
+      display: block;
+    }
+  }
+
+  &__complete-box {
+    display: none;
+    min-height: 20rem;
+    padding: 3rem;
+    background-color: #FAF9F5;
+
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__complete-text {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+  }
+}

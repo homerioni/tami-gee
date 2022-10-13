@@ -2,6 +2,7 @@
 
 $(document).ready(function () {
 
+    // Main page, scroll effect
     if ($('.banner').length) {
         let scrollVal = (document.body.scrollTop+0 || document.documentElement.scrollTop+0);
 
@@ -48,8 +49,58 @@ $(document).ready(function () {
         });
     }
 
+    // Catalog like btn
     $('.catalog__like').click(function () {
         $(this).toggleClass('active');
+    });
+
+    // Catalog filter btn
+    $('.catalog__filter-btn').click(function () {
+        if (!$(this).hasClass('active')) {
+            $('.catalog__filter-btn.active').removeClass('active');
+            $('.catalog__filter-box').slideUp(200);
+        }
+        $(this).addClass('active');
+        $(this).parent().find('.catalog__filter-box').slideToggle(200);
+    });
+    $('.catalog__filter-label').click(function () {
+        if ($(this).find('input').prop('checked')) {
+            $(this).addClass('active');
+        } else {
+            $(this).removeClass('active');
+        }
+    });
+
+    // Order
+    $('.order__box-row').css('display', 'flex').hide();
+    $('.order__form-box.active .order__box-row').css('display', 'flex');
+    $('.order__delivery-item input').change(function () {
+        $('.order__delivery-item').removeClass('active');
+        $(this).parent().addClass('active');
+    });
+    $('.order__box-row input[name="payment"]').change(function () {
+        $('.order__radio-icon').removeClass('active');
+        $(this).parent().find('.order__radio-icon').addClass('active');
+    });
+    $('.order__input--promo').change(function () {
+        if ($(this).val()) {
+            $('.order__promo-arrow').hide();
+            $('.order__promo-reset').show();
+        } else {
+            $('.order__promo-arrow').show();
+            $('.order__promo-reset').hide();
+        }
+    });
+    $('.order__promo-reset').click(function () {
+        $('.order__input--promo').val('');
+    });
+    $('.order__form-box .order__box-title').click(function () {
+        if ($(this).parent().hasClass('active') && $(this).parent().next().next().hasClass('active')) {
+            $(this).parent().hide().next().show();
+        }
+    });
+    $('.order__complete-box .order__box-title').click(function () {
+        $(this).parent().hide().prev().show();
     });
 
 });
