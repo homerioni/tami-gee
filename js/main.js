@@ -103,4 +103,26 @@ $(document).ready(function () {
         $(this).parent().hide().prev().show();
     });
 
+    // Burger btn
+    $('.header__burger-btn').click(function () {
+        $(this).toggleClass('active');
+    });
+
+    // Header catalog
+    $('.header-catalog').hover(function () {
+        $('body').addClass('lock');
+        $('.header').addClass('catalog-open');
+    }, function () {
+        $('body').removeClass('lock');
+        $('.header').removeClass('catalog-open');
+    });
+    $('.header__catalog-item').hover(function () {
+        $('.header__catalog-item').removeClass('active');
+        $(this).addClass('active');
+    });
+    $('.header__catalog-list-item').hover(function () {
+        $('.header__catalog-list-item').removeClass('active');
+        $(this).addClass('active');
+    });
+
 });
