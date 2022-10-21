@@ -149,6 +149,7 @@ input[type=number] {
   margin-bottom: 10rem;
 }
 .header:before {
+  visibility: hidden;
   content: "";
   position: fixed;
   left: 0;
@@ -197,6 +198,7 @@ input[type=number] {
   color: #2F2E2A;
 }
 .header.catalog-open:before {
+  visibility: visible;
   opacity: 1;
 }
 .header.catalog-open .header__menu-item:before {
@@ -799,6 +801,7 @@ input[type=number] {
   margin-bottom: 17rem;
 }
 .catalog-intro__bg {
+  position: relative;
   width: 100%;
   height: 85.2rem;
 }
@@ -808,7 +811,24 @@ input[type=number] {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.catalog-intro__bg:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
 
+@media (max-width: 48em) {
+  .catalog-intro {
+    margin-bottom: 24rem;
+  }
+  .catalog-intro__bg {
+    height: 133.4rem;
+  }
+}
 .catalog {
   padding-bottom: 17rem;
 }
@@ -854,9 +874,6 @@ input[type=number] {
           align-items: center;
   gap: 5rem;
 }
-.catalog__filter-btn-box {
-  position: relative;
-}
 .catalog__filter-btn {
   display: block;
   font-size: 1.8rem;
@@ -864,12 +881,134 @@ input[type=number] {
   cursor: pointer;
 }
 .catalog__filter-box {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 65.7rem;
+  height: 100%;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  background-color: white;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+.catalog__filter-box.active {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+.catalog__filter-box-bg {
   display: none;
-  position: absolute;
+  position: fixed;
   left: 0;
-  top: calc(100% + 2rem);
-  z-index: 1;
-  padding: 2rem 3.5rem 2rem 2rem;
+  top: 0;
+  z-index: 9;
+  width: 100%;
+  height: 100%;
+  background: rgba(47, 46, 42, 0.9);
+}
+.catalog__filter-header {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid #EBEBEA;
+}
+.catalog__filter-box-title {
+  padding: 3rem 5rem;
+  font-family: "Lora";
+  font-size: 4rem;
+  line-height: 5.7rem;
+  text-transform: uppercase;
+}
+.catalog__filter-close {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  position: relative;
+  width: 12.8rem;
+  height: auto;
+  border-left: 1px solid #EBEBEA;
+}
+.catalog__filter-close:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 2rem;
+  height: 2px;
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+  background-color: #2E2E2E;
+}
+.catalog__filter-close:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 2rem;
+  height: 2px;
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+          transform: translate(-50%, -50%) rotate(-45deg);
+  background-color: #2E2E2E;
+}
+.catalog__filter-close:hover {
+  background-color: #F5F5F5;
+}
+.catalog__filter-list {
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+  margin: 3.5rem 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.catalog__filter-list-item {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  color: rgba(47, 46, 42, 0.5);
+}
+.catalog__filter-list-item > * {
+  padding: 1.5rem 5rem;
+}
+.catalog__filter-list-item.active {
+  background-color: #FAF9F5;
+  color: #2F2E2A;
+}
+.catalog__filter-footer {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  padding: 3rem 5rem;
+  border-top: 1px solid #EBEBEA;
+}
+.catalog__filter-form-btn {
+  width: 100%;
+  padding: 2.2rem 5rem;
+  border: 1px solid #2F2E2A;
+  font-family: "Sofia Pro Semi";
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+}
+.catalog__filter-form-btn:hover {
   background-color: #F5F5F5;
 }
 .catalog__filter-category {

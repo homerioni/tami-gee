@@ -1,7 +1,10 @@
+@import "param";
+
 .catalog-intro {
   margin-bottom: 17rem;
 
   &__bg {
+    position: relative;
     width: 100%;
     height: 85.2rem;
 
@@ -9,6 +12,26 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+  }
+}
+
+@media (max-width: 48em) {
+  .catalog-intro {
+    margin-bottom: 24rem;
+
+    &__bg {
+      height: 133.4rem;
     }
   }
 }

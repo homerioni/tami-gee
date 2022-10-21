@@ -7,6 +7,7 @@
   margin-bottom: 10rem;
 
   &:before {
+    visibility: hidden;
     content: '';
     position: fixed;
     left: 0;
@@ -70,6 +71,7 @@
     color: #2F2E2A;
 
     &:before {
+      visibility: visible;
       opacity: 1;
     }
 
