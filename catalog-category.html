@@ -218,205 +218,317 @@
 <main>
     <section class="catalog">
         <div class="container">
+            <nav class="catalog__breadcrumbs mobile">
+                <a href="" class="catalog__breadcrumb">Главная</a>
+                <a href="" class="catalog__breadcrumb">Каталог</a>
+                <a href="" class="catalog__breadcrumb">Одежда</a>
+                <a href="" class="catalog__breadcrumb">Жакеты</a>
+            </nav>
             <h1 class="catalog__title">Каталог</h1>
             <div class="catalog__filter-block">
-                <nav class="catalog__breadcrumbs">
+                <nav class="catalog__breadcrumbs desktop">
                     <a href="" class="catalog__breadcrumb">Главная</a>
                     <a href="" class="catalog__breadcrumb">Каталог</a>
                     <a href="" class="catalog__breadcrumb">Одежда</a>
                     <a href="" class="catalog__breadcrumb">Жакеты</a>
                 </nav>
-                <div class="catalog__filters">
+                <button class="catalog__filters-btn-mob mobile">
+                    <span>Фильтр</span>
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17 1H1L6.6 8.46667C6.85964 8.81286 7 9.23393 7 9.66667V17L11 15V9.66667C11 9.23393 11.1404 8.81286 11.4 8.46667L17 1Z" stroke="#2F2E2A" stroke-width="2" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <form class="catalog__filters">
+                    <div class="catalog__filter-header mobile">
+                        <h3 class="catalog__filter-box-title">фильтр</h3>
+                        <button type="button" class="catalog__filter-close close"></button>
+                    </div>
                     <div class="catalog__filter-btn-box">
-                        <button type="button" class="catalog__filter-btn">Категория</button>
+                        <button type="button" class="catalog__filter-btn">
+                            <span>Категория</span>
+                            <svg class="mobile" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.5 5.5L6 1.5L10.5 5.5" stroke="#2F2E2A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <div class="catalog__filter-box-bg close"></div>
                         <div class="catalog__filter-box">
-                            <a href="" class="catalog__filter-category">Платья</a>
-                            <a href="" class="catalog__filter-category">Блузки/рубашки/топы</a>
-                            <a href="" class="catalog__filter-category">Юбки</a>
-                            <a href="" class="catalog__filter-category">Трикотаж</a>
-                            <a href="" class="catalog__filter-category">Жакеты</a>
-                            <a href="" class="catalog__filter-category">Брюки/шорты</a>
-                            <a href="" class="catalog__filter-category">Вечерняя линия</a>
-                            <a href="" class="catalog__filter-category">Верхняя одежда</a>
-                            <a href="" class="catalog__filter-category">Аксессуары</a>
+                            <div class="catalog__filter-header desktop">
+                                <h3 class="catalog__filter-box-title">Категория</h3>
+                                <button type="button" class="catalog__filter-close close"></button>
+                            </div>
+                            <ul class="catalog__filter-list">
+                                <li class="catalog__filter-list-item">
+                                    <label class="catalog__filter-label">
+                                        <input type="checkbox">
+                                        <span class="catalog__filter-text">Платья</span>
+                                    </label>
+                                </li>
+                                <li class="catalog__filter-list-item">
+                                    <label class="catalog__filter-label">
+                                        <input type="checkbox">
+                                        <span class="catalog__filter-text">Блузки/рубашки/топы</span>
+                                    </label>
+                                </li>
+                                <li class="catalog__filter-list-item">
+                                    <label class="catalog__filter-label">
+                                        <input type="checkbox">
+                                        <span class="catalog__filter-text">Юбки</span>
+                                    </label>
+                                </li>
+                                <li class="catalog__filter-list-item">
+                                    <label class="catalog__filter-label">
+                                        <input type="checkbox">
+                                        <span class="catalog__filter-text">Трикотаж</span>
+                                    </label>
+                                </li>
+                                <li class="catalog__filter-list-item">
+                                    <label class="catalog__filter-label">
+                                        <input type="checkbox">
+                                        <span class="catalog__filter-text">Жакеты</span>
+                                    </label>
+                                </li>
+                                <li class="catalog__filter-list-item">
+                                    <label class="catalog__filter-label">
+                                        <input type="checkbox">
+                                        <span class="catalog__filter-text">Брюки/шорты</span>
+                                    </label>
+                                </li>
+                                <li class="catalog__filter-list-item">
+                                    <label class="catalog__filter-label">
+                                        <input type="checkbox">
+                                        <span class="catalog__filter-text">Вечерняя линия</span>
+                                    </label>
+                                </li>
+                                <li class="catalog__filter-list-item">
+                                    <label class="catalog__filter-label">
+                                        <input type="checkbox">
+                                        <span class="catalog__filter-text">Верхняя одежда</span>
+                                    </label>
+                                </li>
+                                <li class="catalog__filter-list-item">
+                                    <label class="catalog__filter-label">
+                                        <input type="checkbox">
+                                        <span class="catalog__filter-text">Аксессуары</span>
+                                    </label>
+                                </li>
+                            </ul>
+                            <div class="catalog__filter-footer desktop">
+                                <button class="catalog__filter-form-btn">
+                                    Показать 46 товаров
+                                </button>
+                            </div>
                         </div>
                     </div>
                     <div class="catalog__filter-btn-box">
-                        <button type="button" class="catalog__filter-btn">Цвет</button>
+                        <button type="button" class="catalog__filter-btn">
+                            <span>Цвет</span>
+                            <svg class="mobile" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.5 5.5L6 1.5L10.5 5.5" stroke="#2F2E2A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <div class="catalog__filter-box-bg close"></div>
                         <div class="catalog__filter-box">
-                            <label class="catalog__filter-label">
-                                <input type="checkbox">
-                                <span class="catalog__filter-checkbox">
-                                    <img src="img/catalog-check.svg" alt="">
-                                </span>
-                                <span class="catalog__filter-color" style="background-color: #2F2E2A"></span>
-                                <span class="catalog__filter-text">Черный</span>
-                            </label>
-                            <label class="catalog__filter-label">
-                                <input type="checkbox">
-                                <span class="catalog__filter-checkbox">
-                                    <img src="img/catalog-check.svg" alt="">
-                                </span>
-                                <span class="catalog__filter-color" style="background-color: #C9D4BD"></span>
-                                <span class="catalog__filter-text">Мятный</span>
-                            </label>
-                            <label class="catalog__filter-label">
-                                <input type="checkbox">
-                                <span class="catalog__filter-checkbox">
-                                    <img src="img/catalog-check.svg" alt="">
-                                </span>
-                                <span class="catalog__filter-color" style="background-color: #ECDEB8"></span>
-                                <span class="catalog__filter-text">Желтый</span>
-                            </label>
-                            <label class="catalog__filter-label">
-                                <input type="checkbox">
-                                <span class="catalog__filter-checkbox">
-                                    <img src="img/catalog-check.svg" alt="">
-                                </span>
-                                <span class="catalog__filter-color" style="background-color: #FFFFFF"></span>
-                                <span class="catalog__filter-text">Белый</span>
-                            </label>
-                            <label class="catalog__filter-label">
-                                <input type="checkbox">
-                                <span class="catalog__filter-checkbox">
-                                    <img src="img/catalog-check.svg" alt="">
-                                </span>
-                                <span class="catalog__filter-color" style="background-color: #BABABA"></span>
-                                <span class="catalog__filter-text">Серый</span>
-                            </label>
-                            <label class="catalog__filter-label">
-                                <input type="checkbox">
-                                <span class="catalog__filter-checkbox">
-                                    <img src="img/catalog-check.svg" alt="">
-                                </span>
-                                <span class="catalog__filter-color" style="background-color: #ECD9D4"></span>
-                                <span class="catalog__filter-text">Розовый</span>
-                            </label>
+                            <div class="catalog__filter-header desktop">
+                                <h3 class="catalog__filter-box-title">Цвет</h3>
+                                <button type="button" class="catalog__filter-close close"></button>
+                            </div>
+                            <ul class="catalog__filter-list">
+                                <li class="catalog__filter-list-item">
+                                    <label class="catalog__filter-label">
+                                        <input type="checkbox">
+                                        <span class="catalog__filter-color" style="background-color: #2F2E2A"></span>
+                                        <span class="catalog__filter-text">Черный</span>
+                                    </label>
+                                </li>
+                                <li class="catalog__filter-list-item">
+                                    <label class="catalog__filter-label">
+                                        <input type="checkbox">
+                                        <span class="catalog__filter-color" style="background-color: #C9D4BD"></span>
+                                        <span class="catalog__filter-text">Мятный</span>
+                                    </label>
+                                </li>
+                                <li class="catalog__filter-list-item">
+                                    <label class="catalog__filter-label">
+                                        <input type="checkbox">
+                                        <span class="catalog__filter-color" style="background-color: #ECDEB8"></span>
+                                        <span class="catalog__filter-text">Желтый</span>
+                                    </label>
+                                </li>
+                                <li class="catalog__filter-list-item">
+                                    <label class="catalog__filter-label">
+                                        <input type="checkbox">
+                                        <span class="catalog__filter-color" style="background-color: #FFFFFF"></span>
+                                        <span class="catalog__filter-text">Белый</span>
+                                    </label>
+                                </li>
+                                <li class="catalog__filter-list-item">
+                                    <label class="catalog__filter-label">
+                                        <input type="checkbox">
+                                        <span class="catalog__filter-color" style="background-color: #BABABA"></span>
+                                        <span class="catalog__filter-text">Серый</span>
+                                    </label>
+                                </li>
+                                <li class="catalog__filter-list-item">
+                                    <label class="catalog__filter-label">
+                                        <input type="checkbox">
+                                        <span class="catalog__filter-color" style="background-color: #ECD9D4"></span>
+                                        <span class="catalog__filter-text">Розовый</span>
+                                    </label>
+                                </li>
+                            </ul>
+                            <div class="catalog__filter-footer desktop">
+                                <button class="catalog__filter-form-btn close">
+                                    Показать 46 товаров
+                                </button>
+                            </div>
                         </div>
                     </div>
                     <div class="catalog__filter-btn-box">
-                        <button type="button" class="catalog__filter-btn">Материал</button>
+                        <button type="button" class="catalog__filter-btn">
+                            <span>Материал</span>
+                            <svg class="mobile" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.5 5.5L6 1.5L10.5 5.5" stroke="#2F2E2A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <div class="catalog__filter-box-bg close"></div>
                         <div class="catalog__filter-box">
-                            <label class="catalog__filter-label">
-                                <input type="checkbox">
-                                <span class="catalog__filter-checkbox">
-                                    <img src="img/catalog-check.svg" alt="">
-                                </span>
-                                <span class="catalog__filter-text">Акрил</span>
-                            </label>
-                            <label class="catalog__filter-label">
-                                <input type="checkbox">
-                                <span class="catalog__filter-checkbox">
-                                    <img src="img/catalog-check.svg" alt="">
-                                </span>
-                                <span class="catalog__filter-text">Бархат</span>
-                            </label>
-                            <label class="catalog__filter-label">
-                                <input type="checkbox">
-                                <span class="catalog__filter-checkbox">
-                                    <img src="img/catalog-check.svg" alt="">
-                                </span>
-                                <span class="catalog__filter-text">Верблюжья шерсть</span>
-                            </label>
-                            <label class="catalog__filter-label">
-                                <input type="checkbox">
-                                <span class="catalog__filter-checkbox">
-                                    <img src="img/catalog-check.svg" alt="">
-                                </span>
-                                <span class="catalog__filter-text">Замша</span>
-                            </label>
-                            <label class="catalog__filter-label">
-                                <input type="checkbox">
-                                <span class="catalog__filter-checkbox">
-                                    <img src="img/catalog-check.svg" alt="">
-                                </span>
-                                <span class="catalog__filter-text">Кашемир</span>
-                            </label>
-                            <label class="catalog__filter-label">
-                                <input type="checkbox">
-                                <span class="catalog__filter-checkbox">
-                                    <img src="img/catalog-check.svg" alt="">
-                                </span>
-                                <span class="catalog__filter-text">Жаккард</span>
-                            </label>
-                            <label class="catalog__filter-label">
-                                <input type="checkbox">
-                                <span class="catalog__filter-checkbox">
-                                    <img src="img/catalog-check.svg" alt="">
-                                </span>
-                                <span class="catalog__filter-text">Лен</span>
-                            </label>
-                            <label class="catalog__filter-label">
-                                <input type="checkbox">
-                                <span class="catalog__filter-checkbox">
-                                    <img src="img/catalog-check.svg" alt="">
-                                </span>
-                                <span class="catalog__filter-text">Трикотаж</span>
-                            </label>
-                            <label class="catalog__filter-label">
-                                <input type="checkbox">
-                                <span class="catalog__filter-checkbox">
-                                    <img src="img/catalog-check.svg" alt="">
-                                </span>
-                                <span class="catalog__filter-text">Аксессуары</span>
-                            </label>
-                            <label class="catalog__filter-label">
-                                <input type="checkbox">
-                                <span class="catalog__filter-checkbox">
-                                    <img src="img/catalog-check.svg" alt="">
-                                </span>
-                                <span class="catalog__filter-text">Хлопок</span>
-                            </label>
-                            <label class="catalog__filter-label">
-                                <input type="checkbox">
-                                <span class="catalog__filter-checkbox">
-                                    <img src="img/catalog-check.svg" alt="">
-                                </span>
-                                <span class="catalog__filter-text">Шерсть</span>
-                            </label>
+                            <div class="catalog__filter-header desktop">
+                                <h3 class="catalog__filter-box-title">Материал</h3>
+                                <button type="button" class="catalog__filter-close close"></button>
+                            </div>
+                            <ul class="catalog__filter-list">
+                                <li class="catalog__filter-list-item">
+                                    <label class="catalog__filter-label">
+                                        <input type="checkbox">
+                                        <span class="catalog__filter-text">Акрил</span>
+                                    </label>
+                                </li>
+                                <li class="catalog__filter-list-item">
+                                    <label class="catalog__filter-label">
+                                        <input type="checkbox">
+                                        <span class="catalog__filter-text">Бархат</span>
+                                    </label>
+                                </li>
+                                <li class="catalog__filter-list-item">
+                                    <label class="catalog__filter-label">
+                                        <input type="checkbox">
+                                        <span class="catalog__filter-text">Верблюжья шерсть</span>
+                                    </label>
+                                </li>
+                                <li class="catalog__filter-list-item">
+                                    <label class="catalog__filter-label">
+                                        <input type="checkbox">
+                                        <span class="catalog__filter-text">Замша</span>
+                                    </label>
+                                </li>
+                                <li class="catalog__filter-list-item">
+                                    <label class="catalog__filter-label">
+                                        <input type="checkbox">
+                                        <span class="catalog__filter-text">Кашемир</span>
+                                    </label>
+                                </li>
+                                <li class="catalog__filter-list-item">
+                                    <label class="catalog__filter-label">
+                                        <input type="checkbox">
+                                        <span class="catalog__filter-text">Жаккард</span>
+                                    </label>
+                                </li>
+                                <li class="catalog__filter-list-item">
+                                    <label class="catalog__filter-label">
+                                        <input type="checkbox">
+                                        <span class="catalog__filter-text">Лен</span>
+                                    </label>
+                                </li>
+                                <li class="catalog__filter-list-item">
+                                    <label class="catalog__filter-label">
+                                        <input type="checkbox">
+                                        <span class="catalog__filter-text">Трикотаж</span>
+                                    </label>
+                                </li>
+                                <li class="catalog__filter-list-item">
+                                    <label class="catalog__filter-label">
+                                        <input type="checkbox">
+                                        <span class="catalog__filter-text">Аксессуары</span>
+                                    </label>
+                                </li>
+                                <li class="catalog__filter-list-item">
+                                    <label class="catalog__filter-label">
+                                        <input type="checkbox">
+                                        <span class="catalog__filter-text">Хлопок</span>
+                                    </label>
+                                </li>
+                                <li class="catalog__filter-list-item">
+                                    <label class="catalog__filter-label">
+                                        <input type="checkbox">
+                                        <span class="catalog__filter-text">Шерсть</span>
+                                    </label>
+                                </li>
+                            </ul>
+                            <div class="catalog__filter-footer desktop">
+                                <button class="catalog__filter-form-btn">
+                                    Показать 46 товаров
+                                </button>
+                            </div>
                         </div>
                     </div>
                     <div class="catalog__filter-btn-box">
-                        <button type="button" class="catalog__filter-btn">Размер</button>
+                        <button type="button" class="catalog__filter-btn">
+                            <span>Размер</span>
+                            <svg class="mobile" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.5 5.5L6 1.5L10.5 5.5" stroke="#2F2E2A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <div class="catalog__filter-box-bg close"></div>
                         <div class="catalog__filter-box">
-                            <label class="catalog__filter-label">
-                                <input type="checkbox">
-                                <span class="catalog__filter-checkbox">
-                                    <img src="img/catalog-check.svg" alt="">
-                                </span>
-                                <span class="catalog__filter-text">34</span>
-                            </label>
-                            <label class="catalog__filter-label">
-                                <input type="checkbox">
-                                <span class="catalog__filter-checkbox">
-                                    <img src="img/catalog-check.svg" alt="">
-                                </span>
-                                <span class="catalog__filter-text">36</span>
-                            </label>
-                            <label class="catalog__filter-label">
-                                <input type="checkbox">
-                                <span class="catalog__filter-checkbox">
-                                    <img src="img/catalog-check.svg" alt="">
-                                </span>
-                                <span class="catalog__filter-text">38</span>
-                            </label>
-                            <label class="catalog__filter-label">
-                                <input type="checkbox">
-                                <span class="catalog__filter-checkbox">
-                                    <img src="img/catalog-check.svg" alt="">
-                                </span>
-                                <span class="catalog__filter-text">40</span>
-                            </label>
-                            <label class="catalog__filter-label">
-                                <input type="checkbox">
-                                <span class="catalog__filter-checkbox">
-                                    <img src="img/catalog-check.svg" alt="">
-                                </span>
-                                <span class="catalog__filter-text">42</span>
-                            </label>
+                            <div class="catalog__filter-header desktop">
+                                <h3 class="catalog__filter-box-title">Размер</h3>
+                                <button type="button" class="catalog__filter-close close desktop"></button>
+                            </div>
+                            <ul class="catalog__filter-list">
+                                <li class="catalog__filter-list-item">
+                                    <label class="catalog__filter-label">
+                                        <input type="checkbox">
+                                        <span class="catalog__filter-text">34 (XXS)</span>
+                                    </label>
+                                </li>
+                                <li class="catalog__filter-list-item">
+                                    <label class="catalog__filter-label">
+                                        <input type="checkbox">
+                                        <span class="catalog__filter-text">36 (XS)</span>
+                                    </label>
+                                </li>
+                                <li class="catalog__filter-list-item">
+                                    <label class="catalog__filter-label">
+                                        <input type="checkbox">
+                                        <span class="catalog__filter-text">38 (S)</span>
+                                    </label>
+                                </li>
+                                <li class="catalog__filter-list-item">
+                                    <label class="catalog__filter-label">
+                                        <input type="checkbox">
+                                        <span class="catalog__filter-text">40 (M)</span>
+                                    </label>
+                                </li>
+                                <li class="catalog__filter-list-item">
+                                    <label class="catalog__filter-label">
+                                        <input type="checkbox">
+                                        <span class="catalog__filter-text">42 (L)</span>
+                                    </label>
+                                </li>
+                            </ul>
+                            <div class="catalog__filter-footer desktop">
+                                <button class="catalog__filter-form-btn">
+                                    Показать 46 товаров
+                                </button>
+                            </div>
                         </div>
                     </div>
-                </div>
+                    <div class="catalog__filter-footer mobile">
+                        <button class="catalog__filter-form-btn">
+                            Показать 46 товаров
+                        </button>
+                    </div>
+                </form>
                 <label class="catalog__label-select">
                     <span class="catalog__select-sub-text">Сортировка:</span>
                     <select class="catalog__select">

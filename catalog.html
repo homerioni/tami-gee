@@ -224,19 +224,39 @@
     </section>
     <section class="catalog">
         <div class="container">
+            <nav class="catalog__breadcrumbs mobile">
+                <a href="" class="catalog__breadcrumb">Главная</a>
+                <a href="" class="catalog__breadcrumb">Каталог</a>
+                <a href="" class="catalog__breadcrumb">Одежда</a>
+            </nav>
             <h1 class="catalog__title">Каталог</h1>
             <div class="catalog__filter-block">
-                <nav class="catalog__breadcrumbs">
+                <nav class="catalog__breadcrumbs desktop">
                     <a href="" class="catalog__breadcrumb">Главная</a>
                     <a href="" class="catalog__breadcrumb">Каталог</a>
                     <a href="" class="catalog__breadcrumb">Одежда</a>
                 </nav>
+                <button class="catalog__filters-btn-mob mobile">
+                    <span>Фильтр</span>
+                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17 1H1L6.6 8.46667C6.85964 8.81286 7 9.23393 7 9.66667V17L11 15V9.66667C11 9.23393 11.1404 8.81286 11.4 8.46667L17 1Z" stroke="#2F2E2A" stroke-width="2" stroke-linejoin="round"/>
+                    </svg>
+                </button>
                 <form class="catalog__filters">
+                    <div class="catalog__filter-header mobile">
+                        <h3 class="catalog__filter-box-title">фильтр</h3>
+                        <button type="button" class="catalog__filter-close close"></button>
+                    </div>
                     <div class="catalog__filter-btn-box">
-                        <button type="button" class="catalog__filter-btn">Категория</button>
+                        <button type="button" class="catalog__filter-btn">
+                            <span>Категория</span>
+                            <svg class="mobile" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.5 5.5L6 1.5L10.5 5.5" stroke="#2F2E2A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
                         <div class="catalog__filter-box-bg close"></div>
                         <div class="catalog__filter-box">
-                            <div class="catalog__filter-header">
+                            <div class="catalog__filter-header desktop">
                                 <h3 class="catalog__filter-box-title">Категория</h3>
                                 <button type="button" class="catalog__filter-close close"></button>
                             </div>
@@ -296,7 +316,7 @@
                                     </label>
                                 </li>
                             </ul>
-                            <div class="catalog__filter-footer">
+                            <div class="catalog__filter-footer desktop">
                                 <button class="catalog__filter-form-btn">
                                     Показать 46 товаров
                                 </button>
@@ -304,10 +324,15 @@
                         </div>
                     </div>
                     <div class="catalog__filter-btn-box">
-                        <button type="button" class="catalog__filter-btn">Цвет</button>
+                        <button type="button" class="catalog__filter-btn">
+                            <span>Цвет</span>
+                            <svg class="mobile" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.5 5.5L6 1.5L10.5 5.5" stroke="#2F2E2A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
                         <div class="catalog__filter-box-bg close"></div>
                         <div class="catalog__filter-box">
-                            <div class="catalog__filter-header">
+                            <div class="catalog__filter-header desktop">
                                 <h3 class="catalog__filter-box-title">Цвет</h3>
                                 <button type="button" class="catalog__filter-close close"></button>
                             </div>
@@ -355,7 +380,7 @@
                                     </label>
                                 </li>
                             </ul>
-                            <div class="catalog__filter-footer">
+                            <div class="catalog__filter-footer desktop">
                                 <button class="catalog__filter-form-btn close">
                                     Показать 46 товаров
                                 </button>
@@ -363,10 +388,15 @@
                         </div>
                     </div>
                     <div class="catalog__filter-btn-box">
-                        <button type="button" class="catalog__filter-btn">Материал</button>
+                        <button type="button" class="catalog__filter-btn">
+                            <span>Материал</span>
+                            <svg class="mobile" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.5 5.5L6 1.5L10.5 5.5" stroke="#2F2E2A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
                         <div class="catalog__filter-box-bg close"></div>
                         <div class="catalog__filter-box">
-                            <div class="catalog__filter-header">
+                            <div class="catalog__filter-header desktop">
                                 <h3 class="catalog__filter-box-title">Материал</h3>
                                 <button type="button" class="catalog__filter-close close"></button>
                             </div>
@@ -438,7 +468,7 @@
                                     </label>
                                 </li>
                             </ul>
-                            <div class="catalog__filter-footer">
+                            <div class="catalog__filter-footer desktop">
                                 <button class="catalog__filter-form-btn">
                                     Показать 46 товаров
                                 </button>
@@ -446,12 +476,17 @@
                         </div>
                     </div>
                     <div class="catalog__filter-btn-box">
-                        <button type="button" class="catalog__filter-btn">Размер</button>
+                        <button type="button" class="catalog__filter-btn">
+                            <span>Размер</span>
+                            <svg class="mobile" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.5 5.5L6 1.5L10.5 5.5" stroke="#2F2E2A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
                         <div class="catalog__filter-box-bg close"></div>
                         <div class="catalog__filter-box">
-                            <div class="catalog__filter-header">
+                            <div class="catalog__filter-header desktop">
                                 <h3 class="catalog__filter-box-title">Размер</h3>
-                                <button type="button" class="catalog__filter-close close"></button>
+                                <button type="button" class="catalog__filter-close close desktop"></button>
                             </div>
                             <ul class="catalog__filter-list">
                                 <li class="catalog__filter-list-item">
@@ -485,12 +520,17 @@
                                     </label>
                                 </li>
                             </ul>
-                            <div class="catalog__filter-footer">
+                            <div class="catalog__filter-footer desktop">
                                 <button class="catalog__filter-form-btn">
                                     Показать 46 товаров
                                 </button>
                             </div>
                         </div>
+                    </div>
+                    <div class="catalog__filter-footer mobile">
+                        <button class="catalog__filter-form-btn">
+                            Показать 46 товаров
+                        </button>
                     </div>
                 </form>
                 <label class="catalog__label-select">
