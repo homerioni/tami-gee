@@ -1,0 +1,118 @@
+@import "param";
+
+.personal {
+  margin-bottom: 17rem;
+
+  &__breadcrumbs {
+    margin-bottom: 8rem;
+  }
+
+  &__breadcrumb {
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    color: rgba(47, 46, 42, 0.6);
+
+    &:not(:last-child) {
+      &:after {
+        content: '/';
+        display: inline;
+        margin: 0 1rem;
+      }
+    }
+  }
+
+  &__container {
+    display: flex;
+  }
+
+  &__navigation {
+    flex: none;
+    width: 35rem;
+    margin-right: 7rem;
+  }
+
+  &__nav-link {
+    display: block;
+    width: fit-content;
+    padding-bottom: 1.7rem;
+    border-bottom: 1px solid transparent;
+    font-family: $sof600;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    &:not(:last-child) {
+      margin-bottom: 3rem;
+    }
+
+    &.active {
+      border-bottom: 1px solid #2F2E2A;
+    }
+  }
+
+  &__content {
+    width: 98rem;
+  }
+
+  &__title {
+    margin-bottom: 9.6rem;
+    font-family: $lora;
+    font-size: 4rem;
+    text-transform: uppercase;
+  }
+}
+
+@media (max-width: 48em) {
+  .personal {
+    position: relative;
+    margin-bottom: 24rem;
+
+    &__breadcrumbs {
+      position: absolute;
+      left: 3rem;
+      top: -12rem;
+    }
+
+    &__breadcrumb {
+      font-size: 3rem;
+      line-height: 4.6rem;
+
+      &:not(:last-child) {
+        &:after {
+          margin: 0 2rem;
+        }
+      }
+    }
+
+    &__container {
+      display: block;
+    }
+
+    &__navigation {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 12rem;
+    }
+
+    &__nav-link {
+      padding-bottom: 2.2rem;
+      font-size: 3rem;
+      line-height: 4.6rem;
+
+      &:not(:last-child) {
+        margin-bottom: 5rem;
+      }
+    }
+
+    &__content {
+      width: 100%;
+    }
+
+    &__title {
+      margin-bottom: 7rem;
+      font-size: 4.8rem;
+    }
+  }
+}
