@@ -137,4 +137,21 @@ $(document).ready(function () {
         $(this).parent().find('.catalog__filters').slideDown(200);
     });
 
+    // Search modal
+    $('.modal .close').click(function () {
+        $('body').removeClass('lock');
+        $(this).parents('.modal').hide();
+    });
+    $('.modal-search .close').click(function () {
+        $('body').removeClass('lock');
+        $('.modal-search').fadeOut(250);
+    });
+    $('.search-btn').click(function () {
+        $('body').addClass('lock');
+        $('.modal-search').fadeIn(250);
+    });
+    $('.clear-search').click(function () {
+        $('.modal-search__label input').val('');
+    });
+
 });

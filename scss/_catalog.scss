@@ -20,7 +20,7 @@
   }
 
   &__breadcrumbs {
-    max-width: 40rem;
+    width: 34rem;
   }
 
   &__breadcrumb {
@@ -331,6 +331,12 @@
     position: relative;
     padding-bottom: 24rem;
 
+    &--category {
+      .catalog__breadcrumbs {
+        top: -14rem;
+      }
+    }
+
     &__title {
       margin-bottom: 7rem;
       font-size: 4.8rem;
@@ -348,7 +354,7 @@
       position: absolute;
       left: 3rem;
       top: -20rem;
-      max-width: none;
+      width: 100%;
     }
 
     &__breadcrumb {
