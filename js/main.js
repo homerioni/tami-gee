@@ -76,6 +76,8 @@ $(document).ready(function () {
     });
     $('.order__promo-reset').click(function () {
         $('.order__input--promo').val('');
+        $('.order__promo-arrow').show();
+        $('.order__promo-reset').hide();
     });
     $('.order__form-box .order__box-title').click(function () {
         if ($(this).parent().hasClass('active') && $(this).parent().next().next().hasClass('active')) {

@@ -227,6 +227,7 @@
     padding: 2.2rem 4rem;
     margin-top: 5rem;
     border: 1px solid #2F2E2A;
+    font-family: $sof600;
     font-weight: 700;
     font-size: 1.8rem;
     letter-spacing: 0.1em;
@@ -271,7 +272,13 @@
     padding: 1.5rem 1rem;
     background-color: white;
 
-    > img {
+    > a {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    img {
       width: 100%;
       height: 100%;
       object-fit: contain;
@@ -371,5 +378,235 @@
   &__complete-text {
     font-size: 1.8rem;
     line-height: 2.8rem;
+  }
+}
+
+@media (max-width: 48em) {
+  .order {
+    padding-bottom: 24rem;
+
+    &__content {
+      flex-direction: column;
+      justify-content: normal;
+    }
+
+    &__form {
+      order: 2;
+      width: 100%;
+    }
+
+    &__title {
+      margin-bottom: 12rem;
+      font-size: 4.8rem;
+    }
+
+    &__form-box {
+      &:not(:last-child) {
+        margin-bottom: 12rem;
+      }
+    }
+
+    &__box-title {
+      margin-bottom: 7rem;
+      padding-right: 5rem;
+      font-size: 3.6rem;
+      letter-spacing: 0.1em;
+
+      > svg {
+        width: 2.2rem;
+        height: 1.2rem;
+      }
+    }
+
+    &__box-row {
+      flex-direction: column;
+      justify-content: normal;
+
+      &:not(:last-child) {
+        margin-bottom: 7rem;
+      }
+
+      &--payment {
+        flex-direction: row;
+      }
+    }
+
+    &__row-name {
+      width: 100%;
+      padding-right: 0;
+      margin-bottom: 5rem;
+      font-size: 3rem;
+    }
+
+    &__box-inputs {
+    }
+
+    &__label {
+      flex: 100%;
+      font-size: 3rem;
+
+      &--full {
+        flex: 100%;
+      }
+
+      &--quarter {
+        flex: 40%;
+
+        > input {
+          width: 100%;
+        }
+      }
+
+      &--promo {
+        margin-bottom: 7rem;
+      }
+    }
+
+    &__input {
+      &--promo {
+        margin-bottom: 2.4rem;
+      }
+    }
+
+    &__select {
+      padding: 0 4rem 2.4rem 0;
+    }
+
+    &__select-arrow {
+      top: 2.4rem;
+      width: 2.2rem;
+      height: 1.2rem;
+    }
+
+    &__delivery-item {
+      width: 100%;
+      min-height: 23rem;
+      padding: 6rem;
+
+      &:not(:last-child) {
+        margin-bottom: 4rem;
+      }
+    }
+
+    &__delivery-name {
+      margin-bottom: 1rem;
+      font-size: 3rem;
+    }
+
+    &__delivery-desc {
+      font-size: 3rem;
+    }
+
+    &__radio-icon {
+      width: 3.2rem;
+      height: 3.2rem;
+      transform: translateY(1rem);
+      padding: 0.6rem;
+      margin-right: 5rem;
+    }
+
+    &__payment-info {
+      align-items: center;
+      width: 100%;
+      font-size: 3rem;
+
+      > *:first-child {
+        height: fit-content;
+      }
+    }
+
+    &__payment-icon {
+      height: 5.2rem;
+    }
+
+    &__btn {
+      width: 100%;
+      padding: 3.4rem 5rem;
+      margin-top: 12rem;
+      font-size: 3rem;
+      text-align: center;
+    }
+
+    &__info-block {
+      width: 100%;
+      padding: 3rem 7rem;
+      margin-bottom: 16rem;
+    }
+
+    &__info-title {
+      margin-bottom: 3rem;
+      font-size: 4rem;
+    }
+
+    &__info-desc {
+      margin-bottom: 7rem;
+      font-size: 3rem;
+    }
+
+    &__info-list {
+      gap: 3rem;
+      margin-bottom: 3rem;
+    }
+
+    &__info-list-item {
+      width: 13.4rem;
+      height: 18rem;
+      padding: 2.6rem 2rem;
+    }
+
+    &__info-link {
+      margin-bottom: 7rem;
+      font-weight: 400;
+      font-size: 3rem;
+    }
+
+    &__promo-arrow {
+      top: 2rem;
+      width: 1.2rem;
+      height: 2.2rem;
+    }
+
+    &__promo-reset {
+      top: 2rem;
+      width: 4rem;
+      height: 4rem;
+    }
+
+    &__input-error {
+      top: calc(100% + 1.2rem);
+      font-size: 3rem;
+    }
+
+    &__total-box {
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+    }
+
+    &__total-text {
+      font-size: 3rem;
+    }
+
+    &__total {
+      font-size: 3rem;
+    }
+
+    &__complete {
+      margin-bottom: 4rem;
+    }
+
+    &__complete-box {
+      min-height: 34rem;
+      padding: 4rem 3rem;
+
+      &:not(:last-child) {
+        margin-bottom: 4rem;
+      }
+    }
+
+    &__complete-text {
+      font-size: 3rem;
+      line-height: 4.6rem;
+    }
   }
 }
