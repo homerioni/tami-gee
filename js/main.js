@@ -154,4 +154,12 @@ $(document).ready(function () {
         $('.modal-search__label input').val('');
     });
 
+    // Purchases
+    $('.purchases__tab-content input').change(function () {
+        $('.purchases__tab-content').removeClass('active');
+        $(this).parent().addClass('active');
+        $('.purchases__tab').removeClass('active');
+        $('.purchases__tab[for=' + $(this).attr('id') + ']').addClass('active');
+    });
+
 });

@@ -2576,6 +2576,200 @@ input[type=number] {
     height: 1.2rem;
   }
 }
+.purchases__tabs {
+  margin-bottom: 5.5rem;
+}
+.purchases__tab {
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  color: rgba(47, 46, 42, 0.6);
+  cursor: pointer;
+}
+.purchases__tab:not(:last-child) {
+  padding-right: 2rem;
+  margin-right: 2rem;
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+.purchases__tab.active {
+  color: #2F2E2A;
+}
+.purchases__tab-content {
+  display: none;
+}
+.purchases__tab-content > input {
+  display: none;
+}
+.purchases__tab-content.active {
+  display: block;
+}
+.purchases__item {
+  padding: 3rem 2.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.purchases__item:not(:last-child) {
+  margin-bottom: 4rem;
+}
+.purchases__top-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 2.5rem;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  color: rgba(47, 46, 42, 0.6);
+}
+.purchases__info-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-bottom: 4rem;
+}
+.purchases__name-box {
+  margin-bottom: 0.7rem;
+}
+.purchases__name {
+  margin-right: 4.7rem;
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.purchases__status {
+  position: relative;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  color: rgba(47, 46, 42, 0.6);
+}
+.purchases__status:before {
+  content: "";
+  position: absolute;
+  left: -2rem;
+  top: 50%;
+  width: 0.6rem;
+  height: 0.6rem;
+  -webkit-transform: translate(-100%, -50%);
+          transform: translate(-100%, -50%);
+  border-radius: 100%;
+  background-color: #F38A4E;
+}
+.purchases__price-box {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+}
+.purchases__qty {
+  margin-right: 2.6rem;
+}
+.purchases__delivery-date {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+}
+.purchases__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2rem;
+}
+.purchases__list-item {
+  position: relative;
+  width: 8.2rem;
+  height: 10rem;
+  padding: 1.5rem 1rem;
+}
+.purchases__list-item > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.purchases__list-item-qty {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  color: rgba(47, 46, 42, 0.6);
+}
+
+@media (max-width: 48em) {
+  .purchases__tabs {
+    margin-bottom: 7rem;
+  }
+  .purchases__tab {
+    font-size: 3rem;
+    line-height: 4.6rem;
+  }
+  .purchases__tab:not(:last-child) {
+    padding-right: 4rem;
+    margin-right: 4rem;
+  }
+  .purchases__item {
+    padding: 4rem 3rem;
+  }
+  .purchases__top-box {
+    margin-bottom: 5rem;
+    font-size: 3rem;
+    line-height: 4.6rem;
+  }
+  .purchases__info-block {
+    margin-bottom: 7rem;
+  }
+  .purchases__name-box {
+    margin-bottom: 1.4rem;
+  }
+  .purchases__name {
+    margin-right: 8rem;
+    font-family: "Sofia Pro Semi";
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 4.6rem;
+  }
+  .purchases__status {
+    font-size: 3rem;
+    line-height: 4.6rem;
+  }
+  .purchases__status:before {
+    left: -3.4rem;
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+  .purchases__price-box {
+    font-size: 3rem;
+    line-height: 4.6rem;
+  }
+  .purchases__qty {
+    margin-right: 4rem;
+  }
+  .purchases__delivery-date {
+    font-size: 3rem;
+    line-height: 4.6rem;
+  }
+  .purchases__list {
+    gap: 3rem;
+    margin-bottom: 7rem;
+  }
+  .purchases__list-item {
+    width: 13.4rem;
+    height: 18.8rem;
+    padding: 3rem 2rem;
+  }
+  .purchases__list-item-qty {
+    font-size: 3rem;
+    line-height: 4.6rem;
+  }
+}
 body.lock {
   overflow: hidden;
 }
