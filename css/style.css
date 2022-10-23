@@ -1298,6 +1298,20 @@ input[type=number] {
       flex-wrap: wrap;
   row-gap: 6rem;
 }
+.catalog__cards--favorites {
+  width: 120rem;
+}
+.catalog__cards--favorites .catalog__item:nth-child(3n+1) {
+  margin-right: 5rem;
+  margin-left: 0;
+}
+.catalog__cards--favorites .catalog__item:nth-child(3n+2) {
+  margin: 0;
+}
+.catalog__cards--favorites .catalog__item:nth-child(3n) {
+  margin-left: auto;
+  margin-right: 0;
+}
 .catalog__item {
   position: relative;
   width: 36.7rem;
@@ -1570,6 +1584,12 @@ input[type=number] {
         -ms-flex-pack: justify;
             justify-content: space-between;
     row-gap: 7rem;
+  }
+  .catalog__cards--favorites {
+    width: 100%;
+  }
+  .catalog__cards--favorites .catalog__item:nth-child(n) {
+    margin: 0;
   }
   .catalog__item {
     width: 33rem;
