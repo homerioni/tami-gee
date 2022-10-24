@@ -162,4 +162,25 @@ $(document).ready(function () {
         $('.purchases__tab[for=' + $(this).attr('id') + ']').addClass('active');
     });
 
+    // Product
+    $('.product__option-label input').change(function () {
+        $(this).parents('.product__options').find('.product__option-label').removeClass('active');
+        $(this).parent().addClass('active');
+    });
+    $('.product__tab-content input[name="size-guid"]').change(function () {
+        $('.product__guid-tab-content').removeClass('active');
+        $(this).next().addClass('active');
+        $('.product__guid-tab').removeClass('active');
+        $('.product__guid-tab[for=' + $(this).attr('id') + ']').addClass('active');
+    });
+    $('.product__tab-content input[name="product-info"]').change(function () {
+        $('.product__tab-content').removeClass('active');
+        $(this).parent().addClass('active');
+        $('.product__tab').removeClass('active');
+        $('.product__tab[for=' + $(this).attr('id') + ']').addClass('active');
+    });
+    $('.product__tab-close').click(function () {
+        $('.product__tab-content, .product__tab').removeClass('active');
+    });
+
 });
