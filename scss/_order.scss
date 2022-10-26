@@ -34,7 +34,7 @@
   &__box-title {
     position: relative;
     width: fit-content;
-    margin-bottom: 3rem;
+    margin-bottom: 4.5rem;
     padding-right: 3rem;
     font-family: $lora;
     font-size: 2rem;
@@ -107,6 +107,10 @@
     &--promo {
       border-bottom: 1px dashed #979694;
       margin-bottom: 6.3rem;
+
+      > input {
+        text-transform: uppercase;
+      }
     }
   }
 

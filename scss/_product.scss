@@ -1,7 +1,7 @@
 @import "param";
 
 .product {
-  margin-top: 13rem;
+  margin-top: -6rem;
   margin-bottom: 17rem;
 
   &__container {
@@ -53,6 +53,7 @@
     width: 100%;
     height: 100%;
     margin: auto;
+    background-color: white;
 
     > img {
       width: 100%;
@@ -66,7 +67,7 @@
     align-self: flex-start;
     width: 51.3rem;
     margin-top: -13rem;
-    padding: 20rem 4.4rem 4.4rem 4.4rem;
+    padding: 20.6rem 4.4rem 4.4rem 4.4rem;
     background-color: #FAF9F5;
   }
 
@@ -75,6 +76,7 @@
   &__info-title {
     font-family: $lora;
     font-size: 3rem;
+    text-transform: uppercase;
   }
 
   &__info-sub-title {
@@ -147,7 +149,7 @@
     flex-wrap: wrap;
     gap: 2rem;
     margin-top: 7rem;
-    margin-bottom: 7rem;
+    margin-bottom: 8rem;
   }
 
   &__card-img-box {
@@ -164,7 +166,7 @@
   }
 
   &__price {
-    margin-bottom: 6rem;
+    margin-bottom: 7rem;
     font-family: $lora;
     font-size: 2.2rem;
   }
@@ -323,6 +325,7 @@
   }
 
   &__tab-text {
+    width: 34.4rem;
     font-size: 1.6rem;
     line-height: 2.5rem;
     color: #8D8C8A;
@@ -375,7 +378,6 @@
 
 @media (max-width: 48em) {
   .product {
-    margin-top: 18rem;
     margin-bottom: 24rem;
 
     &__container {
@@ -575,6 +577,7 @@
     }
 
     &__tab-text {
+      width: auto;
       font-size: 3rem;
       line-height: 4.6rem;
     }

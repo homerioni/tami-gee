@@ -52,6 +52,24 @@
     }
   }
 
+  &__log-out {
+    display: block;
+    margin-top: 18rem;
+    width: fit-content;
+    font-family: $sof600;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(47, 46, 42, 0.6);
+    transition: color .5s ease;
+
+    &:hover {
+      color: #2F2E2A;
+    }
+  }
+
   &__content {
     width: 98rem;
   }

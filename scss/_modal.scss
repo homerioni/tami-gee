@@ -86,10 +86,16 @@
     letter-spacing: 0.1em;
     text-transform: uppercase;
 
-    &.border {
+    &.clear-search {
       padding-right: 3.4rem;
       margin-right: 3.4rem;
       border-right: 1px solid rgba(0, 0, 0, 0.2);
+      opacity: 0;
+      transition: opacity .3s ease;
+
+      &.active {
+        opacity: 1;
+      }
     }
   }
 

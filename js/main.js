@@ -1,6 +1,17 @@
 'use strict'
 
 $(document).ready(function () {
+    const rem = function (rem) {
+        if ($(window).width() > 768) {
+            return 0.005208335 * $(window).width() * rem;
+        } else {
+            // где 375 это ширина моб версии макета
+            return (100/375) * (0.05 * $(window).width()) * rem;
+        }
+    }
+
+    // Masked input
+    $('.input-phone').mask('+7 999 999-99-99');
 
     // Main page, scroll effect
     if ($('.banner').length) {
@@ -110,6 +121,25 @@ $(document).ready(function () {
         $(this).addClass('active');
     });
 
+    // Header
+    let scrollPos = 0;
+    $(window).scroll(function(){
+        let scrolled = $(this).scrollTop(), scrollMax = rem(15);
+        console.log(scrollMax);
+        if ( scrolled > scrollMax && scrolled > scrollPos ) {
+            $('.header').addClass('hidden');
+        } else {
+            $('.header').removeClass('hidden');
+        }
+        if (scrolled > scrollMax * 1.2) {
+            $('.header').addClass('header--bg');
+        } else {
+            $('.header').removeClass('header--bg');
+        }
+        console.log(scrolled);
+        scrollPos = scrolled;
+    });
+
     // Catalog filters
     $('.catalog__filter-btn').click(function () {
         if ($(window).width() > 768) {
@@ -150,8 +180,17 @@ $(document).ready(function () {
         $('body').addClass('lock');
         $('.modal-search').fadeIn(250);
     });
+    $('.modal-search__label input').keyup(function () {
+        if ($(this).val()) {
+            $('.modal-search .clear-search').addClass('active');
+        } else {
+            $('.modal-search .clear-search').removeClass('active');
+        }
+    });
     $('.clear-search').click(function () {
         $('.modal-search__label input').val('');
+        $(this).removeClass('active');
+        $('.modal-search__label input').focus();
     });
 
     // Purchases

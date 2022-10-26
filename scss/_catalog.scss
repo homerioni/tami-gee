@@ -7,6 +7,15 @@
     .catalog__title {
       text-align: left;
     }
+
+    .catalog__img-box {
+      height: 50rem;
+      margin-bottom: 1.2rem;
+
+      > img {
+        padding: 7.3rem 2.8rem;
+      }
+    }
   }
 
   &__title {
@@ -198,6 +207,10 @@
     height: 1.6rem;
     margin-right: 1.2rem;
     border-radius: 100%;
+
+    &--border {
+      border: 1px solid #2F2E2A;
+    }
   }
 
   &__label-select {
@@ -321,15 +334,31 @@
   }
 
   &__img-box {
+    position: relative;
     width: 36.7rem;
     height: 41.4rem;
-    padding: 2.7rem 1.8rem;
     margin-bottom: 0.9rem;
 
     > img {
+      position: absolute;
+      left: 0;
+      top: 0;
       width: 100%;
       height: 100%;
+      padding: 2.7rem 1.8rem;
       object-fit: contain;
+      transition: .6s opacity ease;
+
+      &:nth-child(2) {
+        opacity: 0;
+        background-color: white;
+      }
+    }
+
+    &:hover {
+      > img:nth-child(2) {
+        opacity: 1;
+      }
     }
   }
 
@@ -361,6 +390,15 @@
       .catalog__title {
         line-height: 6.5rem;
       }
+
+      .catalog__img-box {
+        height: 37.2rem;
+        margin-bottom: 2.4rem;
+
+        > img {
+          padding: 3rem 4rem;
+        }
+      }
     }
 
     &--category {
@@ -386,7 +424,7 @@
       position: absolute;
       left: 3rem;
       top: -20rem;
-      width: 100%;
+      width: auto;
     }
 
     &__breadcrumb {

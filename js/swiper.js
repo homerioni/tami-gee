@@ -8,11 +8,9 @@ const rem = function (rem) {
     }
 }
 
-const reviews_slider = new Swiper('.product__slider', {
-    direction: 'vertical',
-    loop: true,
-    slidesPerView: 1,
-    spaceBetween: 50,
+const product_slider = new Swiper('.product__slider', {
+    effect: "fade",
+    speed: 700,
 
     pagination: {
         el: '.product__pagination',
@@ -28,7 +26,7 @@ const reviews_slider = new Swiper('.product__slider', {
 });
 
 $('.product__slider-cards').on('click', '.product__card-img-box', function() {
-    reviews_slider.slideTo($( this ).index() + 1);
+    product_slider.slideTo($( this ).index());
 });
 
 const catalog_slider = new Swiper('.catalog__cards.swiper', {
