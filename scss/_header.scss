@@ -331,6 +331,10 @@ main {
           background-color: #ccc;
         }
       }
+
+      .header__catalog-list-item a {
+        transform: translateX(0);
+      }
     }
   }
 
@@ -375,6 +379,11 @@ main {
     font-size: 1.8rem;
     line-height: 2.8rem;
     letter-spacing: 0.1em;
+
+    > a {
+      display: block;
+      transform: translateX(-70rem);
+    }
 
     &:not(:last-child) {
       margin-bottom: 3.5rem;

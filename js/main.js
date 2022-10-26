@@ -119,6 +119,8 @@ $(document).ready(function () {
     $('.header__catalog-list-item').hover(function () {
         $('.header__catalog-list-item').removeClass('active');
         $(this).addClass('active');
+    }).each(function () {
+        $(this).find('a').css('transition', + ($(this).index() / 20 + 0.4) + 's transform ease');
     });
 
     // Header

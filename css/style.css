@@ -659,6 +659,10 @@ main.intro {
   border-radius: 100%;
   background-color: #ccc;
 }
+.header__catalog-item.active .header__catalog-list-item a {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
 .header__catalog-content {
   display: none;
   position: absolute;
@@ -707,6 +711,11 @@ main.intro {
   font-size: 1.8rem;
   line-height: 2.8rem;
   letter-spacing: 0.1em;
+}
+.header__catalog-list-item > a {
+  display: block;
+  -webkit-transform: translateX(-70rem);
+          transform: translateX(-70rem);
 }
 .header__catalog-list-item:not(:last-child) {
   margin-bottom: 3.5rem;
