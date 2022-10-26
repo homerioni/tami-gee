@@ -331,10 +331,6 @@ main {
           background-color: #ccc;
         }
       }
-
-      .header__catalog-list-item a {
-        transform: translateX(0);
-      }
     }
   }
 
@@ -382,7 +378,6 @@ main {
 
     > a {
       display: block;
-      transform: translateX(-70rem);
     }
 
     &:not(:last-child) {
