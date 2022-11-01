@@ -3,6 +3,16 @@
 .order {
   padding-bottom: 17rem;
 
+  &--cart {
+    .order__info-block {
+      text-align: center;
+    }
+
+    .order__info-desc {
+      margin-bottom: 7rem;
+    }
+  }
+
   &__content {
     display: flex;
     justify-content: space-between;
@@ -383,11 +393,47 @@
     font-size: 1.8rem;
     line-height: 2.8rem;
   }
+
+  &__cart-price {
+    margin-bottom: 7rem;
+    font-size: 2.5rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  &__cart-btn {
+    width: 100%;
+    padding: 2.2rem;
+    border: 1px solid #2F2E2A;
+    font-family: $sof600;
+    font-weight: 700;
+    font-size: 1.8rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-align: center;
+  }
 }
 
 @media (max-width: 48em) {
   .order {
     padding-bottom: 24rem;
+
+    &--cart {
+      .order__title {
+        margin-bottom: 7rem;
+        text-align: center;
+      }
+
+      .order__info-block {
+        order: 2;
+        padding-top: 12rem;
+        padding-bottom: 12rem;
+      }
+
+      .order__info-desc {
+        margin-bottom: 12rem;
+      }
+    }
 
     &__content {
       flex-direction: column;
@@ -611,6 +657,16 @@
     &__complete-text {
       font-size: 3rem;
       line-height: 4.6rem;
+    }
+
+    &__cart-price {
+      margin-bottom: 12rem;
+      font-size: 4rem;
+    }
+
+    &__cart-btn {
+      padding: 3.4rem;
+      font-size: 3rem;
     }
   }
 }

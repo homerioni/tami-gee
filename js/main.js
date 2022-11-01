@@ -259,4 +259,16 @@ $(document).ready(function () {
         $('.product__tab-content, .product__tab').removeClass('active');
     });
 
+    // Cart
+    $('.my-order__qty-operand.minus').click(function () {
+        let input = $(this).parent().find('.my-order__qty-input');
+        if (input.val() > 1) {
+            input.val(Number(input.val()) - 1);
+        }
+    });
+    $('.my-order__qty-operand.plus').click(function () {
+        let input = $(this).parent().find('.my-order__qty-input');
+        input.val(Number(input.val()) + 1);
+    });
+
 });
