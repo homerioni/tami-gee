@@ -523,22 +523,5 @@
 <script src="js/jquery.maskedinput.min.js"></script>
 <script src="js/main.js"></script>
 
-<script>
-    // Скрипт чисто для теста функционала
-    $('.order__form-box .required').change(function () {
-        let hasEmpty;
-        $(this).parents('.order__form-box').find('.required').each(function () {
-            if (!$(this).val()) {
-                hasEmpty = true;
-            }
-        });
-        if (!hasEmpty && !$(this).parents('.order__form-box').next().next().hasClass('active')) {
-            $(this).parents('.order__form-box').next().next().addClass('active').find('.order__box-row').slideDown();
-        }
-    });
-
-    // Для активации какой либо вкладки используем следующий код
-    // $('.order__form-box').addClass('active').find('.order__box-row').slideDown();
-</script>
 </body>
 </html>
