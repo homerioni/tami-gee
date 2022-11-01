@@ -3943,6 +3943,116 @@ main.intro {
     width: 11rem;
   }
 }
+.page-404 {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+.page-404__bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -10;
+  width: 100%;
+  height: 100%;
+}
+.page-404__bg > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.page-404__container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  height: 100%;
+  padding-bottom: 6rem;
+}
+.page-404__title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 162rem;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-family: "Lora";
+  font-size: 4rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: white;
+}
+.page-404__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.page-404__footer-box {
+  font-family: "Sofia Pro Semi";
+  font-weight: 700;
+  font-size: 1.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: white;
+}
+.page-404__footer-box > *:not(:last-child) {
+  margin-right: 5rem;
+}
+.page-404__footer-box--social {
+  font-family: "Sofia Pro";
+  font-weight: 400;
+}
+
+@media (max-width: 48em) {
+  .page-404__container {
+    padding-bottom: 12rem;
+  }
+  .page-404__title {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: normal;
+        -ms-flex-pack: normal;
+            justify-content: normal;
+    width: calc(100% - 6rem);
+    font-size: 4.8rem;
+    line-height: 10rem;
+  }
+  .page-404__footer-box {
+    font-size: 3rem;
+  }
+  .page-404__footer-box > * {
+    display: block;
+  }
+  .page-404__footer-box > *:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 3rem;
+  }
+}
 body.lock {
   overflow: hidden;
 }

@@ -12,7 +12,7 @@
 <body>
 
 
-<header class="header">
+<header class="header header--white header--fixed">
     <div class="header__blur-bg"></div>
     <nav class="container header__container">
         <div class="header__buttons mobile">
@@ -30,7 +30,7 @@
             tamI gee
         </a>
         <ul class="header__menu desktop">
-            <li class="header__menu-item header-catalog active">
+            <li class="header__menu-item header-catalog">
                 <a href="">Каталог</a>
                 <div class="header__catalog">
                     <ul class="container">
@@ -214,54 +214,25 @@
     </nav>
 </header>
 
-<main>
-    <section class="personal">
-        <div class="container">
-            <div class="personal__breadcrumbs">
-                <a href="" class="personal__breadcrumb">Главная</a>
-                <a href="" class="personal__breadcrumb">Личный кабинет</a>
-            </div>
-            <div class="personal__container">
-                <nav class="personal__navigation">
-                    <a href="" class="personal__nav-link active">Личные данные</a>
-                    <a href="" class="personal__nav-link">мои покупки</a>
-                    <a href="" class="personal__nav-link">избранное</a>
-                    <a href="" class="personal__log-out">выйти</a>
-                </nav>
-                <div class="personal__content">
-                    <h1 class="personal__title">Личные данные</h1>
-                    <div class="profile">
-                        <div class="profile__box-row">
-                            <p class="profile__row-name">Ваши данные</p>
-                            <div class="profile__box-inputs">
-                                <label class="profile__label">
-                                    <input placeholder="Имя" type="text" class="profile__input">
-                                </label>
-                                <label class="profile__label">
-                                    <input placeholder="Фамилия" type="text" class="profile__input">
-                                </label>
-                            </div>
-                        </div>
-                        <div class="profile__box-row">
-                            <p class="profile__row-name">Контакты</p>
-                            <div class="profile__box-inputs">
-                                <label class="profile__label">
-                                    <input placeholder="Мобильный номер" type="text" class="profile__input">
-                                </label>
-                                <label class="profile__label">
-                                    <input placeholder="E-mail" type="text" class="profile__input">
-                                </label>
-                            </div>
-                        </div>
-                        <div class="profile__box-row">
-                            <p class="profile__row-name">Город</p>
-                            <div class="profile__box-inputs">
-                                <label class="profile__label">
-                                    <input placeholder="Ваш город" type="text" class="profile__input">
-                                </label>
-                            </div>
-                        </div>
-                    </div>
+<main class="intro">
+    <section class="page-404">
+        <div class="page-404__bg">
+            <img src="img/404.webp" alt="" class="desktop">
+            <img src="img/404-mob.webp" alt="" class="mobile">
+        </div>
+        <div class="container page-404__container">
+            <h1 class="page-404__title">
+                <span>страница не найдена</span>
+                <span>404</span>
+            </h1>
+            <div class="page-404__footer">
+                <div class="page-404__footer-box">
+                    <a href=""><span class="desktop">перейти </span>на главную</a>
+                    <a href=""><span class="desktop">перейти </span>в каталог</a>
+                </div>
+                <div class="page-404__footer-box page-404__footer-box--social">
+                    <a href="">TELEGRAM</a>
+                    <a href="">PINTEREST</a>
                 </div>
             </div>
         </div>
