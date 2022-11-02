@@ -609,7 +609,6 @@ main.intro {
   fill: white;
 }
 .header--bg {
-  border-radius: 0 0 5rem 5rem;
   background-color: white;
   color: #2F2E2A;
 }
