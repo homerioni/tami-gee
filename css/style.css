@@ -142,35 +142,6 @@ input[type=number] {
     width: 100%;
   }
 }
-.modal {
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 20;
-  display: none;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 100%;
-  height: 100%;
-}
-.modal__bg {
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
-}
-.modal__content {
-  max-width: 90%;
-  max-height: 90%;
-}
-
 .modal-search {
   position: fixed;
   left: 0;
@@ -312,6 +283,169 @@ input[type=number] {
   text-transform: uppercase;
 }
 
+.modal-login {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: -100;
+  width: 100%;
+  height: 100%;
+}
+.modal-login__bg {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.modal-login__content {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 65.2rem;
+  height: 100%;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  padding: 21rem 8rem 6rem 7rem;
+  background-color: white;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+.modal-login__content.active {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+.modal-login__close {
+  position: absolute;
+  right: 3rem;
+  top: 3rem;
+  width: 4.3rem;
+  height: 4.3rem;
+}
+.modal-login__close:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 80%;
+  height: 2px;
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+  background-color: #82827F;
+}
+.modal-login__close:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 80%;
+  height: 2px;
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+          transform: translate(-50%, -50%) rotate(-45deg);
+  background-color: #82827F;
+}
+.modal-login__login-box {
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+.modal-login__title {
+  width: 44.7rem;
+  margin-bottom: 2.5rem;
+  font-family: "Lora";
+  font-size: 3rem;
+  line-height: 4.2rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.modal-login__desc {
+  width: 41.1rem;
+  margin-bottom: 6rem;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+}
+.modal-login__desc--bold {
+  font-family: "Sofia Pro Semi";
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  letter-spacing: 0.1em;
+}
+.modal-login__label {
+  display: block;
+  padding-bottom: 2.4rem;
+  margin-bottom: 7rem;
+  border-bottom: 1px solid rgba(47, 46, 42, 0.1019607843);
+}
+.modal-login__input {
+  width: 100%;
+  font-size: 1.8rem;
+}
+.modal-login__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.modal-login__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 24.9rem;
+  height: 7.2rem;
+  border: 1px solid #2F2E2A;
+  font-family: "Sofia Pro Semi";
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.modal-login__btn--not-border {
+  border: 1px solid transparent;
+  font-size: 1.5rem;
+  line-height: 2.3rem;
+}
+.modal-login__btn:hover {
+  color: #8D8C8A;
+}
+.modal-login__password-box {
+  position: absolute;
+  -webkit-transform: translateX(65rem);
+          transform: translateX(65rem);
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+.modal-login__link {
+  display: block;
+  margin-top: auto;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: rgba(47, 46, 42, 0.4);
+}
+
 @media (max-width: 48em) {
   .modal-search__content {
     width: 100%;
@@ -364,6 +498,69 @@ input[type=number] {
   }
   .modal-search__popular-item:nth-child(3n) {
     margin-bottom: 7rem;
+  }
+
+  .modal-login__content {
+    width: 100%;
+    padding: 22rem 3rem 6rem 3rem;
+  }
+  .modal-login__close {
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    width: 8.6rem;
+    height: 8.6rem;
+  }
+  .modal-login__title {
+    width: calc(100vw - 6rem);
+    margin-bottom: 4rem;
+    font-size: 4.8rem;
+    line-height: 7rem;
+  }
+  .modal-login__desc {
+    width: calc(100vw - 6rem);
+    margin-bottom: 10rem;
+    font-size: 3rem;
+    line-height: 5.2rem;
+  }
+  .modal-login__desc--bold {
+    font-size: 3rem;
+    line-height: 5.2rem;
+  }
+  .modal-login__label {
+    width: calc(100vw - 6rem);
+    padding-bottom: 3.6rem;
+    margin-bottom: 12rem;
+  }
+  .modal-login__input {
+    font-size: 3rem;
+  }
+  .modal-login__buttons {
+    width: calc(100vw - 6rem);
+  }
+  .modal-login__btn {
+    -webkit-box-flex: 10;
+        -ms-flex: 10;
+            flex: 10;
+    width: 40rem;
+    height: 11.4rem;
+    font-size: 3rem;
+    line-height: 4.6rem;
+  }
+  .modal-login__btn--not-border {
+    -webkit-box-flex: 11;
+        -ms-flex: 11;
+            flex: 11;
+    font-size: 2.4rem;
+    line-height: 3.7rem;
+  }
+  .modal-login__password-box {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  .modal-login__link {
+    font-size: 3rem;
+    line-height: 5.2rem;
   }
 }
 main {
@@ -638,6 +835,7 @@ main.intro {
 .header__catalog-item.active .header__catalog-content {
   visibility: visible;
   opacity: 1;
+  z-index: 0;
 }
 .header__catalog-item.active > a {
   position: relative;
@@ -668,6 +866,7 @@ main.intro {
   position: absolute;
   right: 0;
   top: 0;
+  z-index: -1;
   display: none;
   width: 131.2rem;
   height: 100%;
@@ -3961,6 +4160,8 @@ main.intro {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: left;
+     object-position: left;
 }
 .page-404__container {
   position: relative;

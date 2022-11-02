@@ -11,7 +11,7 @@ $(document).ready(function () {
     }
 
     // Masked input
-    $('.input-phone').mask('+7 999 999-99-99');
+    $('.input-phone').mask('+7 (999) 999-99-99');
 
     // Main page, scroll effect
     if ($('.banner').length) {
@@ -205,10 +205,6 @@ $(document).ready(function () {
     });
 
     // Search modal
-    $('.modal .close').click(function () {
-        $('body').removeClass('lock');
-        $(this).parents('.modal').hide();
-    });
     $('.modal-search .close').click(function () {
         $('body').removeClass('lock');
         $('.modal-search').fadeOut(250);
@@ -269,6 +265,24 @@ $(document).ready(function () {
     $('.my-order__qty-operand.plus').click(function () {
         let input = $(this).parent().find('.my-order__qty-input');
         input.val(Number(input.val()) + 1);
+    });
+
+    // Login modal
+    $('.pop-up-login').click(function () {
+        $('.modal-login__bg').fadeIn(200);
+        $('.modal-login__content').addClass('active');
+        $('.modal-login').css('z-index', '10');
+    });
+    $('.modal-login .close').click(function () {
+        $('.modal-login__bg').fadeOut(200);
+        $('.modal-login__content').removeClass('active');
+        setTimeout(function () {
+            $('.modal-login').removeAttr('style');
+        }, 300)
+    });
+    $('.login-get-code').click(function () {
+        $('.modal-login__login-box').css('transform', 'translate(-100vw)');
+        $('.modal-login__password-box').css('transform', 'translate(0)');
     });
 
 });

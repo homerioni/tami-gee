@@ -309,9 +309,9 @@ main {
 
     &.active {
       .header__catalog-content {
-        //display: flex;
         visibility: visible;
         opacity: 1;
+        z-index: 0;
       }
 
       > a {
@@ -346,6 +346,7 @@ main {
     position: absolute;
     right: 0;
     top: 0;
+    z-index: -1;
     display: none;
     width: 131.2rem;
     height: 100%;
