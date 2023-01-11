@@ -3,10 +3,10 @@
 body {
   min-height: 100vh;
   position: relative;
-  padding-bottom: 59.1rem;
+  padding-bottom: 43.2rem;
 
   @media (max-width: 48em) {
-    padding-bottom: 236.2rem;
+    padding-bottom: 208.4rem;
   }
 }
 
@@ -16,13 +16,17 @@ body {
   left: 0;
   z-index: 5;
   width: 100%;
-  padding-top: 20rem;
   background-color: white;
+
+  &--main {
+    padding-top: 20rem;
+  }
 
   &__content-top {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 4rem;
+    padding: 4rem 0;
+    border-top: 1px solid #2F2E2A1A;
     border-bottom: 1px solid #2F2E2A1A;
   }
 
@@ -142,14 +146,16 @@ body {
 
 @media (max-width: 48em) {
   .footer {
-    padding-top: 21rem;
+    &--main {
+      padding-top: 21rem;
+    }
 
     &__content-top {
       flex-direction: column;
       justify-content: normal;
       gap: 9rem;
       width: calc(100% - 6rem);
-      padding: 0 0 10rem 0;
+      padding: 9rem 0;
     }
 
     &__box {
@@ -213,7 +219,7 @@ body {
       flex-direction: column;
       justify-content: normal;
       gap: 3rem;
-      padding: 9rem 3rem 24rem 3rem;
+      padding: 9rem 3rem;
       font-size: 3.2rem;
       line-height: 5.6rem;
     }

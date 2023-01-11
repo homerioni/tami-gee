@@ -2,6 +2,7 @@
 
 .main-page {
   position: relative;
+  margin-bottom: 20rem;
 
   &:before {
     content: '';
@@ -110,6 +111,10 @@
 }
 
 @media (max-width: 48em) {
+  .main-page {
+    margin-bottom: 21rem;
+  }
+
   .banner {
     &--static {
     }
