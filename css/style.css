@@ -310,11 +310,11 @@ input[type=number] {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 65.2rem;
+  width: 70rem;
   height: 100%;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
-  padding: 21rem 8rem 6rem 7rem;
+  padding: 17rem 10.5rem 6rem 10.5rem;
   background-color: white;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -364,7 +364,7 @@ input[type=number] {
 }
 .modal-login__title {
   width: 44.7rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 1.2rem;
   font-family: "Lora";
   font-size: 3rem;
   line-height: 4.2rem;
@@ -376,6 +376,7 @@ input[type=number] {
   margin-bottom: 6rem;
   font-size: 1.6rem;
   line-height: 2.6rem;
+  color: rgba(47, 46, 42, 0.4);
 }
 .modal-login__desc--bold {
   font-family: "Sofia Pro Semi";
@@ -387,12 +388,38 @@ input[type=number] {
 .modal-login__label {
   display: block;
   padding-bottom: 2.4rem;
-  margin-bottom: 7rem;
+  margin-bottom: 4.5rem;
   border-bottom: 1px solid rgba(47, 46, 42, 0.1019607843);
 }
 .modal-login__input {
   width: 100%;
   font-size: 1.8rem;
+}
+.modal-login__input::-webkit-input-placeholder {
+  color: #2F2E2A;
+}
+.modal-login__input::-moz-placeholder {
+  color: #2F2E2A;
+}
+.modal-login__input:-ms-input-placeholder {
+  color: #2F2E2A;
+}
+.modal-login__input::-ms-input-placeholder {
+  color: #2F2E2A;
+}
+.modal-login__input::placeholder {
+  color: #2F2E2A;
+}
+.modal-login__forgot {
+  display: block;
+  margin-top: -3rem;
+  margin-bottom: 8rem;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: rgba(47, 46, 42, 0.4);
+}
+.modal-login__forgot:hover {
+  color: #2F2E2A;
 }
 .modal-login__buttons {
   display: -webkit-box;
@@ -409,8 +436,7 @@ input[type=number] {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 24.9rem;
-  height: 7.2rem;
+  padding: 2.2rem 4.6rem;
   border: 1px solid #2F2E2A;
   font-family: "Sofia Pro Semi";
   font-weight: 700;
@@ -427,10 +453,10 @@ input[type=number] {
 .modal-login__btn:hover {
   color: #8D8C8A;
 }
-.modal-login__password-box {
+.modal-login__register-box {
   position: absolute;
-  -webkit-transform: translateX(65rem);
-          transform: translateX(65rem);
+  -webkit-transform: translateX(100vw);
+          transform: translateX(100vw);
   -webkit-transition: -webkit-transform 0.3s ease;
   transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
@@ -499,7 +525,7 @@ input[type=number] {
   }
   .modal-login__content {
     width: 100%;
-    padding: 22rem 3rem 6rem 3rem;
+    padding: 20rem 3rem 6rem 3rem;
   }
   .modal-login__close {
     position: absolute;
@@ -510,7 +536,7 @@ input[type=number] {
   }
   .modal-login__title {
     width: calc(100vw - 6rem);
-    margin-bottom: 4rem;
+    margin-bottom: 1.2rem;
     font-size: 4.8rem;
     line-height: 7rem;
   }
@@ -527,33 +553,29 @@ input[type=number] {
   .modal-login__label {
     width: calc(100vw - 6rem);
     padding-bottom: 3.6rem;
-    margin-bottom: 12rem;
+    margin-bottom: 7rem;
   }
   .modal-login__input {
     font-size: 3rem;
+  }
+  .modal-login__forgot {
+    display: block;
+    margin-top: -5rem;
+    margin-bottom: 10rem;
+    font-size: 2.6rem;
+    line-height: 4.2rem;
   }
   .modal-login__buttons {
     width: calc(100vw - 6rem);
   }
   .modal-login__btn {
-    -webkit-box-flex: 10;
-        -ms-flex: 10;
-            flex: 10;
-    width: 40rem;
-    height: 11.4rem;
+    padding: 3.4rem 4.2rem;
     font-size: 3rem;
     line-height: 4.6rem;
   }
   .modal-login__btn--not-border {
-    -webkit-box-flex: 11;
-        -ms-flex: 11;
-            flex: 11;
     font-size: 2.4rem;
     line-height: 3.7rem;
-  }
-  .modal-login__password-box {
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
   }
   .modal-login__link {
     font-size: 3rem;
@@ -735,28 +757,18 @@ main.intro {
       -ms-flex-align: center;
           align-items: center;
 }
-.header__language-btn {
-  position: relative;
-  display: block;
+.header__language-btn-box {
   margin-right: 6rem;
   font-weight: 700;
   font-size: 1.8rem;
+  line-height: 2.8rem;
   letter-spacing: 0.1em;
-}
-.header__language-btn > select {
-  padding-right: 2.2rem;
-  outline: none;
-  border: none;
-  background-color: transparent;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  font-family: inherit;
-  font-weight: inherit;
-  font-size: inherit;
-  line-height: inherit;
   cursor: pointer;
-  text-align: right;
+}
+.header__language-btn {
+  position: relative;
+  padding-right: 2.2rem;
+  cursor: pointer;
 }
 .header__language-btn > svg {
   position: absolute;
@@ -764,11 +776,41 @@ main.intro {
   top: 50%;
   width: 1.1rem;
   height: 0.6rem;
-  -webkit-transform: translateY(-80%);
-          transform: translateY(-80%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: -webkit-transform 0.25s ease;
+  transition: -webkit-transform 0.25s ease;
+  transition: transform 0.25s ease;
+  transition: transform 0.25s ease, -webkit-transform 0.25s ease;
 }
 .header__language-btn > svg path {
   stroke: #2F2E2A;
+}
+.header__language-btn.active > svg {
+  -webkit-transform: scaleY(-1) translateY(50%);
+          transform: scaleY(-1) translateY(50%);
+}
+.header__language-list {
+  position: absolute;
+  left: -2rem;
+  top: calc(100% + 1.8rem);
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.6rem;
+  padding: 1.5rem 4rem 1.5rem 2rem;
+  background-color: white;
+}
+.header__language-item {
+  opacity: 0.5;
+  font-weight: 400;
+  color: #2F2E2A;
+}
+.header__language-item.active, .header__language-item:hover {
+  opacity: 1;
+  font-weight: 700;
 }
 .header__btn {
   display: block;
@@ -1071,6 +1113,89 @@ main.intro {
     font-weight: 400;
     font-size: 5.2rem;
     line-height: 5.2rem;
+  }
+  .header__menu-box {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    height: calc(100vh - 100%);
+    background-color: #F5F5F5;
+  }
+  .header__menu {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-top: 1px solid rgba(47, 46, 42, 0.1);
+    background-color: white;
+  }
+  .header__menu-mob .header__menu-item {
+    font-weight: 400;
+    font-size: 3rem;
+    line-height: 4.6rem;
+    text-transform: none;
+    letter-spacing: 0;
+  }
+  .header__menu-item {
+    width: 69rem;
+    padding: 3.2rem 0;
+    margin: 0 auto;
+    font-size: 3rem;
+  }
+  .header__menu-item:before {
+    content: none;
+  }
+  .header__menu-item:not(:last-child) {
+    margin-right: auto;
+    border-bottom: 1px solid rgba(47, 46, 42, 0.1019607843);
+  }
+  .header__menu-item.active:before {
+    content: none;
+  }
+  .header__menu-item > a,
+.header__menu-item > button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .header__menu-item > a > svg,
+.header__menu-item > a > .language,
+.header__menu-item > button > svg,
+.header__menu-item > button > .language {
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+    width: 4.6rem;
+    height: 4.6rem;
+    margin-right: 3rem;
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 5rem;
+    letter-spacing: 0.1em;
+  }
+  .header__menu-item > a > .arrow,
+.header__menu-item > button > .arrow {
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+    width: 1.2rem;
+    height: 2.4rem;
+    margin-left: auto;
   }
   .header__btn {
     width: 4.4rem;

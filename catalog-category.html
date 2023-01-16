@@ -178,15 +178,22 @@
             </li>
         </ul>
         <div class="header__buttons">
-            <label class="header__language-btn desktop">
-                <select>
-                    <option value="">RU</option>
-                    <option value="">ENG</option>
-                </select>
-                <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M10 1L5.5 5L1 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </label>
+            <div class="header__language-btn-box desktop">
+                <button type="button" class="header__language-btn">
+                    <span>RU</span>
+                    <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 1L5.5 5L1 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <ul class="header__language-list">
+                    <li class="header__language-item active">
+                        <a>RU</a>
+                    </li>
+                    <li class="header__language-item">
+                        <a href="#">EN</a>
+                    </li>
+                </ul>
+            </div>
             <button type="button" class="header__btn search-btn desktop">
                 <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M10.3333 19.6667C15.488 19.6667 19.6667 15.488 19.6667 10.3333C19.6667 5.17868 15.488 1 10.3333 1C5.17868 1 1 5.17868 1 10.3333C1 15.488 5.17868 19.6667 10.3333 19.6667Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
