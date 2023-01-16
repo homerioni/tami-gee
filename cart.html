@@ -514,35 +514,52 @@
         <button class="modal-login__close close"></button>
         <div class="modal-login__login-box">
             <h2 class="modal-login__title">
-                войти или зарегистрироваться
+                личный кабинет
             </h2>
             <p class="modal-login__desc">
-                Мы отправим на номер SMS-сообщение
-                с&nbsp;кодом&nbsp;подтверждения.
+                Войдите в систему, чтобы добавить в избранное
             </p>
             <label class="modal-login__label">
                 <input placeholder="+7 (___) ___-__-__" type="text" class="modal-login__input input-phone">
             </label>
+            <label class="modal-login__label">
+                <input placeholder="Пароль" type="password" class="modal-login__input">
+            </label>
+            <a href="" class="modal-login__forgot">Забыли пароль?</a>
             <div class="modal-login__buttons">
-                <button type="button" class="modal-login__btn login-get-code">
-                    получить код
+                <button type="button" class="modal-login__btn">
+                    войти
+                </button>
+                <button type="button" class="modal-login__btn modal-login__btn--not-border register-box">
+                    Зарегистрироваться
                 </button>
             </div>
         </div>
-        <div class="modal-login__password-box">
+        <div class="modal-login__register-box">
             <h2 class="modal-login__title">
-                подтверждение
-                номера
+                личный кабинет
             </h2>
-            <p class="modal-login__desc modal-login__desc--bold">
-                +7 (968) 676-00-40
+            <p class="modal-login__desc">
+                Войдите в систему, чтобы добавить в избранное
             </p>
             <label class="modal-login__label">
-                <input placeholder="Введите код из смс" type="text" class="modal-login__input input-phone">
+                <input placeholder="Имя" type="password" class="modal-login__input">
+            </label>
+            <label class="modal-login__label">
+                <input placeholder="Фамилия" type="password" class="modal-login__input">
+            </label>
+            <label class="modal-login__label">
+                <input placeholder="+7 (___) ___-__-__" type="text" class="modal-login__input input-phone">
+            </label>
+            <label class="modal-login__label">
+                <input placeholder="Пароль" type="password" class="modal-login__input">
+            </label>
+            <label class="modal-login__label">
+                <input placeholder="Повторите пароль" type="password" class="modal-login__input">
             </label>
             <div class="modal-login__buttons">
-                <button class="modal-login__btn">подтвердить</button>
-                <button class="modal-login__btn modal-login__btn--not-border">Отправить повторно</button>
+                <button class="modal-login__btn">Зарегистрироваться</button>
+                <button class="modal-login__btn modal-login__btn--not-border login-box">войти</button>
             </div>
         </div>
         <a href="" class="modal-login__link">Политика конфиденциальности</a>
