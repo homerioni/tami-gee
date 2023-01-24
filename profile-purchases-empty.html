@@ -288,162 +288,47 @@
                     <path d="M21 22C21 18.134 16.5228 15 11 15C5.47715 15 1 18.134 1 22" stroke="white" stroke-width="2"/>
                 </svg>
             </button>
-            <a href="" class="header__btn header__cart">
+            <a href="" class="header__btn">
                 <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect x="1" y="8.02344" width="19.6818" height="13.6591" stroke="white" stroke-width="2"/>
                     <path d="M15.6588 9.43182V5.81818C15.6588 3.15717 13.5017 1 10.8406 1V1C8.17963 1 6.02246 3.15717 6.02246 5.81818L6.02246 9.43182" stroke="white" stroke-width="2" stroke-linecap="round"/>
                 </svg>
-                <span class="header__cart-qty">3</span>
             </a>
         </div>
     </nav>
 </header>
 
 <main>
-    <section class="order order--cart">
+    <section class="personal">
         <div class="container">
-            <div class="order__content">
-                <form class="order__form">
-                    <h1 class="order__title">
-                        ваша корзина
-                    </h1>
-                    <ul class="my-order__list">
-                        <li class="my-order__list-item">
-                            <div class="my-order__item-content">
-                                <div class="my-order__img-box">
-                                    <img src="img/catalog-img4.webp" alt="">
-                                </div>
-                                <div class="my-order__item-info-box">
-                                    <div class="my-order__info-title-box">
-                                        <h2 class="my-order__item-title">приталенный жакет</h2>
-                                        <p class="my-order__item-price desktop">300 000 ₽</p>
-                                    </div>
-                                    <div class="my-order__item-info-row">
-                                        <p class="my-order__item-info-row--gray">Размер:</p>
-                                        <p>36</p>
-                                    </div>
-                                    <div class="my-order__item-info-row">
-                                        <p class="my-order__item-info-row--gray">Цвет:</p>
-                                        <span class="my-order__color-circle" style="background-color: #2F2E2A"></span>
-                                        <p>Черный</p>
-                                    </div>
-                                    <div class="my-order__item-footer desktop">
-                                        <div class="my-order__qty-box">
-                                            <button type="button" class="my-order__qty-operand minus">-</button>
-                                            <label>
-                                                <input type="number" class="my-order__qty-input" value="1" disabled>
-                                            </label>
-                                            <button type="button" class="my-order__qty-operand plus">+</button>
-                                        </div>
-                                        <button class="my-order__delete"></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="my-order__item-footer mobile">
-                                <div class="my-order__qty-box">
-                                    <button type="button" class="my-order__qty-operand minus">-</button>
-                                    <label>
-                                        <input type="number" class="my-order__qty-input" value="1" disabled>
-                                    </label>
-                                    <button type="button" class="my-order__qty-operand plus">+</button>
-                                </div>
-                                <p class="my-order__item-price">300 000 ₽</p>
-                                <button class="my-order__delete"></button>
-                            </div>
-                        </li>
-                        <li class="my-order__list-item">
-                            <div class="my-order__item-content">
-                                <div class="my-order__img-box">
-                                    <img src="img/catalog-img5.webp" alt="">
-                                </div>
-                                <div class="my-order__item-info-box">
-                                    <div class="my-order__info-title-box">
-                                        <h2 class="my-order__item-title">приталенный жакет</h2>
-                                        <p class="my-order__item-price desktop">300 000 ₽</p>
-                                    </div>
-                                    <div class="my-order__item-info-row">
-                                        <p class="my-order__item-info-row--gray">Размер:</p>
-                                        <p>36</p>
-                                    </div>
-                                    <div class="my-order__item-info-row">
-                                        <p class="my-order__item-info-row--gray">Цвет:</p>
-                                        <span class="my-order__color-circle" style="background-color: #2F2E2A"></span>
-                                        <p>Черный</p>
-                                    </div>
-                                    <div class="my-order__item-footer desktop">
-                                        <div class="my-order__qty-box">
-                                            <button type="button" class="my-order__qty-operand minus">-</button>
-                                            <label>
-                                                <input type="number" class="my-order__qty-input" value="1" disabled>
-                                            </label>
-                                            <button type="button" class="my-order__qty-operand plus">+</button>
-                                        </div>
-                                        <button class="my-order__delete"></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="my-order__item-footer mobile">
-                                <div class="my-order__qty-box">
-                                    <button type="button" class="my-order__qty-operand minus">-</button>
-                                    <label>
-                                        <input type="number" class="my-order__qty-input" value="1" disabled>
-                                    </label>
-                                    <button type="button" class="my-order__qty-operand plus">+</button>
-                                </div>
-                                <p class="my-order__item-price">300 000 ₽</p>
-                                <button class="my-order__delete"></button>
-                            </div>
-                        </li>
-                        <li class="my-order__list-item">
-                            <div class="my-order__item-content">
-                                <div class="my-order__img-box">
-                                    <img src="img/catalog-img1.webp" alt="">
-                                </div>
-                                <div class="my-order__item-info-box">
-                                    <div class="my-order__info-title-box">
-                                        <h2 class="my-order__item-title">приталенный жакет</h2>
-                                        <p class="my-order__item-price desktop">300 000 ₽</p>
-                                    </div>
-                                    <div class="my-order__item-info-row">
-                                        <p class="my-order__item-info-row--gray">Размер:</p>
-                                        <p>36</p>
-                                    </div>
-                                    <div class="my-order__item-info-row">
-                                        <p class="my-order__item-info-row--gray">Цвет:</p>
-                                        <span class="my-order__color-circle" style="background-color: #2F2E2A"></span>
-                                        <p>Черный</p>
-                                    </div>
-                                    <div class="my-order__item-footer desktop">
-                                        <div class="my-order__qty-box">
-                                            <button type="button" class="my-order__qty-operand minus">-</button>
-                                            <label>
-                                                <input type="number" class="my-order__qty-input" value="1" disabled>
-                                            </label>
-                                            <button type="button" class="my-order__qty-operand plus">+</button>
-                                        </div>
-                                        <button class="my-order__delete"></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="my-order__item-footer mobile">
-                                <div class="my-order__qty-box">
-                                    <button type="button" class="my-order__qty-operand minus">-</button>
-                                    <label>
-                                        <input type="number" class="my-order__qty-input" value="1" disabled>
-                                    </label>
-                                    <button type="button" class="my-order__qty-operand plus">+</button>
-                                </div>
-                                <p class="my-order__item-price">300 000 ₽</p>
-                                <button class="my-order__delete"></button>
-                            </div>
-                        </li>
-                    </ul>
-                </form>
-                <div class="order__info-block">
-                    <h2 class="order__info-title">итого</h2>
-                    <p class="order__info-desc">3 позиции на сумму:</p>
-                    <p class="order__cart-price">900 000 ₽</p>
-                    <button class="order__cart-btn">Оформить заказ</button>
+            <div class="personal__breadcrumbs">
+                <a href="" class="personal__breadcrumb">Главная</a>
+                <a href="" class="personal__breadcrumb">Личный кабинет</a>
+                <a href="" class="personal__breadcrumb">Мои покупки</a>
+            </div>
+            <div class="personal__container">
+                <nav class="personal__navigation">
+                    <a href="" class="personal__nav-link">Личные данные</a>
+                    <a href="" class="personal__nav-link active">мои покупки</a>
+                    <a href="" class="personal__nav-link">избранное</a>
+                    <a href="" class="personal__log-out">выйти</a>
+                </nav>
+                <div class="personal__content">
+                    <h1 class="personal__title">мои покупки</h1>
+                    <div class="purchases">
+                        <div class="purchases__tabs">
+                            <label for="purchases1" class="purchases__tab active">
+                                <span>Активные</span>
+                                <sup>0</sup>
+                            </label>
+                            <label for="purchases2" class="purchases__tab">
+                                <span>Архивные</span>
+                                <sup>0</sup>
+                            </label>
+                        </div>
+                        <h3 class="purchases__empty-title">История заказов отсутствует</h3>
+                        <a href="" class="purchases__empty-btn">перейти в каталог</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -650,6 +535,5 @@
 <script src="js/jquery.maskedinput.min.js"></script>
 <script src="js/swiper.js"></script>
 <script src="js/main.js"></script>
-
 </body>
 </html>

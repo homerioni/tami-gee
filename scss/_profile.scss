@@ -70,6 +70,17 @@
       stroke: #2F2E2A;
     }
   }
+
+  &__btn {
+    padding: 2.2rem 4.6rem;
+    margin-top: 8rem;
+    border: 1px solid #2F2E2A;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    letter-spacing: 0.1em;
+  }
 }
 
 @media (max-width: 48em) {
@@ -109,6 +120,12 @@
       top: 2.4rem;
       width: 2.2rem;
       height: 1.2rem;
+    }
+
+    &__btn {
+      padding: 3.4rem 4.2rem;
+      font-size: 3rem;
+      line-height: 4.6rem;
     }
   }
 }

@@ -139,6 +139,27 @@
     line-height: 2.5rem;
     color: rgba(47, 46, 42, 0.6);
   }
+
+  &__empty-title {
+    margin-bottom: 8.5rem;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: #2F2E2A;
+  }
+
+  &__empty-btn {
+    display: block;
+    padding: 2.2rem 4.6rem;
+    border: 1px solid #2F2E2A;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
 }
 
 @media (max-width: 48em) {
@@ -229,6 +250,18 @@
     }
 
     &__list-item-qty {
+      font-size: 3rem;
+      line-height: 4.6rem;
+    }
+
+    &__empty-title {
+      margin-bottom: 12rem;
+      font-size: 3rem;
+      line-height: 5.2rem;
+    }
+
+    &__empty-btn {
+      padding: 3.4rem 4.2rem;
       font-size: 3rem;
       line-height: 4.6rem;
     }
