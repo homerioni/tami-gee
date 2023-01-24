@@ -391,4 +391,12 @@ $(document).ready(function () {
         $('.modal-error').fadeOut(200);
     });
 
+    // Personal
+    $('.personal__title').click(function () {
+        $('.personal__container').removeClass('active');
+    });
+    $('.personal__nav-link.active').click(function () {
+        $('.personal__container').addClass('active');
+    });
+
 });

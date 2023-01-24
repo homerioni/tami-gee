@@ -42,6 +42,7 @@
     line-height: 2.6rem;
     letter-spacing: 0.1em;
     text-transform: uppercase;
+    cursor: pointer;
 
     &:not(:last-child) {
       margin-bottom: 3rem;
@@ -94,6 +95,12 @@
     position: relative;
     margin-bottom: 24rem;
 
+    .container {
+      overflow: hidden;
+      margin-top: -8rem;
+      padding-top: 8rem;
+    }
+
     &__breadcrumbs {
       position: absolute;
       left: 3rem;
@@ -112,23 +119,60 @@
     }
 
     &__container {
-      display: block;
+      display: flex;
+
+      > * {
+        flex: none;
+        transition: transform .4s ease;
+      }
+
+      &.active {
+        > * {
+          transform: translateX(-100vw);
+        }
+      }
+    }
+
+    &__mob-title {
+      margin-top: -8rem;
+      margin-bottom: 8rem;
+      font-family: $lora;
+      font-size: 4.8rem;
+      text-transform: uppercase;
     }
 
     &__navigation {
       width: 100%;
-      margin-right: 0;
-      margin-bottom: 12rem;
+      margin-right: 6rem;
     }
 
     &__nav-link {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
       padding-bottom: 2.2rem;
       font-size: 3rem;
       line-height: 4.6rem;
 
+      &.active {
+        border-bottom: 0;
+      }
+
       &:not(:last-child) {
         margin-bottom: 5rem;
       }
+
+      &:not(:last-child, :nth-last-child(2)) {
+        border-bottom: 1px solid rgba(47, 46, 42, 0.1);
+      }
+    }
+
+    &__log-out {
+      margin-top: 56rem;
+      font-size: 3rem;
+      line-height: 4.6rem;
+      color: #A10000;
     }
 
     &__content {
@@ -136,8 +180,12 @@
     }
 
     &__title {
+      display: flex;
+      align-items: center;
+      gap: 5rem;
       margin-bottom: 7rem;
       font-size: 4.8rem;
+      cursor: pointer;
     }
 
     &__date {

@@ -3924,6 +3924,7 @@ body {
   line-height: 2.6rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  cursor: pointer;
 }
 .personal__nav-link:not(:last-child) {
   margin-bottom: 3rem;
@@ -3971,6 +3972,11 @@ body {
     position: relative;
     margin-bottom: 24rem;
   }
+  .personal .container {
+    overflow: hidden;
+    margin-top: -8rem;
+    padding-top: 8rem;
+  }
   .personal__breadcrumbs {
     position: absolute;
     left: 3rem;
@@ -3984,27 +3990,78 @@ body {
     margin: 0 2rem;
   }
   .personal__container {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .personal__container > * {
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+    -webkit-transition: -webkit-transform 0.4s ease;
+    transition: -webkit-transform 0.4s ease;
+    transition: transform 0.4s ease;
+    transition: transform 0.4s ease, -webkit-transform 0.4s ease;
+  }
+  .personal__container.active > * {
+    -webkit-transform: translateX(-100vw);
+            transform: translateX(-100vw);
+  }
+  .personal__mob-title {
+    margin-top: -8rem;
+    margin-bottom: 8rem;
+    font-family: "Lora";
+    font-size: 4.8rem;
+    text-transform: uppercase;
   }
   .personal__navigation {
     width: 100%;
-    margin-right: 0;
-    margin-bottom: 12rem;
+    margin-right: 6rem;
   }
   .personal__nav-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
     padding-bottom: 2.2rem;
     font-size: 3rem;
     line-height: 4.6rem;
   }
+  .personal__nav-link.active {
+    border-bottom: 0;
+  }
   .personal__nav-link:not(:last-child) {
     margin-bottom: 5rem;
+  }
+  .personal__nav-link:not(:last-child, :nth-last-child(2)) {
+    border-bottom: 1px solid rgba(47, 46, 42, 0.1);
+  }
+  .personal__log-out {
+    margin-top: 56rem;
+    font-size: 3rem;
+    line-height: 4.6rem;
+    color: #A10000;
   }
   .personal__content {
     width: 100%;
   }
   .personal__title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 5rem;
     margin-bottom: 7rem;
     font-size: 4.8rem;
+    cursor: pointer;
   }
   .personal__date {
     margin-bottom: 2rem;
