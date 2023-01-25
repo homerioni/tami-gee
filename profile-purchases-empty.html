@@ -301,20 +301,48 @@
 <main>
     <section class="personal">
         <div class="container">
-            <div class="personal__breadcrumbs">
+            <div class="personal__breadcrumbs desktop">
                 <a href="" class="personal__breadcrumb">Главная</a>
                 <a href="" class="personal__breadcrumb">Личный кабинет</a>
                 <a href="" class="personal__breadcrumb">Мои покупки</a>
             </div>
-            <div class="personal__container">
+            <div class="personal__container active">
                 <nav class="personal__navigation">
-                    <a href="" class="personal__nav-link">Личные данные</a>
-                    <a href="" class="personal__nav-link active">мои покупки</a>
-                    <a href="" class="personal__nav-link">избранное</a>
-                    <a href="" class="personal__log-out">выйти</a>
+                    <p class="personal__mob-title mobile">личный кабинет</p>
+                    <a href="" class="personal__nav-link">
+                        <span>Личные данные</span>
+                        <svg class="mobile" width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L5 5.5L1 10" stroke="#2F2E2A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <span class="personal__nav-link active">
+                        <span>мои покупки</span>
+                        <svg class="mobile" width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L5 5.5L1 10" stroke="#2F2E2A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                    <a href="" class="personal__nav-link">
+                        <span>избранное</span>
+                        <svg class="mobile" width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L5 5.5L1 10" stroke="#2F2E2A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <a href="" class="personal__log-out">
+                        <span>выйти</span>
+                    </a>
                 </nav>
                 <div class="personal__content">
-                    <h1 class="personal__title">мои покупки</h1>
+                    <div class="personal__breadcrumbs mobile">
+                        <a href="" class="personal__breadcrumb">Главная</a>
+                        <a href="" class="personal__breadcrumb">Личный кабинет</a>
+                        <a href="" class="personal__breadcrumb">Мои покупки</a>
+                    </div>
+                    <h1 class="personal__title">
+                        <svg class="mobile" width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 10L1 5.5L5 1" stroke="#2F2E2A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>мои покупки</span>
+                    </h1>
                     <div class="purchases">
                         <div class="purchases__tabs">
                             <label for="purchases1" class="purchases__tab active">

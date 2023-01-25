@@ -3954,7 +3954,7 @@ body {
 .personal__content {
   width: 98rem;
 }
-.personal__title {
+.personal__title, .personal__order-title {
   margin-bottom: 9.6rem;
   font-family: "Lora";
   font-size: 4rem;
@@ -3974,13 +3974,13 @@ body {
   }
   .personal .container {
     overflow: hidden;
-    margin-top: -8rem;
-    padding-top: 8rem;
+    margin-top: -16rem;
+    padding-top: 16rem;
   }
   .personal__breadcrumbs {
     position: absolute;
-    left: 3rem;
-    top: -12rem;
+    left: 0;
+    top: -13rem;
   }
   .personal__breadcrumb {
     font-size: 3rem;
@@ -4049,9 +4049,10 @@ body {
     color: #A10000;
   }
   .personal__content {
+    position: relative;
     width: 100%;
   }
-  .personal__title {
+  .personal__title, .personal__order-title {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -4334,6 +4335,9 @@ body {
 }
 .purchases__empty-btn {
   display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   padding: 2.2rem 4.6rem;
   border: 1px solid #2F2E2A;
   font-weight: 700;

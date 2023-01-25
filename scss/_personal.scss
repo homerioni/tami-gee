@@ -75,7 +75,8 @@
     width: 98rem;
   }
 
-  &__title {
+  &__title,
+  &__order-title {
     margin-bottom: 9.6rem;
     font-family: $lora;
     font-size: 4rem;
@@ -97,14 +98,14 @@
 
     .container {
       overflow: hidden;
-      margin-top: -8rem;
-      padding-top: 8rem;
+      margin-top: -16rem;
+      padding-top: 16rem;
     }
 
     &__breadcrumbs {
       position: absolute;
-      left: 3rem;
-      top: -12rem;
+      left: 0;
+      top: -13rem;
     }
 
     &__breadcrumb {
@@ -176,10 +177,12 @@
     }
 
     &__content {
+      position: relative;
       width: 100%;
     }
 
-    &__title {
+    &__title,
+    &__order-title {
       display: flex;
       align-items: center;
       gap: 5rem;
