@@ -140,6 +140,19 @@ input[type=number] {
     width: 100%;
   }
 }
+.user_errors {
+  margin-top: -5%;
+  margin-bottom: 5%;
+  font-size: 2rem;
+  color: red;
+  text-align: center;
+  border: 1px solid;
+  padding: 1.5%;
+  border-radius: 1rem;
+  display: none;
+  margin-right: 5%;
+}
+
 .modal-search {
   position: fixed;
   left: 0;
@@ -357,10 +370,16 @@ input[type=number] {
   background-color: #82827F;
 }
 .modal-login__login-box {
+  -webkit-transform: translateX(-100vw);
+          transform: translateX(-100vw);
   -webkit-transition: -webkit-transform 0.3s ease;
   transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+.modal-login__login-box.active {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 .modal-login__title {
   width: 44.7rem;
@@ -461,6 +480,26 @@ input[type=number] {
   transition: -webkit-transform 0.3s ease;
   transition: transform 0.3s ease;
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+.modal-login__register-box.active {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+.modal-login__code-box {
+  position: absolute;
+  -webkit-transform: translateX(100vw);
+          transform: translateX(100vw);
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+.modal-login__code-box.active {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+.modal-login__code-box .modal-login__desc {
+  width: 45rem;
 }
 .modal-login__link {
   display: block;
@@ -786,6 +825,9 @@ input[type=number] {
   .modal-login__btn--not-border {
     font-size: 2.4rem;
     line-height: 3.7rem;
+  }
+  .modal-login__code-box .modal-login__desc {
+    width: 100%;
   }
   .modal-login__link {
     font-size: 3rem;

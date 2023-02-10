@@ -204,7 +204,12 @@
   }
 
   &__login-box {
+    transform: translateX(-100vw);
     transition: transform .3s ease;
+
+    &.active {
+      transform: translateX(0);
+    }
   }
 
   &__title {
@@ -294,6 +299,24 @@
     position: absolute;
     transform: translateX(100vw);
     transition: transform .3s ease;
+
+    &.active {
+      transform: translateX(0);
+    }
+  }
+
+  &__code-box {
+    position: absolute;
+    transform: translateX(100vw);
+    transition: transform .3s ease;
+
+    &.active {
+      transform: translateX(0);
+    }
+
+    .modal-login__desc {
+      width: 45rem;
+    }
   }
 
   &__link {
@@ -645,6 +668,12 @@
     }
 
     &__register-box {
+    }
+
+    &__code-box {
+      .modal-login__desc {
+        width: 100%;
+      }
     }
 
     &__link {

@@ -365,6 +365,121 @@
             <a href="" class="modal-error__btn">вернуться в каталог</a>
         </div>
     </section>
+    <section class="modal-search">
+        <div class="modal-search__content">
+            <div class="modal-search__box">
+                <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.3333 19.6667C15.488 19.6667 19.6667 15.488 19.6667 10.3333C19.6667 5.17868 15.488 1 10.3333 1C5.17868 1 1 5.17868 1 10.3333C1 15.488 5.17868 19.6667 10.3333 19.6667Z" stroke="#8D8C8A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M22.0008 22.0008L16.9258 16.9258" stroke="#8D8C8A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <label class="modal-search__label">
+                    <input type="text" placeholder="Поиск по сайту...">
+                </label>
+                <button type="button" class="modal-search__btn clear-search desktop">Сбросить</button>
+                <button class="modal-search__btn">найти</button>
+                <button type="button" class="modal-search__close close"></button>
+            </div>
+            <div class="modal-search__popular-box">
+                <p class="modal-search__popular-title">Популярное</p>
+                <ul class="modal-search__popular-content">
+                    <li class="modal-search__popular-item">
+                        <a href="">платья</a>
+                    </li>
+                    <li class="modal-search__popular-item">
+                        <a href="">трикотаж</a>
+                    </li>
+                    <li class="modal-search__popular-item">
+                        <a href="">вечерняя линия</a>
+                    </li>
+                    <li class="modal-search__popular-item">
+                        <a href="">блузки/рубашки/топы</a>
+                    </li>
+                    <li class="modal-search__popular-item">
+                        <a href="">жакеты</a>
+                    </li>
+                    <li class="modal-search__popular-item">
+                        <a href="">верхняя одежда</a>
+                    </li>
+                    <li class="modal-search__popular-item">
+                        <a href="">юбки</a>
+                    </li>
+                    <li class="modal-search__popular-item">
+                        <a href="">брюки/шорты</a>
+                    </li>
+                    <li class="modal-search__popular-item">
+                        <a href="">аксессуары</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="modal-login">
+        <div class="modal-login__bg close"></div>
+        <div class="modal-login__content">
+            <button class="modal-login__close close"></button>
+            <form class="modal-login__login-box form active">
+                <h2 class="modal-login__title">
+                    личный кабинет
+                </h2>
+                <p class="modal-login__desc">
+                    Войдите в систему, чтобы добавить в избранное
+                </p>
+                <label class="modal-login__label">
+                    <input placeholder="+7 (___) ___-__-__" type="text" class="modal-login__input input-phone">
+                </label>
+                <label class="modal-login__label">
+                    <input placeholder="Пароль" type="password" class="modal-login__input">
+                </label>
+                <button type="button" class="modal-login__forgot close pop-up-recovery">Забыли пароль?</button>
+                <div class="modal-login__buttons">
+                    <button type="button" class="modal-login__btn">
+                        войти
+                    </button>
+                    <button type="button" class="modal-login__btn modal-login__btn--not-border register-box">
+                        Зарегистрироваться
+                    </button>
+                </div>
+            </form>
+            <form class="modal-login__register-box form">
+                <h2 class="modal-login__title">
+                    личный кабинет
+                </h2>
+                <p class="modal-login__desc">
+                    Войдите в систему, чтобы добавить в избранное
+                </p>
+                <label class="modal-login__label">
+                    <input placeholder="Имя" type="password" class="modal-login__input">
+                </label>
+                <label class="modal-login__label">
+                    <input placeholder="Фамилия" type="password" class="modal-login__input">
+                </label>
+                <label class="modal-login__label">
+                    <input placeholder="+7 (___) ___-__-__" type="text" class="modal-login__input input-phone">
+                </label>
+                <label class="modal-login__label">
+                    <input placeholder="Пароль" type="password" class="modal-login__input">
+                </label>
+                <label class="modal-login__label">
+                    <input placeholder="Повторите пароль" type="password" class="modal-login__input">
+                </label>
+                <div class="modal-login__buttons">
+                    <button type="button" class="modal-login__btn code-box">Зарегистрироваться</button>
+                    <button type="button" class="modal-login__btn modal-login__btn--not-border login-box">войти</button>
+                </div>
+            </form>
+            <form class="modal-login__code-box form">
+                <h2 class="modal-login__title">Регистрация</h2>
+                <p class="modal-login__desc">
+                    На веденный вами номер выслан код подтверждения. Введите код в поле, для продолжения восстановления пароля.
+                </p>
+                <label class="modal-login__label">
+                    <input placeholder="Код подтверждения" type="text" class="modal-recovery__input">
+                </label>
+                <button type="button" class="modal-login__btn">Зарегистрироваться</button>
+            </form>
+            <a href="" class="modal-login__link">Политика конфиденциальности</a>
+        </div>
+    </section>
 </main>
 
 <footer class="footer">

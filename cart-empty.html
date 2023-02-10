@@ -456,7 +456,7 @@
     <div class="modal-login__bg close"></div>
     <div class="modal-login__content">
         <button class="modal-login__close close"></button>
-        <div class="modal-login__login-box">
+        <form class="modal-login__login-box form active">
             <h2 class="modal-login__title">
                 личный кабинет
             </h2>
@@ -469,7 +469,7 @@
             <label class="modal-login__label">
                 <input placeholder="Пароль" type="password" class="modal-login__input">
             </label>
-            <a href="" class="modal-login__forgot">Забыли пароль?</a>
+            <button type="button" class="modal-login__forgot close pop-up-recovery">Забыли пароль?</button>
             <div class="modal-login__buttons">
                 <button type="button" class="modal-login__btn">
                     войти
@@ -478,8 +478,8 @@
                     Зарегистрироваться
                 </button>
             </div>
-        </div>
-        <div class="modal-login__register-box">
+        </form>
+        <form class="modal-login__register-box form">
             <h2 class="modal-login__title">
                 личный кабинет
             </h2>
@@ -502,10 +502,20 @@
                 <input placeholder="Повторите пароль" type="password" class="modal-login__input">
             </label>
             <div class="modal-login__buttons">
-                <button class="modal-login__btn">Зарегистрироваться</button>
-                <button class="modal-login__btn modal-login__btn--not-border login-box">войти</button>
+                <button type="button" class="modal-login__btn code-box">Зарегистрироваться</button>
+                <button type="button" class="modal-login__btn modal-login__btn--not-border login-box">войти</button>
             </div>
-        </div>
+        </form>
+        <form class="modal-login__code-box form">
+            <h2 class="modal-login__title">Регистрация</h2>
+            <p class="modal-login__desc">
+                На веденный вами номер выслан код подтверждения. Введите код в поле, для продолжения восстановления пароля.
+            </p>
+            <label class="modal-login__label">
+                <input placeholder="Код подтверждения" type="text" class="modal-recovery__input">
+            </label>
+            <button type="button" class="modal-login__btn">Зарегистрироваться</button>
+        </form>
         <a href="" class="modal-login__link">Политика конфиденциальности</a>
     </div>
 </section>

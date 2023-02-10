@@ -333,15 +333,21 @@ $(document).ready(function () {
         $('.modal-login__content').removeClass('active');
         setTimeout(function () {
             $('.modal-login').removeAttr('style');
-        }, 300)
+            $('.modal-login__content .form').removeClass('active');
+            $('.modal-login__login-box').addClass('active');
+        }, 300);
     });
     $('.register-box').click(function () {
-        $('.modal-login__login-box').css('transform', 'translate(-100vw)');
-        $('.modal-login__register-box').css('transform', 'translate(0)');
+        $('.modal-login__content .form').removeClass('active');
+        $('.modal-login__register-box').addClass('active');
     });
     $('.login-box').click(function () {
-        $('.modal-login__login-box').css('transform', 'translate(0)');
-        $('.modal-login__register-box').css('transform', 'translateX(100vw)');
+        $('.modal-login__content .form').removeClass('active');
+        $('.modal-login__login-box').addClass('active');
+    });
+    $('.code-box').click(function () {
+        $('.modal-login__content .form').removeClass('active');
+        $('.modal-login__code-box').addClass('active');
     });
 
     // Information
