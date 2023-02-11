@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="another website">
+    <title>Страница</title>
+
+    <link rel="stylesheet" href="font/stylesheet.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+<header class="header">
+    <div class="header__blur-bg"></div>
+    <nav class="container header__container">
+        <div class="header__buttons mobile">
+            <button class="header__burger-btn header__btn">
+                <span></span>
+            </button>
+            <button type="button" class="header__btn search-btn">
+                <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.3333 19.6667C15.488 19.6667 19.6667 15.488 19.6667 10.3333C19.6667 5.17868 15.488 1 10.3333 1C5.17868 1 1 5.17868 1 10.3333C1 15.488 5.17868 19.6667 10.3333 19.6667Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M21.9998 22.0008L16.9248 16.9258" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+        <a href="" class="header__logo">
+            tamI gee
+        </a>
+        <div class="header__menu-box">
+            <ul class="header__menu">
+                <li class="header__menu-item header-catalog">
+                    <a href="">
+                        <span>Каталог</span>
+                        <svg class="arrow mobile" width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L5 5.5L1 10" stroke="#2F2E2A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <div class="header__catalog">
+                        <div class="container">
+                            <button type="button" class="header__catalog-back-link mobile">
+                                <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 10L1 5.5L5 1" stroke="#2F2E2A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span>Каталог</span>
+                            </button>
+                            <div class="header__catalog-item active">
+                                <a href="" class="sublist">
+                                    <span>одежда</span>
+                                    <svg class="mobile" width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 1L5 5.5L1 10" stroke="#2F2E2A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                                <div class="header__catalog-content">
+                                    <ul class="header__catalog-list">
+                                        <li class="header__catalog-list-item mobile">
+                                            <button type="button" class="header__catalog-back-link">
+                                                <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M5 10L1 5.5L5 1" stroke="#2F2E2A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                </svg>
+                                                <span>одежда</span>
+                                            </button>
+                                        </li>
+                                        <li class="header__catalog-list-item active">
+                                            <a href="">платья</a>
+                                            <div class="header__catalog-list-img desktop">
+                                                <img src="img/header-catalog-list-img.webp" alt="">
+                                            </div>
+                                        </li>
+                                        <li class="header__catalog-list-item">
+                                            <a href="">блузки/рубашки/топы</a>
+                                            <div class="header__catalog-list-img desktop">
+                                                <img src="img/header-catalog-img1.webp" alt="">
+                                            </div>
+                                        </li>
+                                        <li class="header__catalog-list-item">
+                                            <a href="">юбки</a>
+                                            <div class="header__catalog-list-img desktop">
+                                                <img src="img/header-catalog-list-img.webp" alt="">
+                                            </div>
+                                        </li>
+                                        <li class="header__catalog-list-item">
+                                            <a href="">трикотаж</a>
+                                            <div class="header__catalog-list-img desktop">
+                                                <img src="img/header-catalog-img1.webp" alt="">
+                                            </div>
+                                        </li>
+                                        <li class="header__catalog-list-item">
+                                            <a href="">жакеты</a>
+                                            <div class="header__catalog-list-img desktop">
+                                                <img src="img/header-catalog-list-img.webp" alt="">
+                                            </div>
+                                        </li>
+                                        <li class="header__catalog-list-item">
+                                            <a href="">брюки/шорты</a>
+                                            <div class="header__catalog-list-img desktop">
+                                                <img src="img/header-catalog-img1.webp" alt="">
+                                            </div>
+                                        </li>
+                                        <li class="header__catalog-list-item">
+                                            <a href="">вечерняя линия</a>
+                                            <div class="header__catalog-list-img desktop">
+                                                <img src="img/header-catalog-list-img.webp" alt="">
+                                            </div>
+                                        </li>
+                                        <li class="header__catalog-list-item">
+                                            <a href="">верхняя одежда</a>
+                                            <div class="header__catalog-list-img desktop">
+                                                <img src="img/header-catalog-img1.webp" alt="">
+                                            </div>
+                                        </li>
+                                        <li class="header__catalog-list-item">
+                                            <a href="">аксессуары</a>
+                                            <div class="header__catalog-list-img desktop">
+                                                <img src="img/header-catalog-list-img.webp" alt="">
+                                            </div>
+                                        </li>
+                                        <li class="header__catalog-list-link desktop">
+                                            <a href="">смотреть все</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="header__catalog-item">
+                                <a href="">осень-зима 2022-2023</a>
+                                <div class="header__catalog-content desktop">
+                                    <div class="header__catalog-img-box">
+                                        <img src="img/header-catalog-img1.webp" alt="">
+                                        <a href="" class="header__catalog-img-btn">смотреть</a>
+                                    </div>
+                                    <div class="header__box-info">
+                                        <div class="header__info-logo">
+                                            <img src="img/header-info-logo.svg" alt="">
+                                        </div>
+                                        <p class="header__info-date">
+                                            since
+                                            <br>2010
+                                        </p>
+                                        <p class="header__info-text">
+                                            истинно русские
+                                            и&nbsp;близкие сердцу вещи легли в основу бренда
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header__catalog-item">
+                                <a href="">lookbook</a>
+                                <div class="header__catalog-content desktop">
+                                    <div class="header__catalog-img-box">
+                                        <img src="img/header-catalog-list-img.webp" alt="">
+                                        <a href="" class="header__catalog-img-btn">смотреть</a>
+                                    </div>
+                                    <div class="header__box-info">
+                                        <div class="header__info-logo">
+                                            <img src="img/header-info-logo.svg" alt="">
+                                        </div>
+                                        <p class="header__info-date">
+                                            since
+                                            <br>2010
+                                        </p>
+                                        <p class="header__info-text">
+                                            истинно русские
+                                            и&nbsp;близкие сердцу вещи легли в основу бренда
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header__catalog-item">
+                                <a href="">вечерняя коллекция</a>
+                                <div class="header__catalog-content desktop">
+                                    <div class="header__catalog-img-box">
+                                        <img src="img/header-catalog-img1.webp" alt="">
+                                        <a href="" class="header__catalog-img-btn">смотреть</a>
+                                    </div>
+                                    <div class="header__box-info">
+                                        <div class="header__info-logo">
+                                            <img src="img/header-info-logo.svg" alt="">
+                                        </div>
+                                        <p class="header__info-date">
+                                            since
+                                            <br>2010
+                                        </p>
+                                        <p class="header__info-text">
+                                            истинно русские
+                                            и&nbsp;близкие сердцу вещи легли в основу бренда
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header__catalog-img-box mobile">
+                                <img src="img/header-catalog-list-img.webp" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="header__menu-item">
+                    <a href="">
+                        <span>О бренде</span>
+                    </a>
+                </li>
+                <li class="header__menu-item">
+                    <a href="">
+                        <span>Покупателям</span>
+                    </a>
+                </li>
+                <li class="header__menu-item">
+                    <a href="">
+                        <span>Контакты</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="header__menu-mob mobile">
+                <li class="header__menu-item">
+                    <button type="button" class="header__lang-btn-mob">
+                        <span class="language">RU</span>
+                        <span>Язык</span>
+                        <svg class="arrow" width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 1L5 5.5L1 10" stroke="#2F2E2A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </li>
+                <li class="header__menu-item">
+                    <a href="">
+                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="11" cy="6" r="5" stroke="#2F2E2A" stroke-width="2"/>
+                            <path d="M21 22C21 18.134 16.5228 15 11 15C5.47715 15 1 18.134 1 22" stroke="#2F2E2A" stroke-width="2"/>
+                        </svg>
+                        <span>Личный кабинет</span>
+                    </a>
+                </li>
+                <li class="header__menu-item">
+                    <a href="">
+                        <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21.1652 2.67974L20.4943 3.35235L20.4946 3.35266L21.1652 2.67974ZM17.099 1V1.95V1ZM13.0327 2.67974L13.7035 3.35251L13.7036 3.35235L13.0327 2.67974ZM11.9247 3.7844L11.254 4.45717L11.9247 5.12587L12.5955 4.45717L11.9247 3.7844ZM10.8167 2.67974L10.146 3.35251L10.146 3.35251L10.8167 2.67974ZM2.68428 10.7875L3.35501 10.1148V10.1148L2.68428 10.7875ZM3.7923 11.8922L3.12156 12.565L3.12156 12.565L3.7923 11.8922ZM11.9247 20L11.254 20.6728L11.9247 21.3415L12.5955 20.6728L11.9247 20ZM20.0571 11.8922L19.3864 11.2194L20.0571 11.8922ZM21.1652 10.7875L20.4946 10.1146L20.4944 10.1148L21.1652 10.7875ZM21.8361 2.00713C21.2138 1.38648 20.4752 0.894282 19.6624 0.558528L18.937 2.31459C19.5196 2.55527 20.0487 2.90795 20.4943 3.35235L21.8361 2.00713ZM19.6624 0.558528C18.8496 0.222776 17.9786 0.05 17.099 0.05V1.95C17.7298 1.95 18.3543 2.07391 18.937 2.31459L19.6624 0.558528ZM17.099 0.05C16.2193 0.05 15.3483 0.222776 14.5355 0.558528L15.2609 2.31459C15.8436 2.07391 16.4681 1.95 17.099 1.95V0.05ZM14.5355 0.558528C13.7227 0.894282 12.9841 1.38648 12.3618 2.00713L13.7036 3.35235C14.1492 2.90795 14.6783 2.55527 15.2609 2.31459L14.5355 0.558528ZM12.362 2.00697L11.254 3.11163L12.5955 4.45717L13.7035 3.35251L12.362 2.00697ZM12.5955 3.11163L11.4874 2.00697L10.146 3.35251L11.254 4.45717L12.5955 3.11163ZM11.4874 2.00697C10.2306 0.753968 8.52665 0.0505573 6.75049 0.0505573V1.95056C8.02459 1.95056 9.24592 2.45519 10.146 3.35251L11.4874 2.00697ZM6.75049 0.0505573C4.97434 0.0505573 3.27035 0.753968 2.01355 2.00697L3.35501 3.35251C4.25506 2.45519 5.47639 1.95056 6.75049 1.95056V0.0505573ZM2.01355 2.00697C0.756645 3.26007 0.05 4.96024 0.05 6.73364H1.95C1.95 5.46602 2.45506 4.24973 3.35501 3.35251L2.01355 2.00697ZM0.05 6.73364C0.05 8.50703 0.756645 10.2072 2.01355 11.4603L3.35501 10.1148C2.45506 9.21754 1.95 8.00126 1.95 6.73364H0.05ZM2.01355 11.4603L3.12156 12.565L4.46303 11.2194L3.35501 10.1148L2.01355 11.4603ZM3.12156 12.565L11.254 20.6728L12.5955 19.3272L4.46303 11.2194L3.12156 12.565ZM12.5955 20.6728L20.7279 12.565L19.3864 11.2194L11.254 19.3272L12.5955 20.6728ZM20.7279 12.565L21.8359 11.4603L20.4944 10.1148L19.3864 11.2194L20.7279 12.565ZM21.8357 11.4605C22.4583 10.8401 22.9523 10.1034 23.2894 9.29229L21.5349 8.56311C21.2938 9.14319 20.9403 9.67043 20.4946 10.1146L21.8357 11.4605ZM23.2894 9.29229C23.6265 8.48121 23.8 7.61176 23.8 6.73364H21.9C21.9 7.36137 21.7759 7.98302 21.5349 8.56311L23.2894 9.29229ZM23.8 6.73364C23.8 5.85551 23.6265 4.98606 23.2894 4.17498L21.5349 4.90417C21.7759 5.48425 21.9 6.1059 21.9 6.73364H23.8ZM23.2894 4.17498C22.9523 3.36391 22.4583 2.62718 21.8357 2.00681L20.4946 3.35266C20.9403 3.79685 21.2938 4.32408 21.5349 4.90417L23.2894 4.17498Z" fill="#2F2E2A"/>
+                        </svg>
+                        <span>Избранное</span>
+                    </a>
+                </li>
+                <li class="header__menu-item">
+                    <a href="">
+                        <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21.9685 18.1465C21.9685 18.5245 21.8845 18.913 21.706 19.291C21.5275 19.669 21.2965 20.026 20.992 20.362C20.4775 20.929 19.9105 21.3385 19.27 21.601C18.64 21.8635 17.9575 22 17.2225 22C16.1515 22 15.007 21.748 13.7995 21.2335C12.592 20.719 11.3845 20.026 10.1875 19.1545C8.98 18.2725 7.8355 17.296 6.7435 16.2145C5.662 15.1225 4.6855 13.978 3.814 12.781C2.953 11.584 2.26 10.387 1.756 9.2005C1.252 8.0035 1 6.859 1 5.767C1 5.053 1.126 4.3705 1.378 3.7405C1.63 3.1 2.029 2.512 2.5855 1.987C3.2575 1.3255 3.9925 1 4.7695 1C5.0635 1 5.3575 1.063 5.62 1.189C5.893 1.315 6.1345 1.504 6.3235 1.777L8.7595 5.2105C8.9485 5.473 9.085 5.7145 9.1795 5.9455C9.274 6.166 9.3265 6.3865 9.3265 6.586C9.3265 6.838 9.253 7.09 9.106 7.3315C8.9695 7.573 8.77 7.825 8.518 8.077L7.72 8.9065C7.6045 9.022 7.552 9.1585 7.552 9.3265C7.552 9.4105 7.5625 9.484 7.5835 9.568C7.615 9.652 7.6465 9.715 7.6675 9.778C7.8565 10.1245 8.182 10.576 8.644 11.122C9.1165 11.668 9.6205 12.2245 10.1665 12.781C10.7335 13.3375 11.2795 13.852 11.836 14.3245C12.382 14.7865 12.8335 15.1015 13.1905 15.2905C13.243 15.3115 13.306 15.343 13.3795 15.3745C13.4635 15.406 13.5475 15.4165 13.642 15.4165C13.8205 15.4165 13.957 15.3535 14.0725 15.238L14.8705 14.4505C15.133 14.188 15.385 13.9885 15.6265 13.8625C15.868 13.7155 16.1095 13.642 16.372 13.642C16.5715 13.642 16.7815 13.684 17.0125 13.7785C17.2435 13.873 17.485 14.0095 17.7475 14.188L21.223 16.6555C21.496 16.8445 21.685 17.065 21.8005 17.3275C21.9055 17.59 21.9685 17.8525 21.9685 18.1465Z" stroke="#2F2E2A" stroke-width="1.5" stroke-miterlimit="10"/>
+                        </svg>
+                        <span>8 800 747 32 12</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="header__buttons">
+            <div class="header__language-btn-box">
+                <button type="button" class="header__language-btn desktop">
+                    <span>RU</span>
+                    <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 1L5.5 5L1 1" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <ul class="header__language-list">
+                    <li class="header__language-back-link mobile">
+                        <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 10L1 5.5L5 1" stroke="#2F2E2A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>язык</span>
+                    </li>
+                    <li class="header__language-item active">
+                        <a>RU</a>
+                    </li>
+                    <li class="header__language-item">
+                        <a href="#">EN</a>
+                    </li>
+                </ul>
+            </div>
+            <button type="button" class="header__btn search-btn desktop">
+                <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.3333 19.6667C15.488 19.6667 19.6667 15.488 19.6667 10.3333C19.6667 5.17868 15.488 1 10.3333 1C5.17868 1 1 5.17868 1 10.3333C1 15.488 5.17868 19.6667 10.3333 19.6667Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M21.9998 22.0008L16.9248 16.9258" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <a href="" class="header__btn desktop">
+                <svg class="path-fill" width="26" height="24" viewBox="0 0 26 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22.7027 3.18635L21.9954 3.89329L21.9958 3.89362L22.7027 3.18635ZM18.3265 1.37305V2.37305V1.37305ZM13.9502 3.18635L14.6573 3.89346L14.6575 3.89329L13.9502 3.18635ZM12.7577 4.37885L12.0506 5.08596L12.7577 5.79306L13.4648 5.08596L12.7577 4.37885ZM11.5652 3.18635L10.8581 3.89346V3.89346L11.5652 3.18635ZM2.8127 11.9389L3.51981 11.2317L2.8127 11.9389ZM4.0052 13.1314L3.29809 13.8385L4.0052 13.1314ZM12.7577 21.8839L12.0506 22.591L12.7577 23.2981L13.4648 22.591L12.7577 21.8839ZM21.5102 13.1314L22.2173 13.8385L21.5102 13.1314ZM22.7027 11.9389L21.9958 11.2316L21.9956 11.2317L22.7027 11.9389ZM23.41 2.47941C22.7425 1.81163 21.95 1.2819 21.0778 0.920485L20.3122 2.76815C20.9417 3.029 21.5137 3.41133 21.9954 3.89329L23.41 2.47941ZM21.0778 0.920485C20.2055 0.559069 19.2706 0.373047 18.3265 0.373047V2.37305C19.0079 2.37305 19.6826 2.50731 20.3122 2.76815L21.0778 0.920485ZM18.3265 0.373047C17.3823 0.373047 16.4474 0.559069 15.5751 0.920485L16.3407 2.76815C16.9703 2.50731 17.645 2.37305 18.3265 2.37305V0.373047ZM15.5751 0.920485C14.7029 1.2819 13.9104 1.81163 13.2429 2.47941L14.6575 3.89329C15.1392 3.41133 15.7112 3.029 16.3407 2.76815L15.5751 0.920485ZM13.2431 2.47924L12.0506 3.67174L13.4648 5.08596L14.6573 3.89346L13.2431 2.47924ZM13.4648 3.67174L12.2723 2.47924L10.8581 3.89346L12.0506 5.08596L13.4648 3.67174ZM12.2723 2.47924C10.9241 1.13105 9.09558 0.373648 7.18895 0.373649V2.37365C8.56515 2.37365 9.88498 2.92034 10.8581 3.89346L12.2723 2.47924ZM7.18895 0.373649C5.28232 0.373649 3.45379 1.13105 2.1056 2.47924L3.51981 3.89346C4.49293 2.92034 5.81276 2.37365 7.18895 2.37365V0.373649ZM2.1056 2.47924C0.757405 3.82743 0 5.65597 0 7.5626H2C2 6.1864 2.54669 4.86658 3.51981 3.89346L2.1056 2.47924ZM0 7.5626C0 9.46923 0.757405 11.2978 2.1056 12.646L3.51981 11.2317C2.54669 10.2586 2 8.9388 2 7.5626H0ZM2.1056 12.646L3.29809 13.8385L4.71231 12.4242L3.51981 11.2317L2.1056 12.646ZM3.29809 13.8385L12.0506 22.591L13.4648 21.1767L4.71231 12.4242L3.29809 13.8385ZM13.4648 22.591L22.2173 13.8385L20.8031 12.4242L12.0506 21.1767L13.4648 22.591ZM22.2173 13.8385L23.4098 12.646L21.9956 11.2317L20.8031 12.4242L22.2173 13.8385ZM23.4096 12.6461C24.0774 11.9787 24.6071 11.1862 24.9686 10.3139L23.1209 9.54833C22.86 10.1779 22.4777 10.7498 21.9958 11.2316L23.4096 12.6461ZM24.9686 10.3139C25.33 9.44167 25.516 8.50676 25.516 7.5626H23.516C23.516 8.24404 23.3817 8.9188 23.1209 9.54833L24.9686 10.3139ZM25.516 7.5626C25.516 6.61844 25.33 5.68353 24.9686 4.81128L23.1209 5.57687C23.3817 6.2064 23.516 6.88117 23.516 7.5626H25.516ZM24.9686 4.81128C24.6071 3.93904 24.0774 3.14654 23.4096 2.47908L21.9958 3.89362C22.4777 4.37536 22.86 4.94733 23.1209 5.57687L24.9686 4.81128Z" fill="white"/>
+                </svg>
+            </a>
+            <button type="button" class="header__btn pop-up-login">
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="11" cy="6" r="5" stroke="white" stroke-width="2"/>
+                    <path d="M21 22C21 18.134 16.5228 15 11 15C5.47715 15 1 18.134 1 22" stroke="white" stroke-width="2"/>
+                </svg>
+            </button>
+            <a href="" class="header__btn">
+                <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="1" y="8.02344" width="19.6818" height="13.6591" stroke="white" stroke-width="2"/>
+                    <path d="M15.6588 9.43182V5.81818C15.6588 3.15717 13.5017 1 10.8406 1V1C8.17963 1 6.02246 3.15717 6.02246 5.81818L6.02246 9.43182" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </a>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <section class="lookbook">
+        <div class="lookbook__intro container">
+            <p class="lookbook__title">весна 2023</p>
+            <p class="lookbook__desc">
+                Lorem ipsum dolor sit amet consectetur. Ut turpis dignissim scelerisque sit egestas pellentesque nec commodo.
+            </p>
+            <div class="lookbook__video">
+                <video poster="img/lookbook-video-img.webp">
+                    <source src="video.mp4">
+                </video>
+                <div class="lookbook__video-play">
+                    <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 7L0 13.9282V0.0717969L12 7Z" fill="#1D1D1D"/>
+                    </svg>
+                </div>
+<!--                <button type="button" class="lookbook__video-full">-->
+<!--                    <img src="img/full-screen.svg" alt="">-->
+<!--                </button>-->
+            </div>
+        </div>
+        <ul class="lookbook__list container">
+            <li class="lookbook__item">
+                <a href="">
+                     <img src="img/lookbook-img1.webp" alt="">
+                </a>
+            </li>
+            <li class="lookbook__item">
+                <a href="">
+                     <img src="img/lookbook-img2.webp" alt="">
+                </a>
+            </li>
+            <li class="lookbook__item">
+                <a href="">
+                     <img src="img/lookbook-img3.webp" alt="">
+                </a>
+            </li>
+            <li class="lookbook__item">
+                <a href="">
+                     <img src="img/lookbook-img4.webp" alt="">
+                </a>
+            </li>
+            <li class="lookbook__item">
+                <a href="">
+                     <img src="img/lookbook-img5.webp" alt="">
+                </a>
+            </li>
+            <li class="lookbook__item">
+                <a href="">
+                     <img src="img/lookbook-img6.webp" alt="">
+                </a>
+            </li>
+            <li class="lookbook__item">
+                <a href="">
+                     <img src="img/lookbook-img7.webp" alt="">
+                </a>
+            </li>
+            <li class="lookbook__item">
+                <a href="">
+                     <img src="img/lookbook-img8.webp" alt="">
+                </a>
+            </li>
+            <li class="lookbook__item">
+                <a href="">
+                     <img src="img/lookbook-img9.webp" alt="">
+                </a>
+            </li>
+            <li class="lookbook__item">
+                <a href="">
+                    <img src="img/lookbook-img10.webp" alt="">
+                </a>
+            </li>
+            <li class="lookbook__item">
+                <a href="">
+                    <img src="img/lookbook-img11.webp" alt="">
+                </a>
+            </li>
+        </ul>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="footer__content-top container">
+        <div class="footer__box footer__box--logo">
+            <a href="" class="footer__logo desktop">
+                tamI gee
+            </a>
+            <div class="footer__socials">
+                <a href="" class="footer__social">
+                    <img src="img/telegram-icon.svg" alt="">
+                </a>
+                <a href="" class="footer__social">
+                    <img src="img/pinterest-icon.svg" alt="">
+                </a>
+                <a href="" class="footer__social">
+                    <img src="img/instagram-icon.svg" alt="">
+                </a>
+            </div>
+        </div>
+        <div class="footer__box">
+            <h3 class="footer__list-name">Помощь</h3>
+            <ul class="footer__list">
+                <li class="footer__list-item">
+                    <a href="">Оплата</a>
+                </li>
+                <li class="footer__list-item">
+                    <a href="">Доставка</a>
+                </li>
+                <li class="footer__list-item">
+                    <a href="">Гид по размерам</a>
+                </li>
+                <li class="footer__list-item">
+                    <a href="">Программа привелегий</a>
+                </li>
+                <li class="footer__list-item">
+                    <a href="">Возврат</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__box">
+            <h3 class="footer__list-name">Компания</h3>
+            <ul class="footer__list">
+                <li class="footer__list-item">
+                    <a href="">О бренде</a>
+                </li>
+                <li class="footer__list-item">
+                    <a href="">Каталог</a>
+                </li>
+                <li class="footer__list-item">
+                    <a href="">Lookbook</a>
+                </li>
+                <li class="footer__list-item">
+                    <a href="">Контакты</a>
+                </li>
+                <li class="footer__list-item">
+                    <a href="">СМИ о нас</a>
+                </li>
+            </ul>
+        </div>
+        <form class="footer__box">
+            <h3 class="footer__list-name">подписаться на рассылку</h3>
+            <label class="footer__label">
+                <input type="email" placeholder="Ваш E-mail" class="footer__input">
+                <button class="footer__label-arrow">
+                    <svg width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L5 5.5L1 10" stroke="#2F2E2A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </label>
+            <p class="footer__label-desc">
+                Отправляя форму, вы даете согласие на&nbsp;обработку данных
+            </p>
+        </form>
+    </div>
+    <div class="footer__content-bottom container">
+        <div class="footer__box">
+            <p>© 2022 Tami Gee.</p>
+        </div>
+        <div class="footer__box desktop"></div>
+        <div class="footer__box">
+            <a href="">Политика конфиденциальности</a>
+        </div>
+        <div class="footer__box">
+            <a href="">Пользовательское соглашение</a>
+        </div>
+    </div>
+</footer>
+
+
+<section class="modal-search">
+    <div class="modal-search__content">
+        <div class="modal-search__box">
+            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.3333 19.6667C15.488 19.6667 19.6667 15.488 19.6667 10.3333C19.6667 5.17868 15.488 1 10.3333 1C5.17868 1 1 5.17868 1 10.3333C1 15.488 5.17868 19.6667 10.3333 19.6667Z" stroke="#8D8C8A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M22.0008 22.0008L16.9258 16.9258" stroke="#8D8C8A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <label class="modal-search__label">
+                <input type="text" placeholder="Поиск по сайту...">
+            </label>
+            <button type="button" class="modal-search__btn clear-search desktop">Сбросить</button>
+            <button class="modal-search__btn">найти</button>
+            <button type="button" class="modal-search__close close"></button>
+        </div>
+        <div class="modal-search__popular-box">
+            <p class="modal-search__popular-title">Популярное</p>
+            <ul class="modal-search__popular-content">
+                <li class="modal-search__popular-item">
+                    <a href="">платья</a>
+                </li>
+                <li class="modal-search__popular-item">
+                    <a href="">трикотаж</a>
+                </li>
+                <li class="modal-search__popular-item">
+                    <a href="">вечерняя линия</a>
+                </li>
+                <li class="modal-search__popular-item">
+                    <a href="">блузки/рубашки/топы</a>
+                </li>
+                <li class="modal-search__popular-item">
+                    <a href="">жакеты</a>
+                </li>
+                <li class="modal-search__popular-item">
+                    <a href="">верхняя одежда</a>
+                </li>
+                <li class="modal-search__popular-item">
+                    <a href="">юбки</a>
+                </li>
+                <li class="modal-search__popular-item">
+                    <a href="">брюки/шорты</a>
+                </li>
+                <li class="modal-search__popular-item">
+                    <a href="">аксессуары</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<section class="modal-login">
+    <div class="modal-login__bg close"></div>
+    <div class="modal-login__content">
+        <button class="modal-login__close close"></button>
+        <form class="modal-login__login-box form active">
+            <h2 class="modal-login__title">
+                личный кабинет
+            </h2>
+            <p class="modal-login__desc">
+                Войдите в систему, чтобы добавить в избранное
+            </p>
+            <label class="modal-login__label">
+                <input placeholder="+7 (___) ___-__-__" type="text" class="modal-login__input input-phone">
+            </label>
+            <label class="modal-login__label">
+                <input placeholder="Пароль" type="password" class="modal-login__input">
+            </label>
+            <button type="button" class="modal-login__forgot close pop-up-recovery">Забыли пароль?</button>
+            <div class="modal-login__buttons">
+                <button type="button" class="modal-login__btn">
+                    войти
+                </button>
+                <button type="button" class="modal-login__btn modal-login__btn--not-border register-box">
+                    Зарегистрироваться
+                </button>
+            </div>
+        </form>
+        <form class="modal-login__register-box form">
+            <h2 class="modal-login__title">
+                личный кабинет
+            </h2>
+            <p class="modal-login__desc">
+                Войдите в систему, чтобы добавить в избранное
+            </p>
+            <label class="modal-login__label">
+                <input placeholder="Имя" type="password" class="modal-login__input">
+            </label>
+            <label class="modal-login__label">
+                <input placeholder="Фамилия" type="password" class="modal-login__input">
+            </label>
+            <label class="modal-login__label">
+                <input placeholder="+7 (___) ___-__-__" type="text" class="modal-login__input input-phone">
+            </label>
+            <label class="modal-login__label">
+                <input placeholder="Пароль" type="password" class="modal-login__input">
+            </label>
+            <label class="modal-login__label">
+                <input placeholder="Повторите пароль" type="password" class="modal-login__input">
+            </label>
+            <div class="modal-login__buttons">
+                <button type="button" class="modal-login__btn code-box">Зарегистрироваться</button>
+                <button type="button" class="modal-login__btn modal-login__btn--not-border login-box">войти</button>
+            </div>
+        </form>
+        <form class="modal-login__code-box form">
+            <h2 class="modal-login__title">Регистрация</h2>
+            <p class="modal-login__desc">
+                На веденный вами номер выслан код подтверждения. Введите код в поле, для продолжения восстановления пароля.
+            </p>
+            <label class="modal-login__label">
+                <input placeholder="Код подтверждения" type="text" class="modal-recovery__input">
+            </label>
+            <button type="button" class="modal-login__btn">Зарегистрироваться</button>
+        </form>
+        <a href="" class="modal-login__link">Политика конфиденциальности</a>
+    </div>
+</section>
+
+
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/swiper.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

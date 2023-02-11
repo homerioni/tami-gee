@@ -405,4 +405,38 @@ $(document).ready(function () {
         $('.personal__container').addClass('active');
     });
 
+    // Video lookbook
+    let videoHoverTimeout;
+    $('.lookbook__video').click(function () {
+        if ($(this).hasClass('play')) {
+            document.querySelector('.lookbook__video video').pause();
+            $(this).removeClass('play');
+        } else {
+            document.querySelector('.lookbook__video video').play();
+            $(this).addClass('play');
+        }
+    }).mousemove(function () {
+        videoHoverTimeout ? clearTimeout(videoHoverTimeout) : false;
+        $('.lookbook__video').addClass('hover');
+
+        videoHoverTimeout = setTimeout(function () {
+            $('.lookbook__video').removeClass('hover');
+        }, 1000);
+    });
+    document.querySelector('.lookbook__video video').onended = function () {
+        $('.lookbook__video').removeClass('play');
+    };
+    // $('.lookbook__video-full').click(function (e) {
+    //     e.stopPropagation();
+    //     let video = document.querySelector('.lookbook__video video');
+    //
+    //     if (video.requestFullscreen) {
+    //         video.requestFullscreen();
+    //     } else if (video.mozRequestFullScreen) {
+    //         video.mozRequestFullScreen();
+    //     } else if (video.webkitRequestFullscreen) {
+    //         video.webkitRequestFullscreen();
+    //     }
+    // });
+
 });
