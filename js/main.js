@@ -13,7 +13,7 @@ $(document).ready(function () {
     // Masked input
     $('.input-phone').mask('+7 (999) 999-99-99');
 
-    // Main page, scroll effect
+    // Old Main page, scroll effect
     if ($('.banner').length) {
         let scrollVal = (document.body.scrollTop+0 || document.documentElement.scrollTop+0);
 
@@ -59,6 +59,25 @@ $(document).ready(function () {
             $('.banner--next img').css('transform', 'scale(' + (1 - (scrollVal - banners[0]) / banners[0] / 3) + ')');
         });
     }
+
+    // New Main page, scroll effect
+    function bannerScroll (item, index) {
+        let scroll = $(document).scrollTop(),
+            itemShow = scroll + $(window).height() - $(window).height() * 0.8 * index,
+            translateY = itemShow / $(window).height() * 20;
+
+        if (itemShow > 0 && itemShow < $(window).height()) {
+            item.find('.new-banner__bg').css('transform', 'translate(-50%, '+ translateY +'%)');
+        }
+    }
+    $('.new-banner').each(function (i) {
+        let _this = $(this);
+        bannerScroll(_this, i);
+
+        $(document).scroll(function () {
+            bannerScroll(_this, i);
+        });
+    });
 
     // Order
     $('.order__box-row').css('display', 'flex').hide();
@@ -423,20 +442,10 @@ $(document).ready(function () {
             $('.lookbook__video').removeClass('hover');
         }, 1000);
     });
-    document.querySelector('.lookbook__video video').onended = function () {
-        $('.lookbook__video').removeClass('play');
-    };
-    // $('.lookbook__video-full').click(function (e) {
-    //     e.stopPropagation();
-    //     let video = document.querySelector('.lookbook__video video');
-    //
-    //     if (video.requestFullscreen) {
-    //         video.requestFullscreen();
-    //     } else if (video.mozRequestFullScreen) {
-    //         video.mozRequestFullScreen();
-    //     } else if (video.webkitRequestFullscreen) {
-    //         video.webkitRequestFullscreen();
-    //     }
-    // });
+    if (document.querySelector('.lookbook__video video')) {
+        document.querySelector('.lookbook__video video').onended = function () {
+            $('.lookbook__video').removeClass('play');
+        };
+    }
 
 });

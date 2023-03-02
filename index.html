@@ -11,114 +11,190 @@
 
     <!--Стили для этой странички-->
     <style>
+        html,
         body {
-            padding: 10rem 0;
-            background: rgba(20, 20, 20, 1);
+            padding-bottom: 0;
+        }
+
+        .index {
+            position: relative;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-        }
-
-        a {
-            position: relative;
-            padding: 4rem 5rem;
-            display: block;
-            margin-bottom: 2rem;
-            text-transform: uppercase;
-            width: 80rem;
-            overflow: hidden;
-            border-radius: 10rem 10rem 50% 50%;
-        }
-
-        a:nth-child(even) {
-            transform: translateX(10%);
-        }
-
-        a:nth-child(odd) {
-            transform: translateX(-10%);
-        }
-
-        a span {
-            position: relative;
-            display: block;
-            text-align: center;
-            color: #fff;
-            font-size: 3.4rem;
-            z-index: 1;
-            text-shadow: 0 0 1rem rgba(0, 0, 0, 1),
-            0 0 2rem rgba(0, 0, 0, 1),
-            0 0 3rem rgba(0, 0, 0, 1);
-        }
-
-        a div {
-            position: absolute;
-            top: -35rem;
-            left: 0;
+            gap: 3rem;
             width: 100%;
-            height: 80rem;
-            background: #4973ff;
-            box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
-            transition: 0.5s;
-        }
-        a:nth-child(3n) div {
-            background: #a100ff;
-        }
-        a:nth-child(3n - 1) div {
-            background: #ff35ee;
+            min-height: 100vh;
+            padding: 10rem;
         }
 
-        a div::after,
-        a div::before {
+        .index:before {
             content: '';
-            width: 200%;
-            height: 200%;
+            position: fixed;
+            left: 0;
+            top: 0;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            transform: translateY(-100%);
+            background: linear-gradient(rgb(20, 20, 20) 20%, var(--color-transparent) 50%, rgb(20, 20, 20) 80%);
+            animation: bg 4.8s linear 1s infinite;
+        }
+
+        @keyframes bg {
+            from {
+                transform: translateY(-200%);
+            }
+
+            to {
+                transform: translateY(200%);
+            }
+        }
+
+        .index:after {
+            content: '';
+            position: fixed;
+            left: 0;
+            top: 0;
+            z-index: -2;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(20, 20, 20);
+        }
+
+        .index__bg {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .index__item {
+            position: relative;
+            z-index: 5;
+            display: block;
+            min-width: 66rem;
+            padding: 2rem 5rem;
+            border-radius: 2.4rem;
+            border: 1px solid var(--color-transparent);
+            font-size: 3rem;
+            color: white;
+            text-align: center;
+            text-transform: uppercase;
+            transition: transform .5s ease;
+        }
+
+        @media (min-width: 48.01em) {
+            .index__item:nth-child(odd) {
+                transform: translateX(-8rem);
+            }
+
+            .index__item:nth-child(even) {
+                transform: translateX(8rem);
+            }
+        }
+
+        .index__item:before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            z-index: -2;
+            width: 105%;
+            height: 120%;
+            transform: translate(-50%, -50%) scale(0.95, 0.83);
+            border-radius: inherit;
+            filter: blur(1rem);
+            background-color: var(--color);
+            transition: transform .5s ease, filter .5s ease;
+        }
+        .index__item:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            border-radius: inherit;
+            background-color: #303030;
+        }
+
+        .index__item:hover:before {
+            transform: translate(-50%, -50%) scale(1);
+            filter: blur(1.5rem);
+        }
+
+        .animation-wrapper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .stagger-visualizer {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transform-origin: left top;
+        }
+
+        .stagger-visualizer .dots-wrapper {
+            transform: translateZ(0);
             position: absolute;
             top: 0;
-            left: 50%;
-            transform: translate(-50%, -75%);
-            background: #000;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
         }
 
-        a div::before {
-            border-radius: 45%;
-            background: rgba(20, 20, 20, 1);
-            animation: animate 5s linear infinite;
+        .stagger-visualizer .dot {
+            position: relative;
+            z-index: 1;
+            width: 7.77%;
+            height: 14.9rem;
+            margin: 0.5rem;
+            transition: background-color 1.5s ease;
+            border-radius: 1rem;
+            background: #202020;
+            box-shadow: inset 1.2rem 1.2rem 2rem #171717,
+            inset -1.2rem -1.2rem 2rem #292929;
+            will-change: transform;
         }
 
-        a div::after {
-            border-radius: 40%;
-            background: rgba(20, 20, 20, 0.5);
-            animation: animate 10s linear infinite;
+        .stagger-visualizer .dot.active {
+            background-color: var(--color);
         }
 
-        a:hover div {
-            transform: translateY(-15rem);
+        .stagger-visualizer .dot:hover {
+            background-color: var(--color);
+            transition: background-color .1s ease;
         }
 
         @media (max-width: 48em) {
-            a {
+            .stagger-visualizer .dot {
+                width: 18.6%;
+                height: 13.8rem;
+            }
+
+            .index {
+                gap: 3rem;
+                padding: 10rem 4rem;
+            }
+
+            .index__item {
+                min-width: auto;
                 width: 100%;
-                margin-bottom: 4rem;
+                padding: 2.5rem 4rem;
+                border-radius: 100rem;
             }
 
-            a:nth-child(n) {
-                transform: translateX(0);
-            }
-
-            a div {
-                top: -32rem;
-                height: 75rem;
-            }
-        }
-
-        @keyframes animate {
-            0% {
-                transform: translate(-50%, -75%) rotate(0deg);
-            }
-
-            100% {
-                transform: translate(-50%, -75%) rotate(360deg);
+            .index__item:before {
+                transform: translate(-50%, -50%) scale(0.97, 0.88);
             }
         }
     </style>
@@ -126,93 +202,113 @@
 </head>
 <body>
 
-<a href="./main.html" target="_blank">
-    <span>Главная</span>
-    <div></div>
-</a>
-<a href="./catalog.html" target="_blank">
-    <span>Каталог общий</span>
-    <div></div>
-</a>
-<a href="./catalog-category.html" target="_blank">
-    <span>Каталог категория</span>
-    <div></div>
-</a>
-<a href="./product-page.html" target="_blank">
-    <span>Карточка товара</span>
-    <div></div>
-</a>
-<a href="./order.html" target="_blank">
-    <span>Оформление</span>
-    <div></div>
-</a>
-<a href="./contacts.html" target="_blank">
-    <span>Контакты</span>
-    <div></div>
-</a>
-<a href="./search-result.html" target="_blank">
-    <span>Результаты поиска</span>
-    <div></div>
-</a>
-<a href="./profile.html" target="_blank">
-    <span>ЛК Личный данные</span>
-    <div></div>
-</a>
-<a href="./profile-purchases.html" target="_blank">
-    <span>ЛК Мои покупки</span>
-    <div></div>
-</a>
-<a href="./profile-purchases-empty.html" target="_blank">
-    <span>ЛК Мои покупки - Пусто</span>
-    <div></div>
-</a>
-<a href="./profile-order.html" target="_blank">
-    <span>ЛК Заказ</span>
-    <div></div>
-</a>
-<a href="./favorites.html" target="_blank">
-    <span>ЛК Избранное</span>
-    <div></div>
-</a>
-<a href="./cart.html" target="_blank">
-    <span>Корзина</span>
-    <div></div>
-</a>
-<a href="./cart-empty.html" target="_blank">
-    <span>Корзина - Пусто</span>
-    <div></div>
-</a>
-<a href="./404.html" target="_blank">
-    <span>404</span>
-    <div></div>
-</a>
-<a href="./information.html" target="_blank">
-    <span>Информация</span>
-    <div></div>
-</a>
-<a href="./user-agreement.html" target="_blank">
-    <span>Пользовательское соглашение</span>
-    <div></div>
-</a>
-<a href="./privacy-policy.html" target="_blank">
-    <span>Политика конфиденциальности</span>
-    <div></div>
-</a>
-<a href="./about.html" target="_blank">
-    <span>О нас</span>
-    <div></div>
-</a>
-<a href="./new-modal.html" target="_blank">
-    <span>Модальные окна</span>
-    <div></div>
-</a>
-<a href="./lookbook.html" target="_blank">
-    <span>Лукбук</span>
-    <div></div>
-</a>
+<div class="index">
+    <div class="index__bg">
+        <div class="animation-wrapper">
+            <div class="stagger-visualizer">
+                <div class="dots-wrapper"></div>
+            </div>
+        </div>
+    </div>
+
+    <a href="main.html" target="_blank" class="index__item">Главная</a>
+    <a href="old-main.html" target="_blank" class="index__item">Старая главная</a>
+    <a href="./catalog.html" target="_blank" class="index__item">Каталог общий</a>
+    <a href="./catalog-category.html" target="_blank" class="index__item">Каталог категория</a>
+    <a href="./product-page.html" target="_blank" class="index__item">Карточка товара</a>
+    <a href="./order.html" target="_blank" class="index__item">Оформление</a>
+    <a href="./contacts.html" target="_blank" class="index__item">Контакты</a>
+    <a href="./search-result.html" target="_blank" class="index__item">Результаты поиска</a>
+    <a href="./profile.html" target="_blank" class="index__item">ЛК Личный данные</a>
+    <a href="./profile-purchases.html" target="_blank" class="index__item">ЛК Мои покупки</a>
+    <a href="./profile-purchases-empty.html" target="_blank" class="index__item">ЛК Мои покупки - Пусто</a>
+    <a href="./profile-order.html" target="_blank" class="index__item">ЛК Заказ</a>
+    <a href="./favorites.html" target="_blank" class="index__item">ЛК Избранное</a>
+    <a href="./cart.html" target="_blank" class="index__item">Корзина</a>
+    <a href="./cart-empty.html" target="_blank" class="index__item">Корзина - Пусто</a>
+    <a href="./404.html" target="_blank" class="index__item">404</a>
+    <a href="./information.html" target="_blank" class="index__item">Информация</a>
+    <a href="./user-agreement.html" target="_blank" class="index__item">Пользовательское соглашение</a>
+    <a href="./privacy-policy.html" target="_blank" class="index__item">Политика конфиденциальности</a>
+    <a href="./about.html" target="_blank" class="index__item">О нас</a>
+    <a href="./new-modal.html" target="_blank" class="index__item">Модальные окна</a>
+    <a href="./lookbook.html" target="_blank" class="index__item">Лукбук</a>
+
+</div>
 
 
 <script src="js/jquery-3.6.0.min.js"></script>
-<script src="js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+<script>
+    let color = [
+        ['rgba(151, 80, 255, 1)', 'rgba(151, 80, 255, 0.7)'],
+        ['rgba(0, 255, 0, 1)', 'rgba(0, 255, 0, 0.7)'],
+        ['rgba(255, 183, 0, 1)', 'rgba(255, 183, 0, 0.7)'],
+        ['rgba(0, 187, 255, 1)', 'rgba(0, 187, 255, 0.7)'],
+        ['rgba(0, 255, 218, 1)', 'rgba(0, 255, 218, 0.7)'],
+    ][Math.floor(Math.random() * 5)];
+    $('body').css('--color', color[0]).css('--color-transparent', color[1]);
+
+    const indexAnime = (function() {
+
+        let dotsWrapperEl = $('.dots-wrapper');
+        let dotsFragment = $(document.createDocumentFragment());
+        let row = Math.ceil($(document).height() / $(document).width() * 12.5);
+        let rowMob = Math.ceil($(document).height() / $(document).width() * 5);
+        let grid;
+        if ($(window).width() > 768) {
+            grid = [12, row];
+        } else {
+            grid = [5, rowMob];
+        }
+        let numberOfElements = grid[0] * grid[1];
+        let animation;
+
+        for (let i = 0; i < numberOfElements; i++) {
+            dotsFragment.append('<div class="dot"></div>');
+        }
+
+        dotsWrapperEl.append(dotsFragment);
+
+        let index = anime.random(0, numberOfElements-1);
+
+        function play() {
+            if (animation) animation.pause();
+
+            index = anime.random(0, numberOfElements-1);
+
+            animation = anime.timeline({
+                easing: 'easeInOutQuad',
+                complete: play
+            })
+                .add({
+                    targets: '.stagger-visualizer .dot',
+                    keyframes: [
+                        {
+                            translateX: anime.stagger('-2px', {grid: grid, from: index, axis: 'x'}),
+                            translateY: anime.stagger('-2px', {grid: grid, from: index, axis: 'y'}),
+                            duration: 100
+                        }, {
+                            translateX: anime.stagger('2px', {grid: grid, from: index, axis: 'x'}),
+                            translateY: anime.stagger('2px', {grid: grid, from: index, axis: 'y'}),
+                            scale: anime.stagger([1, 0.9], {grid: grid, from: index}),
+                            duration: 225
+                        }, {
+                            translateX: 0,
+                            translateY: 0,
+                            scale: 1,
+                            duration: 1200,
+                        }, {
+                            duration: 1400,
+                        }
+                    ],
+                    delay: anime.stagger(80, {grid: grid, from: index})
+                }, 30)
+        }
+
+        play();
+
+    })();
+</script>
 </body>
 </html>
