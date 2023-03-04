@@ -6073,6 +6073,17 @@ body {
   -o-object-fit: fill;
      object-fit: fill;
 }
+.lookbook__img-box {
+  width: 100%;
+  height: 86.1rem;
+  margin-top: 10rem;
+}
+.lookbook__img-box > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .lookbook__title {
   width: 98.8rem;
   margin: 0 auto 4rem auto;
@@ -6152,6 +6163,10 @@ body {
   .lookbook__video-full {
     width: 6rem;
     height: 6rem;
+  }
+  .lookbook__img-box {
+    height: 49.2rem;
+    margin-top: 12rem;
   }
   .lookbook__title {
     width: 100%;
