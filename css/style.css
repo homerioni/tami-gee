@@ -5837,6 +5837,9 @@ body {
 .about-intro__text-box {
   width: 38.5rem;
 }
+.about-intro__text-box--black {
+  color: #2F2E2A;
+}
 .about-intro__title {
   margin-bottom: 2rem;
   font-family: "Lora";
@@ -5920,8 +5923,8 @@ body {
   color: rgba(47, 46, 42, 0.6);
 }
 .about__text {
-  font-size: 1.6rem;
-  line-height: 2.6rem;
+  font-size: 2rem;
+  line-height: 3rem;
 }
 
 @media (max-width: 48em) {
