@@ -328,6 +328,176 @@
   }
 }
 
+.modal-feedback {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: -100;
+  width: 100%;
+  height: 100%;
+
+  &__bg {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  &__content {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    width: 70rem;
+    height: 100%;
+    transform: translateX(100%);
+    padding: 17rem 10.5rem 6rem 10.5rem;
+    background-color: white;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    transition: transform .3s ease;
+
+    &.active {
+      transform: translateX(0);
+    }
+  }
+
+  &__close {
+    position: absolute;
+    right: 3rem;
+    top: 3rem;
+    width: 4.3rem;
+    height: 4.3rem;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 80%;
+      height: 2px;
+      transform: translate(-50%, -50%) rotate(45deg);
+      background-color: #82827F;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 80%;
+      height: 2px;
+      transform: translate(-50%, -50%) rotate(-45deg);
+      background-color: #82827F;
+    }
+  }
+
+  &__login-box {
+    transform: translateX(-100vw);
+    transition: transform .3s ease;
+
+    &.active {
+      transform: translateX(0);
+    }
+  }
+
+  &__title {
+    width: 44.7rem;
+    margin-bottom: 6.6rem;
+    font-family: $lora;
+    font-size: 3rem;
+    line-height: 4.2rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  &__desc {
+    width: 41.1rem;
+    margin-bottom: 6rem;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+
+    &--bold {
+      font-family: $sof600;
+      font-weight: 700;
+      font-size: 1.8rem;
+      line-height: 2.8rem;
+      letter-spacing: 0.1em;
+    }
+  }
+
+  &__label {
+    display: block;
+    padding-bottom: 2.4rem;
+    margin-bottom: 4.5rem;
+    border-bottom: 1px solid #2F2E2A1A;
+  }
+
+  &__input {
+    width: 100%;
+    font-size: 1.8rem;
+
+    &::placeholder {
+      color: #2F2E2A;
+    }
+  }
+
+  &__forgot {
+    display: block;
+    margin-top: -3rem;
+    margin-bottom: 8rem;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    color: rgba(47, 46, 42, 0.4);
+
+    &:hover {
+      color: #2F2E2A;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    margin-top: 7rem;
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2.2rem 6.5rem;
+    border: 1px solid #2F2E2A;
+    font-family: $sof600;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    &--not-border {
+      border: 1px solid transparent;
+      font-size: 1.5rem;
+      line-height: 2.3rem;
+    }
+
+    &:hover {
+      color: #8D8C8A;
+    }
+  }
+
+  &__link {
+    display: block;
+    margin-top: auto;
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+    color: rgba(47, 46, 42, 0.4);
+  }
+}
+
 .modal-recovery {
   position: fixed;
   left: 0;
@@ -673,6 +843,85 @@
     &__code-box {
       .modal-login__desc {
         width: 100%;
+      }
+    }
+
+    &__link {
+      font-size: 3rem;
+      line-height: 5.2rem;
+    }
+  }
+
+  .modal-feedback {
+    &__bg {
+    }
+
+    &__content {
+      width: 100%;
+      padding: 20rem 3rem 6rem 3rem;
+    }
+
+    &__close {
+      position: absolute;
+      right: 2rem;
+      top: 2rem;
+      width: 8.6rem;
+      height: 8.6rem;
+    }
+
+    &__login-box {
+    }
+
+    &__title {
+      width: calc(100vw - 6rem);
+      margin-bottom: 9rem;
+      font-size: 4.8rem;
+      line-height: 7rem;
+    }
+
+    &__desc {
+      width: calc(100vw - 6rem);
+      margin-bottom: 10rem;
+      font-size: 3rem;
+      line-height: 5.2rem;
+
+      &--bold {
+        font-size: 3rem;
+        line-height: 5.2rem;
+      }
+    }
+
+    &__label {
+      width: calc(100vw - 6rem);
+      padding-bottom: 3.6rem;
+      margin-bottom: 8rem;
+    }
+
+    &__input {
+      font-size: 3rem;
+    }
+
+    &__forgot {
+      display: block;
+      margin-top: -5rem;
+      margin-bottom: 10rem;
+      font-size: 2.6rem;
+      line-height: 4.2rem;
+    }
+
+    &__buttons {
+      width: calc(100vw - 6rem);
+      margin-top: 11rem;
+    }
+
+    &__btn {
+      padding: 3.4rem 7.2rem;
+      font-size: 3rem;
+      line-height: 4.6rem;
+
+      &--not-border {
+        font-size: 2.4rem;
+        line-height: 3.7rem;
       }
     }
 

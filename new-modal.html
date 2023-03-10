@@ -264,6 +264,7 @@
     <div class="test-wrap">
         <button class="pop-up-recovery">Восстановление пароля</button>
         <button class="pop-up-error">Ошибка добавления</button>
+        <button class="pop-up-feedback">Обратная связь</button>
     </div>
 
 
@@ -430,6 +431,36 @@
                 <button type="button" class="modal-login__btn">Зарегистрироваться</button>
             </form>
             <a href="" class="modal-login__link">Политика конфиденциальности</a>
+        </div>
+    </section>
+    <section class="modal-feedback">
+        <div class="modal-feedback__bg close"></div>
+        <div class="modal-feedback__content">
+            <button class="modal-feedback__close close"></button>
+            <form class="modal-feedback__login-box form active">
+                <h2 class="modal-feedback__title">
+                    обратная связь
+                </h2>
+                <p class="modal-feedback__desc">
+                    Оставьте контакты и сообщение, наши
+                    <br>менеджеры свяжутся с вами
+                </p>
+                <label class="modal-feedback__label">
+                    <input placeholder="+7 (___) ___-__-__" type="text" class="modal-feedback__input input-phone">
+                </label>
+                <label class="modal-feedback__label">
+                    <input placeholder="Имя" type="text" class="modal-feedback__input">
+                </label>
+                <label class="modal-feedback__label">
+                    <input placeholder="Сообщение..." type="text" class="modal-feedback__input">
+                </label>
+                <div class="modal-feedback__buttons">
+                    <button type="button" class="modal-feedback__btn">
+                        отправить
+                    </button>
+                </div>
+            </form>
+            <a href="" class="modal-feedback__link">Политика конфиденциальности</a>
         </div>
     </section>
 </main>
