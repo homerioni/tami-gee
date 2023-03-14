@@ -401,6 +401,10 @@
     font-size: 1.8rem;
     line-height: 2.8rem;
     text-align: center;
+
+    &--price {
+      text-decoration: overline;
+    }
   }
 
   &__info-text {
