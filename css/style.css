@@ -2925,10 +2925,20 @@ body {
 }
 .catalog__price {
   margin-top: auto;
+  margin-bottom: 2.4rem;
   font-weight: 500;
   font-size: 1.8rem;
   line-height: 2.8rem;
   text-align: center;
+}
+.catalog__info-text {
+  margin-top: -1.6rem;
+  font-weight: 250;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  letter-spacing: 0.1em;
+  text-align: center;
+  text-transform: uppercase;
 }
 .catalog__selected-filters {
   display: none;
@@ -3239,9 +3249,15 @@ body {
     line-height: 4.4rem;
   }
   .catalog__price {
+    margin-bottom: 3rem;
     font-weight: 400;
     font-size: 3rem;
     line-height: 4.6rem;
+  }
+  .catalog__info-text {
+    margin-top: -2.4rem;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
   }
   .catalog__nav-block {
     display: -webkit-box;
@@ -5277,6 +5293,20 @@ body {
   font-family: "Lora";
   font-size: 2.2rem;
 }
+.product__price--pre {
+  margin-bottom: 3.5rem;
+}
+.product__price--pre > * {
+  display: block;
+}
+.product__price--pre > *:first-child {
+  margin-bottom: 2.6rem;
+  font-weight: 250;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
 .product__buttons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5563,6 +5593,14 @@ body {
   .product__price {
     margin-bottom: 7rem;
     font-size: 4rem;
+  }
+  .product__price--pre {
+    margin-bottom: 5rem;
+  }
+  .product__price--pre > *:first-child {
+    margin-bottom: 3rem;
+    font-size: 2.4rem;
+    line-height: 2.4rem;
   }
   .product__cart-btn {
     width: 48.6rem;
@@ -6121,11 +6159,10 @@ body {
   margin-bottom: 18rem;
 }
 .about__desc {
-  width: 106.8rem;
-  margin: 0 auto 17rem auto;
+  margin: 0 auto 10rem auto;
   font-family: "Lora";
-  font-size: 2rem;
-  line-height: 3.3rem;
+  font-size: 2.5rem;
+  line-height: 4.2rem;
   letter-spacing: 0.1em;
   text-align: center;
   text-transform: uppercase;
@@ -6504,41 +6541,42 @@ body {
   text-align: center;
 }
 .new-banner__title {
-  width: 71rem;
+  width: 63rem;
   margin-bottom: 3rem;
   font-family: "Lora";
-  font-size: 4rem;
-  line-height: 5.7rem;
+  font-size: 5rem;
+  line-height: 6.5rem;
   text-transform: uppercase;
 }
 .new-banner__btn {
-  padding: 2.2rem 4.8rem;
+  padding: 3rem 5rem;
   border: 1px solid white;
   background: rgba(255, 255, 255, 0.05);
-  -webkit-backdrop-filter: blur(2rem);
-          backdrop-filter: blur(2rem);
+  -webkit-backdrop-filter: blur(4rem);
+          backdrop-filter: blur(4rem);
   font-weight: 700;
-  font-size: 1.8rem;
+  font-size: 2.5rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
 }
 
-.new-banner__text-box {
-  padding: 14rem 0;
+@media (max-width: 48em) {
+  .new-banner__text-box {
+    padding: 14rem 0;
+  }
+  .new-banner__title {
+    width: 63rem;
+    margin-bottom: 5rem;
+    font-size: 4.8rem;
+    line-height: 6.5rem;
+  }
+  .new-banner__btn {
+    padding: 3.4rem 7.6rem;
+    -webkit-backdrop-filter: blur(4rem);
+            backdrop-filter: blur(4rem);
+    font-size: 3rem;
+  }
 }
-.new-banner__title {
-  width: 63rem;
-  margin-bottom: 5rem;
-  font-size: 4.8rem;
-  line-height: 6.5rem;
-}
-.new-banner__btn {
-  padding: 3.4rem 7.6rem;
-  -webkit-backdrop-filter: blur(4rem);
-          backdrop-filter: blur(4rem);
-  font-size: 3rem;
-}
-
 body.lock {
   overflow: hidden;
 }

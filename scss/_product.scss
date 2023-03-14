@@ -169,6 +169,23 @@
     margin-bottom: 7rem;
     font-family: $lora;
     font-size: 2.2rem;
+
+    &--pre {
+      margin-bottom: 3.5rem;
+
+      > * {
+        display: block;
+
+        &:first-child {
+          margin-bottom: 2.6rem;
+          font-weight: 250;
+          font-size: 1.6rem;
+          line-height: 1.6rem;
+          letter-spacing: .1em;
+          text-transform: uppercase;
+        }
+      }
+    }
   }
 
   &__buttons {
@@ -483,6 +500,18 @@
     &__price {
       margin-bottom: 7rem;
       font-size: 4rem;
+
+      &--pre {
+        margin-bottom: 5rem;
+
+        > * {
+          &:first-child {
+            margin-bottom: 3rem;
+            font-size: 2.4rem;
+            line-height: 2.4rem;
+          }
+        }
+      }
     }
 
     &__buttons {
