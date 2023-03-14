@@ -776,6 +776,11 @@
       font-weight: 400;
       font-size: 3rem;
       line-height: 4.6rem;
+
+      .old-price {
+        display: block;
+        margin-right: 0;
+      }
     }
 
     &__info-text {
