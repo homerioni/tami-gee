@@ -402,8 +402,10 @@
     line-height: 2.8rem;
     text-align: center;
 
-    &--price {
-      text-decoration: overline;
+    .old-price {
+      margin-right: 2rem;
+      color: rgba(47, 46, 42, 0.6);
+      text-decoration: line-through;
     }
   }
 
