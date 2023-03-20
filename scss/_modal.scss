@@ -398,12 +398,7 @@
   }
 
   &__login-box {
-    transform: translateX(-100vw);
-    transition: transform .3s ease;
-
-    &.active {
-      transform: translateX(0);
-    }
+    transform: translateX(0);
   }
 
   &__title {

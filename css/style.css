@@ -606,14 +606,6 @@ input[type=number] {
   background-color: #82827F;
 }
 .modal-feedback__login-box {
-  -webkit-transform: translateX(-100vw);
-          transform: translateX(-100vw);
-  -webkit-transition: -webkit-transform 0.3s ease;
-  transition: -webkit-transform 0.3s ease;
-  transition: transform 0.3s ease;
-  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
-}
-.modal-feedback__login-box.active {
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
