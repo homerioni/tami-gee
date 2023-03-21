@@ -6485,7 +6485,7 @@ body {
 .new-banner {
   position: relative;
   z-index: 1;
-  height: 80vh;
+  height: 90vh;
   overflow: hidden;
 }
 .new-banner__bg {
