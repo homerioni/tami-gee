@@ -5500,7 +5500,8 @@ body {
   color: rgba(47, 46, 42, 0.5);
 }
 .product__guid-tab-content td:first-child {
-  width: 8rem;
+  width: 11rem;
+  padding-right: 3rem;
   color: #2F2E2A;
 }
 .product__guid-tab-content.active {
@@ -5700,7 +5701,7 @@ body {
     font-size: 3rem;
   }
   .product__guid-tab-content td:first-child {
-    width: 11rem;
+    width: 14rem;
   }
 }
 .page-404 {
