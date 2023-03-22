@@ -5553,6 +5553,9 @@ body {
     margin-top: 0;
     padding: 7rem 3rem;
   }
+  .product__tab-content {
+    position: static;
+  }
   .product__info-title {
     margin-bottom: 1rem;
     font-size: 4.4rem;

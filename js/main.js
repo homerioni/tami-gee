@@ -333,12 +333,15 @@ $(document).ready(function () {
     });
     $('.product__tab-content input[name="product-info"]').change(function () {
         $('.product__tab-content').removeClass('active');
+        $('.product__main-info').hide();
         $(this).parent().addClass('active');
         $('.product__tab').removeClass('active');
         $('.product__tab[for=' + $(this).attr('id') + ']').addClass('active');
     });
     $('.product__tab-close').click(function () {
+        $('.product__tab-content.active input').prop('checked', false);
         $('.product__tab-content, .product__tab').removeClass('active');
+        $('.product__main-info').show();
     });
 
     // Login modal
