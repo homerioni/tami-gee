@@ -12,6 +12,10 @@ const product_slider = new Swiper('.product__slider', {
     effect: "fade",
     speed: 700,
 
+    mousewheel: {
+        sensitivity: 1,
+    },
+
     pagination: {
         el: '.product__pagination',
         clickable: true,

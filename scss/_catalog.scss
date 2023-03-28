@@ -317,8 +317,8 @@
 
   &__like {
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 1.4rem;
+    top: 1.4rem;
     z-index: 1;
 
     svg {
@@ -357,9 +357,9 @@
 
   &__img-box {
     position: relative;
-    width: 36.7rem;
-    height: 41.4rem;
-    margin-bottom: 0.9rem;
+    width: 100%;
+    height: 57rem;
+    margin-bottom: 1rem;
 
     > img {
       position: absolute;
@@ -367,8 +367,7 @@
       top: 0;
       width: 100%;
       height: 100%;
-      padding: 2.7rem 1.8rem;
-      object-fit: contain;
+      object-fit: cover;
       transition: .6s opacity ease;
 
       &:nth-child(2) {
@@ -741,7 +740,7 @@
     &__item {
       width: 33rem;
       margin-right: 0;
-      padding: 5rem 0 2rem 0;
+      padding: 0;
 
       &:nth-child(4n) {
         margin-left: 0;
@@ -749,6 +748,9 @@
     }
 
     &__like {
+      right: 1rem;
+      top: 1rem;
+
       svg {
         width: 5rem;
         height: 4.2rem;
@@ -759,10 +761,8 @@
     }
 
     &__img-box {
-      width: 28.4rem;
-      height: 31rem;
+      height: 52rem;
       padding: 0;
-      margin: 0 auto 5rem auto;
     }
 
     &__item-title {
