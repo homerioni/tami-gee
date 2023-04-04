@@ -19,6 +19,8 @@ main {
   transform: translateY(0);
   transition: transform .5s ease, background-color .5s ease;
 
+  background-color: white;
+
   &.hidden {
     transform: translateY(-100%);
   }
@@ -606,6 +608,7 @@ main {
   .header {
     padding: 4rem 0;
     margin-bottom: 12rem;
+    border-radius: 0;
 
     &--white {
       .header__burger-btn {

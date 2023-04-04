@@ -253,6 +253,22 @@
     }
   }
 
+  &__btn-desc {
+    width: 72rem;
+    margin-top: 1.5rem;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: #82827F;
+
+    > a {
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
   &__info-block {
     width: 45rem;
     height: fit-content;
@@ -611,6 +627,13 @@
       margin-top: 12rem;
       font-size: 3rem;
       text-align: center;
+    }
+
+    &__btn-desc {
+      width: 100%;
+      margin-top: 2rem;
+      font-size: 3rem;
+      line-height: 4.6rem;
     }
 
     &__info-block {

@@ -125,6 +125,10 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
+svg {
+  overflow: visible;
+}
+
 @media (max-width: 48em) {
   html {
     font-size: 5px;
@@ -1179,6 +1183,7 @@ main.intro {
   transition: background-color 0.5s ease, -webkit-transform 0.5s ease;
   transition: transform 0.5s ease, background-color 0.5s ease;
   transition: transform 0.5s ease, background-color 0.5s ease, -webkit-transform 0.5s ease;
+  background-color: white;
 }
 .header.hidden {
   -webkit-transform: translateY(-100%);
@@ -1731,6 +1736,7 @@ main.intro {
   .header {
     padding: 4rem 0;
     margin-bottom: 12rem;
+    border-radius: 0;
   }
   .header--white .header__burger-btn > span, .header--white .header__burger-btn:before, .header--white .header__burger-btn:after {
     background-color: white;
@@ -2549,9 +2555,6 @@ body {
   height: 50rem;
   margin-bottom: 1.2rem;
 }
-.catalog--slider .catalog__img-box > img {
-  padding: 7.3rem 2.8rem;
-}
 .catalog__title {
   margin-bottom: 5rem;
   font-family: "Lora";
@@ -2997,9 +3000,6 @@ body {
   .catalog--slider .catalog__img-box {
     height: 37.2rem;
     margin-bottom: 2.4rem;
-  }
-  .catalog--slider .catalog__img-box > img {
-    padding: 3rem 4rem;
   }
   .catalog--category .catalog__breadcrumbs {
     top: -14rem;
@@ -3568,6 +3568,19 @@ body {
 .order__btn.active {
   opacity: 1;
 }
+.order__btn-desc {
+  width: 72rem;
+  margin-top: 1.5rem;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: #82827F;
+}
+.order__btn-desc > a {
+  text-decoration: underline;
+}
+.order__btn-desc > a:hover {
+  text-decoration: none;
+}
 .order__info-block {
   width: 45rem;
   height: -webkit-fit-content;
@@ -3900,6 +3913,12 @@ body {
     margin-top: 12rem;
     font-size: 3rem;
     text-align: center;
+  }
+  .order__btn-desc {
+    width: 100%;
+    margin-top: 2rem;
+    font-size: 3rem;
+    line-height: 4.6rem;
   }
   .order__info-block {
     width: 100%;
