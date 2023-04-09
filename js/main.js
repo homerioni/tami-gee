@@ -466,4 +466,12 @@ $(document).ready(function () {
         }, 300);
     });
 
+    // Footer form submit
+    $('.footer__box').submit(function () {
+        $('.footer__label .footer__label-desc').addClass('active');
+        setTimeout(function () {
+            $('.footer__label .footer__label-desc').removeClass('active');
+        }, 2000);
+    });
+
 });

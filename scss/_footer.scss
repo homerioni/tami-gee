@@ -93,11 +93,24 @@ body {
   }
 
   &__label {
+    position: relative;
     display: flex;
     align-items: center;
     gap: 2rem;
     padding-bottom: 1.4rem;
     border-bottom: 1px solid #2F2E2A1A;
+
+    .footer__label-desc {
+      position: absolute;
+      left: 0;
+      top: calc(100% + 1rem);
+      opacity: 0;
+      transition: opacity .3s ease;
+
+      &.active {
+        opacity: 1;
+      }
+    }
   }
 
   &__input {

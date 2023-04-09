@@ -2282,6 +2282,7 @@ body {
   opacity: 0.7;
 }
 .footer__label {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2291,6 +2292,17 @@ body {
   gap: 2rem;
   padding-bottom: 1.4rem;
   border-bottom: 1px solid rgba(47, 46, 42, 0.1019607843);
+}
+.footer__label .footer__label-desc {
+  position: absolute;
+  left: 0;
+  top: calc(100% + 1rem);
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+.footer__label .footer__label-desc.active {
+  opacity: 1;
 }
 .footer__input {
   -webkit-box-flex: 1;
